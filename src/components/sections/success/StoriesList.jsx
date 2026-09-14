@@ -1,3 +1,4 @@
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function StoriesList() {
   return (
     <div className="sis-stories-list-section section pt-0">
@@ -8,7 +9,7 @@ export default function StoriesList() {
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
-                    <img src="/images/profile-img1.png" className="w-100" alt="Priya Sharma" />
+                    <img src={img("/images/profile-img1.png")} className="w-100" alt="Priya Sharma" />
                   </div>
                   <div className="sisf-e-author">
                     <span className="sisf-e-author-name sis-comman-title d-block">
@@ -49,7 +50,7 @@ export default function StoriesList() {
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
-                    <img src="/images/profile-img2.png" className="w-100" alt="Rohan Mehta" />
+                    <img src={img("/images/profile-img2.png")} className="w-100" alt="Rohan Mehta" />
                   </div>
                   <div className="sisf-e-author">
                     <span className="sisf-e-author-name sis-comman-title d-block">
@@ -90,7 +91,7 @@ export default function StoriesList() {
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
-                    <img src="/images/profile-img3.png" className="w-100" alt="Pallavi Jha" />
+                    <img src={img("/images/profile-img3.png")} className="w-100" alt="Pallavi Jha" />
                   </div>
                   <div className="sisf-e-author">
                     <span className="sisf-e-author-name sis-comman-title d-block">
@@ -131,7 +132,7 @@ export default function StoriesList() {
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
-                    <img src="/images/profile-img4.png" className="w-100" alt="Arjun Verma" />
+                    <img src={img("/images/profile-img4.png")} className="w-100" alt="Arjun Verma" />
                   </div>
                   <div className="sisf-e-author">
                     <span className="sisf-e-author-name sis-comman-title d-block">
@@ -172,7 +173,7 @@ export default function StoriesList() {
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
-                    <img src="/images/profile-img5.png" className="w-100" alt="Sneha Kulkarni" />
+                    <img src={img("/images/profile-img5.png")} className="w-100" alt="Sneha Kulkarni" />
                   </div>
                   <div className="sisf-e-author">
                     <span className="sisf-e-author-name sis-comman-title d-block">
@@ -213,7 +214,7 @@ export default function StoriesList() {
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
-                    <img src="/images/profile-img6.png" className="w-100" alt="Karan Malhotra" />
+                    <img src={img("/images/profile-img6.png")} className="w-100" alt="Karan Malhotra" />
                   </div>
                   <div className="sisf-e-author">
                     <span className="sisf-e-author-name sis-comman-title d-block">
@@ -254,7 +255,7 @@ export default function StoriesList() {
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
-                    <img src="/images/profile-img1.png" className="w-100" alt="Ishita Rao" />
+                    <img src={img("/images/profile-img1.png")} className="w-100" alt="Ishita Rao" />
                   </div>
                   <div className="sisf-e-author">
                     <span className="sisf-e-author-name sis-comman-title d-block">
@@ -295,7 +296,7 @@ export default function StoriesList() {
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
-                    <img src="/images/profile-img2.png" className="w-100" alt="Aditya Nair" />
+                    <img src={img("/images/profile-img2.png")} className="w-100" alt="Aditya Nair" />
                   </div>
                   <div className="sisf-e-author">
                     <span className="sisf-e-author-name sis-comman-title d-block">

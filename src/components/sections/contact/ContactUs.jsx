@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { submitContactForm } from "../../../utils/submitContactForm";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function ContactUs() {
   const [submitting, setSubmitting] = useState(false);
   const [formStatus, setFormStatus] = useState("");
@@ -49,7 +50,7 @@ export default function ContactUs() {
             <div className="sisf-contact-left-part position-relative">
               <div className="sisf-contact-left-image">
                 <figure className="sis-image-anime">
-                  <img src="/images/contct-img.png" className="w-100" alt="Go2Abroad" />
+                  <img src={img("/images/contct-img.png")} className="w-100" alt="Go2Abroad" />
                 </figure>
               </div>
               <div className="sisf-contact-left-bottom" data-aos="zoom-in-left" data-aos-delay="500">

@@ -1,9 +1,10 @@
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function WhyChooseUs() {
   return (
     <div className="sis-why-choose-us-section position-relative">
       <div className="sisf-sis-bottom-right-image" data-aos="fade-left" data-aos-delay="400">
         <figure>
-          <img src="/images/page-image-2.png" className="sisf-fade" alt="Go2Abroad" />
+          <img src={img("/images/page-image-2.png")} className="sisf-fade" alt="Go2Abroad" />
         </figure>
       </div>
       <div className="sis-why-choose-us-bg sisf-section">

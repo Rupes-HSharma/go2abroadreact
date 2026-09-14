@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function Footer() {
   return (
     <footer className="main-footer">
       <div className="sisf-page-footer-inner-area sisf-page-background position-relative pt-4">
         <div className="sisf-sis-bottom-left-image">
           <figure>
-            <img src="/images/footer-bg.png" alt="" />
+            <img src={img("/images/footer-bg.png")} alt="" />
           </figure>
         </div>
         <div className="sisf-page-footer-middle-area pt-4">
@@ -19,7 +20,7 @@ export default function Footer() {
                   <ul>
                     <li style={{listStyle: 'none'}} className="footerlogo">
                       <Link className="navbar-brand" to="/">
-                        <img src="/images/logo.png" alt="Go2Abroad Logo" style={{width: '190px'}} />
+                        <img src={img("/images/logo.png")} alt="Go2Abroad Logo" style={{width: '190px'}} />
                       </Link>
                     </li>
                     <li style={{listStyle: 'none'}}>

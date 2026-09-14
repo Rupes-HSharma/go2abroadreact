@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function PopularDestination() {
   return (
     <div className="sis-popular-destination-section sisf-extended-grid--right section sis-brand-gradient-light">
@@ -115,7 +116,7 @@ export default function PopularDestination() {
                   <div className="sis-e-inner bg-white rounded-pill">
                     <div className="sis-e-icon">
                       <figure>
-                        <img src="/images/location1.svg" alt="Go2Abroad" />
+                        <img src={img("/images/location1.svg")} alt="Go2Abroad" />
                       </figure>
                     </div>
                     <div className="sis-e-content">
@@ -133,7 +134,7 @@ export default function PopularDestination() {
                   <div className="sis-e-inner bg-white rounded-pill">
                     <div className="sis-e-icon">
                       <figure>
-                        <img src="/images/location2.svg" alt="Go2Abroad" />
+                        <img src={img("/images/location2.svg")} alt="Go2Abroad" />
                       </figure>
                     </div>
                     <div className="sis-e-content">
@@ -151,7 +152,7 @@ export default function PopularDestination() {
                   <div className="sis-e-inner bg-white rounded-pill">
                     <div className="sis-e-icon">
                       <figure>
-                        <img src="/images/location3.svg" alt="Go2Abroad" />
+                        <img src={img("/images/location3.svg")} alt="Go2Abroad" />
                       </figure>
                     </div>
                     <div className="sis-e-content">
@@ -169,7 +170,7 @@ export default function PopularDestination() {
                   <div className="sis-e-inner bg-white rounded-pill">
                     <div className="sis-e-icon">
                       <figure>
-                        <img src="/images/location5.svg" alt="Go2Abroad" />
+                        <img src={img("/images/location5.svg")} alt="Go2Abroad" />
                       </figure>
                     </div>
                     <div className="sis-e-content">
@@ -187,7 +188,7 @@ export default function PopularDestination() {
                   <div className="sis-e-inner bg-white rounded-pill">
                     <div className="sis-e-icon">
                       <figure>
-                        <img src="/images/location4.svg" alt="Go2Abroad" />
+                        <img src={img("/images/location4.svg")} alt="Go2Abroad" />
                       </figure>
                     </div>
                     <div className="sis-e-content">
@@ -205,7 +206,7 @@ export default function PopularDestination() {
                   <div className="sis-e-inner bg-white rounded-pill">
                     <div className="sis-e-icon">
                       <figure>
-                        <img src="/images/location7.svg" alt="Go2Abroad" />
+                        <img src={img("/images/location7.svg")} alt="Go2Abroad" />
                       </figure>
                     </div>
                     <div className="sis-e-content">
@@ -223,7 +224,7 @@ export default function PopularDestination() {
                   <div className="sis-e-inner bg-white rounded-pill">
                     <div className="sis-e-icon">
                       <figure>
-                        <img src="/images/location6.svg" alt="Go2Abroad" />
+                        <img src={img("/images/location6.svg")} alt="Go2Abroad" />
                       </figure>
                     </div>
                     <div className="sis-e-content">
@@ -241,7 +242,7 @@ export default function PopularDestination() {
                   <div className="sis-e-inner bg-white rounded-pill">
                     <div className="sis-e-icon">
                       <figure>
-                        <img src="/images/location8.svg" alt="Go2Abroad" />
+                        <img src={img("/images/location8.svg")} alt="Go2Abroad" />
                       </figure>
                     </div>
                     <div className="sis-e-content">

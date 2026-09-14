@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function SuccessStories() {
   return (
     <div className="sis-success-stories-section position-relative pb-0 section sis-brand-gradient-deep">
       <div className="sisf-sis-bottom-left-image" style={{top: '0px'}}>
         <figure>
-          <img src="/images/globe-bg1.png" style={{height: '722px'}} />
+          <img src={img("/images/globe-bg1.png")} style={{height: '722px'}} />
         </figure>
       </div>
       <div className="container">
@@ -43,7 +44,7 @@ export default function SuccessStories() {
                   <div className="sisf-content-inner">
                     <div className="sisf-m-inner d-flex align-items-center gap-4">
                       <div className="sisf-e-media-image">
-                        <img src="/images/profile-img1.png" className="w-100" alt="Go2Abroad" />
+                        <img src={img("/images/profile-img1.png")} className="w-100" alt="Go2Abroad" />
                       </div>
                       <div className="sisf-e-author">
                         <span className="sisf-e-author-name sis-comman-title d-block">
@@ -100,7 +101,7 @@ export default function SuccessStories() {
                   <div className="sisf-content-inner">
                     <div className="sisf-m-inner d-flex align-items-center gap-4">
                       <div className="sisf-e-media-image">
-                        <img src="/images/profile-img2.png" className="w-100" alt="Go2Abroad" />
+                        <img src={img("/images/profile-img2.png")} className="w-100" alt="Go2Abroad" />
                       </div>
                       <div className="sisf-e-author">
                         <span className="sisf-e-author-name sis-comman-title d-block">
@@ -156,7 +157,7 @@ export default function SuccessStories() {
                   <div className="sisf-content-inner">
                     <div className="sisf-m-inner d-flex align-items-center gap-4">
                       <div className="sisf-e-media-image">
-                        <img src="/images/profile-img1.png" className="w-100" alt="Go2Abroad" />
+                        <img src={img("/images/profile-img1.png")} className="w-100" alt="Go2Abroad" />
                       </div>
                       <div className="sisf-e-author">
                         <span className="sisf-e-author-name sis-comman-title d-block">
@@ -212,7 +213,7 @@ export default function SuccessStories() {
                   <div className="sisf-content-inner">
                     <div className="sisf-m-inner d-flex align-items-center gap-4">
                       <div className="sisf-e-media-image">
-                        <img src="/images/profile-img1.png" className="w-100" alt="Go2Abroad" />
+                        <img src={img("/images/profile-img1.png")} className="w-100" alt="Go2Abroad" />
                       </div>
                       <div className="sisf-e-author">
                         <span className="sisf-e-author-name sis-comman-title d-block">

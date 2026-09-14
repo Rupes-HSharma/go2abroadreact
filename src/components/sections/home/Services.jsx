@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function Services() {
   return (
     <div className="sis-services-section sisf-page-background position-relative section aboutService sis-brand-gradient-dark">
       <div className="sisf-sis-top-left-image" data-aos="fade-right" data-aos-delay="400">
         <figure>
-          <img src="/images/page-image1.png" alt="Go2Abroad" />
+          <img src={img("/images/page-image1.png")} alt="Go2Abroad" />
         </figure>
       </div>
       <div className="sisf-sis-bottom-right-image" data-aos="fade-left" data-aos-delay="400">
         <figure>
-          <img src="/images/page-image2.png" className="sisf-fade" alt="Go2Abroad" />
+          <img src={img("/images/page-image2.png")} className="sisf-fade" alt="Go2Abroad" />
         </figure>
       </div>
       <div className="container">
@@ -50,7 +51,7 @@ export default function Services() {
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#counselling">
                     <figure className="sis-image-anime">
-                      <img src="/images/service-image-1.png" className="w-100" alt="Profile & Career Assessment" />
+                      <img src={img("/images/service-image-1.png")} className="w-100" alt="Profile & Career Assessment" />
                     </figure>
                   </Link>
                 </div>
@@ -82,7 +83,7 @@ export default function Services() {
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#test-preparation">
                     <figure className="sis-image-anime">
-                      <img src="/images/service-image-2.png" className="w-100" alt="Test Preparation" />
+                      <img src={img("/images/service-image-2.png")} className="w-100" alt="Test Preparation" />
                     </figure>
                   </Link>
                 </div>
@@ -114,7 +115,7 @@ export default function Services() {
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#university-shortlisting">
                     <figure className="sis-image-anime">
-                      <img src="/images/service-image-3.png" className="w-100" alt="University & Course Fit" />
+                      <img src={img("/images/service-image-3.png")} className="w-100" alt="University & Course Fit" />
                     </figure>
                   </Link>
                 </div>
@@ -146,7 +147,7 @@ export default function Services() {
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#sop-writing">
                     <figure className="sis-image-anime">
-                      <img src="/images/service-image-10.png" className="w-100" alt="SOP Drafting" />
+                      <img src={img("/images/service-image-10.png")} className="w-100" alt="SOP Drafting" />
                     </figure>
                   </Link>
                 </div>
@@ -178,7 +179,7 @@ export default function Services() {
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#scholarship-guidance">
                     <figure className="sis-image-anime">
-                      <img src="/images/service-image-5.png" className="w-100" alt="Scholarship Guidance" />
+                      <img src={img("/images/service-image-5.png")} className="w-100" alt="Scholarship Guidance" />
                     </figure>
                   </Link>
                 </div>
@@ -210,7 +211,7 @@ export default function Services() {
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#visa-assistance">
                     <figure className="sis-image-anime">
-                      <img src="/images/service-image-4.png" className="w-100" alt="Visa Assistance" />
+                      <img src={img("/images/service-image-4.png")} className="w-100" alt="Visa Assistance" />
                     </figure>
                   </Link>
                 </div>
@@ -242,7 +243,7 @@ export default function Services() {
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#loan-assistance">
                     <figure className="sis-image-anime">
-                      <img src="/images/service-image-9.png" className="w-100" alt="Education Loan Assistance" />
+                      <img src={img("/images/service-image-9.png")} className="w-100" alt="Education Loan Assistance" />
                     </figure>
                   </Link>
                 </div>
@@ -274,7 +275,7 @@ export default function Services() {
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#accommodation">
                     <figure className="sis-image-anime">
-                      <img src="/images/service-image-6.png" className="w-100" alt="Accommodation Assistance" />
+                      <img src={img("/images/service-image-6.png")} className="w-100" alt="Accommodation Assistance" />
                     </figure>
                   </Link>
                 </div>

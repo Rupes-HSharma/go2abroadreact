@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function Hero() {
   return (
     <div className="sis-hero hero-slider home-page">
@@ -7,7 +8,7 @@ export default function Hero() {
           <div className="hero-slide pb-0">
             <div className="sisf-sis-bottom-right-image" data-aos="zoom-in-left" data-aos-delay="300">
               <figure>
-                <img src="/images/hero-bg.png" alt="Go2Abroad" />
+                <img src={img("/images/hero-bg.png")} alt="Go2Abroad" />
               </figure>
             </div>
             <div className="container">
@@ -59,7 +60,7 @@ export default function Hero() {
                       <div className="sisf-country-item text-center" data-aos="fade-up" data-aos-delay="100">
                         <div className="sisf-country-image mb-2">
                           <figure>
-                            <img src="/images/country-1.png" alt="Go2Abroad" />
+                            <img src={img("/images/country-1.png")} alt="Go2Abroad" />
                           </figure>
                         </div>
                         <div className="sisf-country-content">
@@ -71,7 +72,7 @@ export default function Hero() {
                       <div className="sisf-country-item text-center" data-aos="fade-up" data-aos-delay="300">
                         <div className="sisf-country-image mb-2">
                           <figure>
-                            <img src="/images/country-2.png" alt="Go2Abroad" />
+                            <img src={img("/images/country-2.png")} alt="Go2Abroad" />
                           </figure>
                         </div>
                         <div className="sisf-country-content">
@@ -83,7 +84,7 @@ export default function Hero() {
                       <div className="sisf-country-item text-center" data-aos="fade-up" data-aos-delay="500">
                         <div className="sisf-country-image mb-2">
                           <figure>
-                            <img src="/images/country-3.png" alt="Go2Abroad" />
+                            <img src={img("/images/country-3.png")} alt="Go2Abroad" />
                           </figure>
                         </div>
                         <div className="sisf-country-content">
@@ -95,7 +96,7 @@ export default function Hero() {
                       <div className="sisf-country-item text-center" data-aos="fade-up" data-aos-delay="700">
                         <div className="sisf-country-image mb-2">
                           <figure>
-                            <img src="/images/country-4.png" alt="Go2Abroad" />
+                            <img src={img("/images/country-4.png")} alt="Go2Abroad" />
                           </figure>
                         </div>
                         <div className="sisf-country-content">
@@ -107,7 +108,7 @@ export default function Hero() {
                       <div className="sisf-country-item text-center" data-aos="fade-up" data-aos-delay="900">
                         <div className="sisf-country-image mb-2">
                           <figure>
-                            <img src="/images/country-5.png" alt="Go2Abroad" />
+                            <img src={img("/images/country-5.png")} alt="Go2Abroad" />
                           </figure>
                         </div>
                         <div className="sisf-country-content">
@@ -166,7 +167,7 @@ export default function Hero() {
                   <div className="sisf-hero-content-right position-relative">
                     <div className="sisf-hero-image-right">
                       <figure className="sisf-reveal">
-                        <img src="/images/hero-img-right.png" alt="Go2Abroad" />
+                        <img src={img("/images/hero-img-right.png")} alt="Go2Abroad" />
                       </figure>
                     </div>
                   </div>

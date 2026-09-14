@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function OurApproach() {
   return (
     <div className="sis-our-approach-section sis-comman-background position-relative section">
       <div className="sisf-sis-bottom-left-image">
         <figure>
-          <img src="/images/footer-bg.png" alt="Go2Abroad" />
+          <img src={img("/images/footer-bg.png")} alt="Go2Abroad" />
         </figure>
       </div>
       <div className="container">
@@ -38,13 +39,13 @@ export default function OurApproach() {
             <div className="sisf-our-approach-content position-relative" data-aos="fade-up" data-aos-delay="100">
               <div className="sisf-sis-top-right-image">
                 <figure>
-                  <img src="/images/about-pattern-img.png" alt="Go2Abroad" />
+                  <img src={img("/images/about-pattern-img.png")} alt="Go2Abroad" />
                 </figure>
               </div>
               <div className="sis-e-inner sis-radius p-4">
                 <div className="sisf-our-icon">
                   <figure>
-                    <img src="/images/about-icon-1.svg" alt="Go2Abroad" />
+                    <img src={img("/images/about-icon-1.svg")} alt="Go2Abroad" />
                   </figure>
                 </div>
                 <div className="sisf-e-content">
@@ -66,13 +67,13 @@ export default function OurApproach() {
             <div className="sisf-our-approach-content position-relative" data-aos="fade-up" data-aos-delay="300">
               <div className="sisf-sis-top-right-image">
                 <figure>
-                  <img src="/images/about-pattern-img.png" alt="Go2Abroad" />
+                  <img src={img("/images/about-pattern-img.png")} alt="Go2Abroad" />
                 </figure>
               </div>
               <div className="sis-e-inner sis-radius p-4">
                 <div className="sisf-our-icon">
                   <figure>
-                    <img src="/images/about-icon-2.svg" alt="Go2Abroad" />
+                    <img src={img("/images/about-icon-2.svg")} alt="Go2Abroad" />
                   </figure>
                 </div>
                 <div className="sisf-e-content">

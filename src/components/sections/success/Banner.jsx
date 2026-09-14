@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function Banner() {
   return (
     <div className="sisf-banner position-relative">
       <div className="banner-img">
         <figure>
-          <img src="/images/page-banner.png" alt="Go2Abroad Success Stories" />
+          <img src={img("/images/page-banner.png")} alt="Go2Abroad Success Stories" />
         </figure>
       </div>
       <div className="sisf-page-title sisf-m sisf-title--standard sisf-alignment--center">

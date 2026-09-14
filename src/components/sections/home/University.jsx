@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function University() {
   return (
     <div className="sis-university-section position-relative bg-white section sis-brand-gradient-soft">
@@ -39,7 +40,7 @@ export default function University() {
             <a href="https://www.surrey.ac.uk/" target="_blank" rel="noopener noreferrer" className="sis-country-card d-block" data-aos="fade-up" data-aos-delay="100">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag">
-                  <img src="/images/topUniversity/ArizonaStateUniversity.jpg" alt="University of Surrey" />
+                  <img src={img("/images/topUniversity/ArizonaStateUniversity.jpg")} alt="University of Surrey" />
                 </div>
                 <div>
                   <h3>
@@ -72,7 +73,7 @@ export default function University() {
             <a href="https://www.uel.ac.uk/" target="_blank" rel="noopener noreferrer" className="sis-country-card d-block" data-aos="fade-up" data-aos-delay="200">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag">
-                  <img src="/images/topUniversity/eastLondon.png" alt="University of East London" />
+                  <img src={img("/images/topUniversity/eastLondon.png")} alt="University of East London" />
                 </div>
                 <div>
                   <h3>
@@ -105,7 +106,7 @@ export default function University() {
             <a href="https://www.coventry.ac.uk/" target="_blank" rel="noopener noreferrer" className="sis-country-card d-block" data-aos="fade-up" data-aos-delay="300">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag">
-                  <img src="/images/topUniversity/CoventryUniversity.png" alt="University of East London" />
+                  <img src={img("/images/topUniversity/CoventryUniversity.png")} alt="University of East London" />
                 </div>
                 <div>
                   <h3>
@@ -138,7 +139,7 @@ export default function University() {
             <a href="https://www.brunel.ac.uk/" target="_blank" rel="noopener noreferrer" className="sis-country-card d-block" data-aos="fade-up" data-aos-delay="100">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag">
-                  <img src="/images/topUniversity/BrunelUniversityLondon.png" alt="University of East London" />
+                  <img src={img("/images/topUniversity/BrunelUniversityLondon.png")} alt="University of East London" />
                 </div>
                 <div>
                   <h3>
@@ -171,7 +172,7 @@ export default function University() {
             <a href="https://www.herts.ac.uk/" target="_blank" rel="noopener noreferrer" className="sis-country-card d-block" data-aos="fade-up" data-aos-delay="200">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag">
-                  <img src="/images/topUniversity/Uni_Of_Hertfordshire.png" alt="University of East London" />
+                  <img src={img("/images/topUniversity/Uni_Of_Hertfordshire.png")} alt="University of East London" />
                 </div>
                 <div>
                   <h3>
@@ -204,7 +205,7 @@ export default function University() {
             <a href="https://www.gre.ac.uk/" target="_blank" rel="noopener noreferrer" className="sis-country-card d-block" data-aos="fade-up" data-aos-delay="300">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag">
-                  <img src="/images/topUniversity/Greenwich.png" alt="University of East London" />
+                  <img src={img("/images/topUniversity/Greenwich.png")} alt="University of East London" />
                 </div>
                 <div>
                   <h3>

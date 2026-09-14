@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
 const TEAM_PROFILES = {
   "Chakrapalit Narayan": {
     role: "Founder & CEO of Go2Abroad",
-    image: "/images/Chakrapalit_Narayan.jpg",
+    image: img("/images/Chakrapalit_Narayan.jpg"),
     heading: "The Go2Abroad Founder's Story",
     paragraphs: [
       "Eight years ago, Chakrapalit Narayan was drawing blueprints for machines. Today, he draws blueprints for futures.",
@@ -15,7 +16,7 @@ const TEAM_PROFILES = {
   },
   "David Carter": {
     role: "Study Abroad Advisor",
-    image: "/images/team-image-2.png",
+    image: img("/images/team-image-2.png"),
     heading: "Helping Students Find Their Best-Fit Path",
     paragraphs: [
       "David helps students compare countries, courses and universities with a practical, student-first approach.",
@@ -24,7 +25,7 @@ const TEAM_PROFILES = {
   },
   "Emily Thompson": {
     role: "Visa Documentation Specialist",
-    image: "/images/team-image-3.png",
+    image: img("/images/team-image-3.png"),
     heading: "Making Visa Documentation Simple",
     paragraphs: [
       "Emily focuses on documentation accuracy and visa readiness, helping students prepare complete and well-organized applications.",
@@ -33,7 +34,7 @@ const TEAM_PROFILES = {
   },
   "Michael Reynolds": {
     role: "Work Permit Consultant",
-    image: "/images/team-image-4.png",
+    image: img("/images/team-image-4.png"),
     heading: "Supporting International Career Plans",
     paragraphs: [
       "Michael guides students and professionals who want to understand work opportunities and post-study pathways abroad.",
@@ -117,7 +118,7 @@ export default function TeamMember() {
                           <div className="sis-team-members-img sis-radius">
                             <a href="#" className="sisf-sis-page-link position-relative">
                               <figure>
-                                <img src="/images/Chakrapalit_Narayan.jpg" className="w-100" alt="Go2Abroad" />
+                                <img src={img("/images/Chakrapalit_Narayan.jpg")} className="w-100" alt="Go2Abroad" />
                               </figure>
                             </a>
                           </div>
@@ -173,7 +174,7 @@ export default function TeamMember() {
                           <div className="sis-team-members-img sis-radius">
                             <a href="#" className="sisf-sis-page-link position-relative">
                               <figure>
-                                <img src="/images/team-image-2.png" className="w-100" alt="Go2Abroad" />
+                                <img src={img("/images/team-image-2.png")} className="w-100" alt="Go2Abroad" />
                               </figure>
                             </a>
                           </div>
@@ -229,7 +230,7 @@ export default function TeamMember() {
                           <div className="sis-team-members-img sis-radius">
                             <a href="#" className="sisf-sis-page-link position-relative">
                               <figure>
-                                <img src="/images/team-image-3.png" className="w-100" alt="Go2Abroad" />
+                                <img src={img("/images/team-image-3.png")} className="w-100" alt="Go2Abroad" />
                               </figure>
                             </a>
                           </div>
@@ -285,7 +286,7 @@ export default function TeamMember() {
                           <div className="sis-team-members-img sis-radius">
                             <a href="#" className="sisf-sis-page-link position-relative">
                               <figure>
-                                <img src="/images/team-image-4.png" className="w-100" alt="Go2Abroad" />
+                                <img src={img("/images/team-image-4.png")} className="w-100" alt="Go2Abroad" />
                               </figure>
                             </a>
                           </div>
@@ -341,7 +342,7 @@ export default function TeamMember() {
                           <div className="sis-team-members-img sis-radius">
                             <a href="#" className="sisf-sis-page-link position-relative">
                               <figure>
-                                <img src="/images/team-image-2.png" className="w-100" alt="Go2Abroad" />
+                                <img src={img("/images/team-image-2.png")} className="w-100" alt="Go2Abroad" />
                               </figure>
                             </a>
                           </div>

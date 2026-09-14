@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function HowItWork() {
   return (
     <div className="sis-how-it-work-section position-relative bg-white section">
       <div className="sisf-sis-bottom-right-image" data-aos="fade-left" data-aos-delay="400">
         <figure>
-          <img src="/images/cloud-light.png" alt="Go2Abroad" />
+          <img src={img("/images/cloud-light.png")} alt="Go2Abroad" />
         </figure>
       </div>
       <div className="container">
@@ -44,13 +45,13 @@ export default function HowItWork() {
               <div className="sisf-works-bottom-image" data-aos="zoom-in" data-aos-delay="500">
                 <div className="sisf-animated-top sisf-swing">
                   <figure>
-                    <img src="/images/about-visa-image.svg" alt="Go2Abroad" />
+                    <img src={img("/images/about-visa-image.svg")} alt="Go2Abroad" />
                   </figure>
                 </div>
               </div>
               <div className="sis-e-works-image">
                 <figure className="sis-image-anime">
-                  <img src="/images/how-works-img.png" className="w-100" alt="Go2Abroad" />
+                  <img src={img("/images/how-works-img.png")} className="w-100" alt="Go2Abroad" />
                 </figure>
               </div>
             </div>

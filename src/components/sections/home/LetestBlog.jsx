@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function LetestBlog() {
   return (
     <div className="sis-letest-blog-section section pt-0">
@@ -42,7 +43,7 @@ export default function LetestBlog() {
                     <div className="sisf-e-media-image">
                       <a href="#" className="d-block">
                         <figure>
-                          <img src="/images/blog-grid-img4.jpg" className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
+                          <img src={img("/images/blog-grid-img4.jpg")} className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
                         </figure>
                       </a>
                     </div>
@@ -81,7 +82,7 @@ export default function LetestBlog() {
                     <div className="sisf-e-media-image">
                       <a href="#" className="d-block">
                         <figure>
-                          <img src="/images/blog-grid-img3.jpg" className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
+                          <img src={img("/images/blog-grid-img3.jpg")} className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
                         </figure>
                       </a>
                     </div>
@@ -120,7 +121,7 @@ export default function LetestBlog() {
                     <div className="sisf-e-media-image">
                       <a href="#" className="d-block">
                         <figure>
-                          <img src="/images/blog-grid-img2.jpg" className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
+                          <img src={img("/images/blog-grid-img2.jpg")} className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
                         </figure>
                       </a>
                     </div>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function About() {
   return (
     <div className="sis-about-section section">
@@ -8,7 +9,7 @@ export default function About() {
             <div className="sisf-about-left-image-with-content position-relative">
               <div className="sisf-about-left-image">
                 <figure className="sis-image-anime">
-                  <img src="/images/about-image.jpg" className="w-100 sis-radius" alt="Go2Abroad" />
+                  <img src={img("/images/about-image.jpg")} className="w-100 sis-radius" alt="Go2Abroad" />
                 </figure>
               </div>
               <div className="sisf-about-content" data-aos="zoom-in-left" data-aos-delay="400">
@@ -66,7 +67,7 @@ export default function About() {
               <div className="col-md-4">
                 <div className="sisf-about-right-bottom" data-aos="fade-up" data-aos-delay="300">
                   <figure className="sis-image-anime">
-                    <img src="/images/about-image-1.jpg" className="w-100 sis-radius" alt="Go2Abroad" />
+                    <img src={img("/images/about-image-1.jpg")} className="w-100 sis-radius" alt="Go2Abroad" />
                   </figure>
                 </div>
               </div>
@@ -82,7 +83,7 @@ export default function About() {
             <div className="sisf-about-top-image" data-aos="zoom-in" data-aos-delay="500">
               <div className="sisf-animated-top sisf-swing">
                 <figure>
-                  <img src="/images/about-visa-image.svg" alt="Go2Abroad" />
+                  <img src={img("/images/about-visa-image.svg")} alt="Go2Abroad" />
                 </figure>
               </div>
             </div>

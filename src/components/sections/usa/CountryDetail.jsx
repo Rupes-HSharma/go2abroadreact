@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function CountryDetail() {
   return (
     <div className="sis-country-detail-section section" data-country-page="usa">
@@ -796,7 +797,7 @@ export default function CountryDetail() {
               </p>
             </section>
             <div className="sis-cta-wrap py-3">
-              <div className="sis-cta-banner cta-image" style={{backgroundImage: 'url(\'/images/video-bg.jpg\')'}} data-aos="fade-up">
+              <div className="sis-cta-banner cta-image" style={{backgroundImage: `url(${img("/images/video-bg.jpg")})`}} data-aos="fade-up">
                 <div className="sis-cta-inner">
                   <div className="sis-cta-text">
                     <span className="sis-cta-eyebrow">
