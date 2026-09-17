@@ -8,8 +8,8 @@
 	--white-color: #FFFFFF;
 	--transparent-color: #0000004d;
 	--error-color: rgb(230, 87, 87);
-	--default-font: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-	--heading-font: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	--default-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	--heading-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* ===============================
@@ -8681,11 +8681,13 @@ body.team-modal-open {
 .team-modal-content h2 {
   margin: 0 48px 6px 0;
   color: #fff;
-  font-size: clamp(34px, 4vw, 46px);
+  font-size: clamp(34px, 4vw, 42px);
   line-height: 1.1;
   font-weight: 800;
 }
-
+.team-modal-contact-item a{
+	color:#fff;
+}
 .team-modal-role {
   margin: 0;
   color: #4aaee8;
@@ -9875,4 +9877,2601 @@ body.team-modal-open {
     padding-left: 40px !important;
     padding-right: 36px !important;
   }
+}
+
+/* =========================================================
+   Go2Abroad — Professional Home Enquiry Form
+   UI only: existing form fields, validation and submission
+   logic remain unchanged.
+========================================================= */
+.sis-contact-us-section .sis-contect-right{
+  position:relative;
+  overflow:hidden;
+  padding:30px 32px 28px !important;
+  border:1px solid #e7edf4;
+  border-radius:20px !important;
+  box-shadow:0 16px 45px rgba(20,32,50,.08);
+}
+.sis-contact-us-section .sis-contect-right::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:4px;
+  background:linear-gradient(90deg,var(--main-color),#8ac9ec,var(--main-color));
+}
+.sis-contact-us-section .sis-contect-right .sisf-sis-section-title{
+  margin-bottom:22px;
+}
+.sis-contact-us-section .sis-contect-right .sisf-m-title{
+  font-size:30px;
+  line-height:1.15;
+  margin-bottom:0;
+}
+.sis-contact-us-section .sis-contect-right .sisf-m-text p{
+  max-width:650px;
+  margin-bottom:0 !important;
+  color:#68778e;
+  font-size:14px;
+  line-height:1.65;
+}
+.sis-contact-us-section .form-section{
+  background:#fbfcfe;
+  border:1px solid #edf1f6;
+  border-radius:15px;
+  padding:20px 18px 18px;
+}
+.sis-contact-us-section .form-section > form > .row{
+  row-gap:2px;
+}
+.sis-contact-us-section .sis-form-field{
+  margin-bottom:16px;
+}
+.sis-contact-us-section .sis-form-label{
+  font-size:11.5px;
+  letter-spacing:.055em;
+  font-weight:700;
+  color:#27364d;
+  margin-bottom:7px;
+  text-transform:uppercase;
+}
+.sis-contact-us-section .sis-required{
+  color:#e45757;
+}
+.sis-contact-us-section .sis-form-field-icon{
+  margin-bottom:0;
+}
+.sis-contact-us-section .sis-form-field-icon > i{
+  left:15px;
+  color:var(--main-color);
+  font-size:14px;
+  transition:color .2s ease;
+}
+.sis-contact-us-section .form-section .form-control{
+  height:44px;
+  min-height:44px;
+  border:1px solid #dfe5ec !important;
+  border-radius:10px !important;
+  background:#fff !important;
+  padding-left:43px !important;
+  padding-right:14px !important;
+  color:#26354b;
+  font-size:13.5px;
+  box-shadow:0 2px 5px rgba(20,32,50,.025);
+}
+.sis-contact-us-section .form-section textarea.form-control{
+  min-height:94px;
+  padding-top:13px !important;
+  line-height:1.5;
+  resize:vertical;
+}
+.sis-contact-us-section .form-section .form-control:hover{
+  border-color:#cbd6e3 !important;
+}
+.sis-contact-us-section .form-section .form-control:focus{
+  border-color:var(--main-color) !important;
+  box-shadow:0 0 0 3px rgba(79,168,220,.12) !important;
+  outline:none;
+}
+.sis-contact-us-section .sis-form-field-icon:focus-within > i{
+  color:#2f8fca;
+}
+.sis-contact-us-section .sis-select-field .sis-native-select{
+  padding-right:38px !important;
+}
+.sis-contact-us-section .sis-select-field > .fa-caret-down{
+  right:14px;
+  color:#728197;
+}
+.sis-contact-us-section .sis-form-consent{
+  padding:11px 12px;
+  margin:2px 0 16px;
+  border:1px solid #e5ebf2;
+  border-radius:10px;
+  background:#fff;
+  font-size:11.5px;
+  line-height:1.5;
+  color:#64738a;
+}
+.sis-contact-us-section .sis-form-consent input[type="checkbox"]{
+  width:15px;
+  height:15px;
+  margin-top:2px;
+}
+.sis-contact-us-section .sisf-m-btn .sis-btn-default{
+  min-height:48px;
+  border-radius:10px;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.01em;
+  box-shadow:0 8px 20px rgba(79,168,220,.18);
+}
+.sis-contact-us-section .sis-form-status{
+  margin-top:10px;
+  padding:9px 12px;
+  border-radius:8px;
+  background:#eef9f0;
+  color:#318047;
+  font-size:12px;
+  line-height:1.5;
+}
+
+/* =========================================================
+   Floating WhatsApp / Call / Back-to-top
+========================================================= */
+.sis-floating-contact{
+  position:fixed;
+  right:24px;
+  bottom:28px;
+  z-index:99990;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+.sis-floating-contact-btn{
+  width:56px;
+  height:56px;
+  border:0;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none !important;
+  font-size:22px;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(20,32,50,.18);
+  transition:transform .25s ease,box-shadow .25s ease,opacity .25s ease;
+}
+.sis-floating-contact-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 30px rgba(20,32,50,.24);
+}
+.sis-floating-whatsapp{
+  background:#25d366;
+  color:#fff !important;
+}
+.sis-floating-call{
+  background:#4fa8dc;
+  color:#fff !important;
+}
+.sis-floating-top{
+  width:44px;
+  height:44px;
+  border-radius:8px;
+  background:#4fa8dc;
+  color:#fff;
+  font-size:17px;
+  opacity:.45;
+}
+.sis-floating-top.is-visible{opacity:1}
+@media (max-width:767px){
+  .sis-contact-us-section .sis-contect-right{
+    padding:24px 18px 20px !important;
+    border-radius:16px !important;
+  }
+  .sis-contact-us-section .sis-contect-right .sisf-m-title{font-size:25px}
+  .sis-contact-us-section .form-section{padding:16px 12px 14px}
+  .sis-contact-us-section .col-6{width:100%}
+  .sis-floating-contact{right:14px;bottom:18px;gap:9px}
+  .sis-floating-contact-btn{width:50px;height:50px;font-size:20px}
+  .sis-floating-top{width:40px;height:40px;font-size:15px}
+}
+
+
+/* =========================================================
+   Go2Abroad — Final UI polish
+   1. Poppins globally
+   2. Keep the home hero content stable on first paint
+   3. Compact enquiry panel to match the contact image height
+========================================================= */
+html, body, button, input, select, textarea {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+/* Prevent the hero's left content from jumping during GSAP/AOS initialisation. */
+.home-page .hero-content,
+.home-page .hero-content .sis-section-title,
+.home-page .hero-content .sis-section-title > *,
+.home-page .sisf-content-center,
+.home-page .sisf-content-center > *,
+.home-page .sisf-countries-list-top,
+.home-page .sisf-countries-list-top > * {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  translate: none !important;
+}
+
+/* Hero heading should not be split/animated by the legacy GSAP text effect. */
+.home-page .sis-text-anime-style-3,
+.home-page .sis-text-anime-style-1 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* The right enquiry panel matches the 722x546 contact image ratio at its desktop width. */
+@media (min-width: 992px) {
+  .sis-contact-us-section > .container > .row {
+    align-items: flex-start;
+  }
+
+  .sis-contact-us-section > .container > .row > .col-lg-7 {
+    padding-top: 76px;
+  }
+
+  .sis-contact-us-section .sis-contect-right {
+    height: 405px !important;
+    min-height: 405px !important;
+    max-height: 405px !important;
+    box-sizing: border-box !important;
+    padding: 18px 24px 16px !important;
+    overflow: hidden !important;
+  }
+
+  .sis-contact-us-section .sis-contect-right .sisf-sis-section-title {
+    margin-bottom: 10px !important;
+  }
+
+  .sis-contact-us-section .sis-contect-right .sisf-m-title {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+  }
+
+  .sis-contact-us-section .sis-contect-right .sisf-m-text p {
+    margin-top: 5px !important;
+    margin-bottom: 0 !important;
+    font-size: 11.5px !important;
+    line-height: 1.45 !important;
+  }
+
+  .sis-contact-us-section .form-section {
+    padding: 11px 12px 10px !important;
+    border-radius: 12px !important;
+  }
+
+  .sis-contact-us-section .sis-form-field {
+    margin-bottom: 7px !important;
+  }
+
+  .sis-contact-us-section .sis-form-label {
+    font-size: 10px !important;
+    margin-bottom: 4px !important;
+    line-height: 1.2 !important;
+  }
+
+  .sis-contact-us-section .form-section .form-control,
+  .sis-contact-us-section .form-section .sis-native-select {
+    height: 36px !important;
+    min-height: 36px !important;
+    font-size: 11.5px !important;
+    border-radius: 8px !important;
+  }
+
+  .sis-contact-us-section .form-section .form-control {
+    padding-left: 38px !important;
+    padding-right: 10px !important;
+  }
+
+  .sis-contact-us-section .form-section textarea.form-control {
+    height: 58px !important;
+    min-height: 58px !important;
+    padding-top: 9px !important;
+  }
+
+  .sis-contact-us-section .sis-form-field-icon > i {
+    left: 13px !important;
+    font-size: 12px !important;
+  }
+
+  .sis-contact-us-section .sis-form-consent {
+    padding: 7px 9px !important;
+    margin: 3px 0 8px !important;
+    border-radius: 8px !important;
+    font-size: 9.5px !important;
+    line-height: 1.35 !important;
+  }
+
+  .sis-contact-us-section .sis-form-consent input[type="checkbox"] {
+    width: 13px !important;
+    height: 13px !important;
+  }
+
+  .sis-contact-us-section .sisf-m-btn .sis-btn-default {
+    width: 100% !important;
+    min-height: 38px !important;
+    height: 38px !important;
+    border-radius: 8px !important;
+    font-size: 11.5px !important;
+    padding: 7px 16px !important;
+  }
+
+  .sis-contact-us-section .sis-form-status {
+    margin-top: 5px !important;
+    padding: 5px 8px !important;
+    font-size: 9px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .sis-contact-us-section > .container > .row > .col-lg-7 {
+    padding-top: 0;
+  }
+
+  .sis-contact-us-section .sis-contect-right {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
+
+
+/* =============================================
+   Go2Abroad typography refinement
+   Keep the Poppins family, but reduce oversized
+   desktop typography for a cleaner consultancy UI.
+============================================= */
+body {
+  font-size: 16px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.sis-section-title h1 {
+  font-size: 56px;
+  line-height: 1.18;
+  margin-bottom: 24px;
+}
+
+.sis-scroll-content .sis-contents span {
+  font-size: 68px;
+  line-height: 78px;
+}
+
+.sisf-page-title .sisf-m-title {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.sisf-breadcrumbs span {
+  font-size: 15px;
+}
+
+.sisf-breadcrumbs span i {
+  font-size: 12px !important;
+}
+
+/* Common content headings: slightly smaller and easier to scan. */
+.sisf-sis-section-title h2,
+.sisf-sis-section-title h1,
+.sisf-m-title h2,
+.sisf-m-title h1 {
+  font-size: 34px;
+  line-height: 1.25;
+}
+
+/* Inner-page banners: image-first, clean and consistent. */
+.sisf-banner .banner-img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.sisf-banner .banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .sis-section-title h1 {
+    font-size: 42px;
+  }
+
+  .sis-scroll-content .sis-contents span {
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  .sisf-page-title .sisf-m-title {
+    font-size: 30px;
+  }
+
+  .sisf-breadcrumbs span {
+    font-size: 13px;
+  }
+
+  .sisf-banner .banner-img {
+    height: 220px;
+  }
+
+  .sisf-sis-section-title h2,
+  .sisf-sis-section-title h1,
+  .sisf-m-title h2,
+  .sisf-m-title h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sisf-banner .banner-img {
+    height: 190px;
+  }
+
+  .sisf-page-title .sisf-m-title {
+    font-size: 24px;
+  }
+}
+
+/* =========================================================
+   FINAL POLISH — compact typography + stable first paint +
+   home enquiry form alignment
+========================================================= */
+
+/* Slightly smaller global type scale for the consultancy layout. */
+body {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+p {
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2 !important;
+}
+
+.sis-section-title h1 {
+  font-size: 52px !important;
+  line-height: 1.16 !important;
+  margin-bottom: 20px !important;
+}
+
+.sisf-sis-section-title h2,
+.sisf-sis-section-title h1,
+.sisf-m-title h2,
+.sisf-m-title h1 {
+  font-size: 31px !important;
+  line-height: 1.22 !important;
+}
+
+.sisf-page-title .sisf-m-title {
+  font-size: 40px !important;
+}
+
+.sis-scroll-content .sis-contents span {
+  font-size: 64px !important;
+  line-height: 1.05 !important;
+}
+
+/* Completely neutralise AOS/legacy transforms on the first viewport of home.
+   This prevents the visible left content from moving/shaking during startup. */
+.home-page .hero-content,
+.home-page .hero-content *:not(.sis-btn-default),
+.home-page .sisf-content-center,
+.home-page .sisf-content-center * {
+  animation: none !important;
+}
+
+.home-page .hero-content,
+.home-page .hero-content > *,
+.home-page .hero-content .sis-section-title,
+.home-page .hero-content .sis-section-title > *,
+.home-page .sisf-content-center,
+.home-page .sisf-content-center > *,
+.home-page .sisf-countries-list-top,
+.home-page .sisf-countries-list-top > *,
+.home-page [data-aos] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  translate: none !important;
+}
+
+/* The hero is a single React slide; don't let legacy Swiper/AOS sizing
+   create a small first-paint shift. */
+.home-page .hero-slider-layout,
+.home-page .hero-slide {
+  transform: none !important;
+}
+
+/* Home enquiry: align the right card with the left contact image. */
+@media (min-width: 992px) {
+  .sis-contact-us-section > .container > .row > .col-lg-7 {
+    padding-top: 126px !important;
+  }
+
+  .sis-contact-us-section .sis-contect-right {
+    height: 380px !important;
+    min-height: 380px !important;
+    max-height: 380px !important;
+    padding: 14px 18px 12px !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+  }
+
+  .sis-contact-us-section .sis-contect-right .sisf-sis-section-title {
+    margin-bottom: 7px !important;
+  }
+
+  .sis-contact-us-section .sis-contect-right .sisf-m-title {
+    font-size: 22px !important;
+    line-height: 1.12 !important;
+  }
+
+  .sis-contact-us-section .sis-contect-right .sisf-m-text p {
+    margin-top: 3px !important;
+    margin-bottom: 0 !important;
+    font-size: 10px !important;
+    line-height: 1.35 !important;
+  }
+
+  .sis-contact-us-section .form-section {
+    padding: 8px 10px 7px !important;
+    border-radius: 11px !important;
+  }
+
+  .sis-contact-us-section .form-section > form > .row {
+    row-gap: 0 !important;
+  }
+
+  .sis-contact-us-section .sis-form-field {
+    margin-bottom: 5px !important;
+  }
+
+  .sis-contact-us-section .sis-form-label {
+    font-size: 9px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 3px !important;
+    letter-spacing: .04em !important;
+  }
+
+  .sis-contact-us-section .form-section .form-control,
+  .sis-contact-us-section .form-section .sis-native-select {
+    height: 33px !important;
+    min-height: 33px !important;
+    font-size: 10.5px !important;
+    line-height: 33px !important;
+    border-radius: 8px !important;
+  }
+
+  .sis-contact-us-section .form-section .form-control {
+    padding-left: 35px !important;
+    padding-right: 9px !important;
+  }
+
+  .sis-contact-us-section .form-section textarea.form-control {
+    height: 52px !important;
+    min-height: 52px !important;
+    line-height: 1.35 !important;
+    padding-top: 8px !important;
+    resize: none !important;
+  }
+
+  .sis-contact-us-section .sis-form-field-icon > i {
+    left: 11px !important;
+    font-size: 11px !important;
+  }
+
+  .sis-contact-us-section .sis-select-field .sis-native-select {
+    padding-left: 35px !important;
+    padding-right: 30px !important;
+  }
+
+  .sis-contact-us-section .sis-select-field > .fa-earth-americas,
+  .sis-contact-us-section .sis-select-field > .fa-graduation-cap {
+    left: 12px !important;
+    font-size: 11px !important;
+  }
+
+  .sis-contact-us-section .sis-select-field > .fa-caret-down {
+    right: 10px !important;
+    font-size: 10px !important;
+  }
+
+  .sis-contact-us-section .sis-form-consent {
+    padding: 5px 7px !important;
+    margin: 2px 0 6px !important;
+    gap: 7px !important;
+    border-radius: 7px !important;
+    font-size: 8.5px !important;
+    line-height: 1.25 !important;
+  }
+
+  .sis-contact-us-section .sis-form-consent input[type="checkbox"] {
+    width: 12px !important;
+    height: 12px !important;
+    margin-top: 1px !important;
+  }
+
+  .sis-contact-us-section .sisf-m-btn .sis-btn-default {
+    min-height: 34px !important;
+    height: 34px !important;
+    padding: 5px 14px !important;
+    border-radius: 8px !important;
+    font-size: 10.5px !important;
+  }
+
+  .sis-contact-us-section .sis-form-status {
+    margin-top: 3px !important;
+    padding: 4px 7px !important;
+    font-size: 8.5px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .sis-section-title h1 {
+    font-size: 40px !important;
+  }
+
+  .sisf-sis-section-title h2,
+  .sisf-sis-section-title h1,
+  .sisf-m-title h2,
+  .sisf-m-title h1 {
+    font-size: 27px !important;
+  }
+
+  .sis-scroll-content .sis-contents span {
+    font-size: 50px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .sis-section-title h1 {
+    font-size: 34px !important;
+  }
+
+  .sisf-page-title .sisf-m-title {
+    font-size: 24px !important;
+  }
+
+  .sisf-sis-section-title h2,
+  .sisf-sis-section-title h1,
+  .sisf-m-title h2,
+  .sisf-m-title h1 {
+    font-size: 24px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL PASS — natural hero entrance + comfortable enquiry UI
+   Keep the original motion feel, but reduce travel distance so
+   the first paint never feels like a shake/jump.
+========================================================= */
+body { font-size:16px !important; }
+body p { font-size:15px !important; }
+
+/* Re-enable a restrained hero entrance animation. No large transforms. */
+.home-page .hero-load-content,
+.home-page .hero-animate,
+.home-page .hero-main-image-animate,
+.home-page .hero-bg-animate {
+  visibility: visible !important;
+}
+.home-page .hero-animate {
+  opacity: 0;
+  animation: g2aHeroTextIn .72s cubic-bezier(.22,.61,.36,1) both;
+}
+.home-page .hero-animate-1 { animation-delay:.08s !important; }
+.home-page .hero-animate-2 { animation-delay:.16s !important; }
+.home-page .hero-animate-3 { animation-delay:.24s !important; }
+.home-page .hero-animate-4 { animation-delay:.32s !important; }
+.home-page .hero-animate-5 { animation-delay:.40s !important; }
+.home-page .hero-bg-animate {
+  animation: g2aHeroBgIn .9s cubic-bezier(.22,.61,.36,1) both;
+  animation-delay:.05s;
+}
+.home-page .hero-main-image-animate {
+  opacity:0;
+  animation: g2aHeroImageIn .9s cubic-bezier(.22,.61,.36,1) both;
+  animation-delay:.18s;
+}
+@keyframes g2aHeroTextIn {
+  from { opacity:0; transform:translate3d(0,12px,0); }
+  to { opacity:1; transform:translate3d(0,0,0); }
+}
+@keyframes g2aHeroBgIn {
+  from { opacity:.7; transform:scale(1.015); }
+  to { opacity:1; transform:scale(1); }
+}
+@keyframes g2aHeroImageIn {
+  from { opacity:.72; transform:translate3d(10px,8px,0) scale(.985); }
+  to { opacity:1; transform:translate3d(0,0,0) scale(1); }
+}
+
+/* Home enquiry form — restore readable type and breathing room. */
+@media (min-width:992px) {
+  .sis-contact-us-section > .container > .row > .col-lg-7 {
+    padding-top:76px !important;
+  }
+  .sis-contact-us-section .sis-contect-right {
+    height:410px !important;
+    min-height:410px !important;
+    max-height:410px !important;
+    padding:20px 22px 18px !important;
+    border-radius:18px !important;
+    overflow:hidden !important;
+  }
+  .sis-contact-us-section .sis-contect-right .sisf-sis-section-title {
+    margin-bottom:11px !important;
+  }
+  .sis-contact-us-section .sis-contect-right .sisf-m-title {
+    font-size:27px !important;
+    line-height:1.18 !important;
+  }
+  .sis-contact-us-section .sis-contect-right .sisf-m-text p {
+    margin-top:4px !important;
+    margin-bottom:0 !important;
+    font-size:12.5px !important;
+    line-height:1.45 !important;
+  }
+  .sis-contact-us-section .form-section {
+    padding:11px 12px 10px !important;
+    border-radius:12px !important;
+  }
+  .sis-contact-us-section .sis-form-field {
+    margin-bottom:7px !important;
+  }
+  .sis-contact-us-section .sis-form-label {
+    font-size:10.5px !important;
+    line-height:1.2 !important;
+    margin-bottom:4px !important;
+    letter-spacing:.025em !important;
+  }
+  .sis-contact-us-section .form-section .form-control,
+  .sis-contact-us-section .form-section .sis-native-select {
+    height:36px !important;
+    min-height:36px !important;
+    font-size:12.5px !important;
+    line-height:36px !important;
+    border-radius:9px !important;
+  }
+  .sis-contact-us-section .form-section .form-control {
+    padding-left:39px !important;
+    padding-right:11px !important;
+  }
+  .sis-contact-us-section .form-section textarea.form-control {
+    height:58px !important;
+    min-height:58px !important;
+    line-height:1.4 !important;
+    padding-top:9px !important;
+    resize:none !important;
+  }
+  .sis-contact-us-section .sis-form-field-icon > i {
+    left:13px !important;
+    font-size:12px !important;
+  }
+  .sis-contact-us-section .sis-select-field .sis-native-select {
+    padding-left:39px !important;
+    padding-right:32px !important;
+  }
+  .sis-contact-us-section .sis-select-field > .fa-earth-americas,
+  .sis-contact-us-section .sis-select-field > .fa-graduation-cap {
+    left:13px !important;
+    font-size:12px !important;
+  }
+  .sis-contact-us-section .sis-select-field > .fa-caret-down {
+    right:12px !important;
+    font-size:11px !important;
+  }
+  .sis-contact-us-section .sis-form-consent {
+    padding:7px 9px !important;
+    margin:3px 0 8px !important;
+    gap:8px !important;
+    border-radius:8px !important;
+    font-size:9.5px !important;
+    line-height:1.35 !important;
+  }
+  .sis-contact-us-section .sis-form-consent input[type="checkbox"] {
+    width:13px !important;
+    height:13px !important;
+  }
+  .sis-contact-us-section .sisf-m-btn .sis-btn-default {
+    min-height:38px !important;
+    height:38px !important;
+    padding:7px 16px !important;
+    border-radius:9px !important;
+    font-size:12px !important;
+  }
+}
+
+/* Don't animate the contact card itself; it should feel stable when the page opens. */
+.sis-contact-us-section .sis-contect-right[data-aos] {
+  opacity:1 !important;
+  transform:none !important;
+}
+
+@media (max-width:991px) {
+  body { font-size:15px !important; }
+  body p { font-size:14px !important; }
+  .sis-contact-us-section .sis-contect-right .sisf-m-title { font-size:27px !important; }
+}
+
+/* Let the intentionally animated hero elements move only a few pixels. */
+@keyframes g2aHeroTextInFinal {
+  from { opacity:0; transform:translate3d(0,8px,0); }
+  to { opacity:1; transform:translate3d(0,0,0); }
+}
+.home-page .hero-content .hero-animate {
+  opacity:0;
+  visibility:visible !important;
+  animation-name:g2aHeroTextInFinal;
+  animation-duration:.72s;
+  animation-timing-function:cubic-bezier(.22,.61,.36,1);
+  animation-fill-mode:both;
+}
+
+/* =========================================================
+   HOME — INQUIRY / LEAD FORM
+   Reference-inspired split-card treatment.
+   UI only: form fields, validation and submission are unchanged.
+========================================================= */
+.sis-contact-us-section .sis-contect-right{
+  position:relative !important;
+  margin-top:58px !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:22px !important;
+  background:linear-gradient(135deg,#eef7fc 0%,#f8fbfd 55%,#eaf5fb 100%) !important;
+  box-shadow:0 18px 50px rgba(18,45,72,.10) !important;
+  overflow:hidden !important;
+}
+.sis-contact-us-section .sis-contect-right::before{
+  height:5px !important;
+  background:linear-gradient(90deg,#4fa8dc,#73c2ea,#4fa8dc) !important;
+}
+.sis-contact-us-section .sis-contect-right::after{
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  right:-80px;
+  top:-85px;
+  border-radius:50%;
+  background:rgba(79,168,220,.09);
+  pointer-events:none;
+}
+.sis-contact-us-section .sis-contect-right > .sisf-sis-section-title,
+.sis-contact-us-section .sis-contect-right > .form-section{
+  position:relative;
+  z-index:2;
+}
+.sis-contact-us-section .sis-contect-right > .sisf-sis-section-title{
+  margin:0 !important;
+  padding:22px 24px 10px !important;
+}
+.sis-contact-us-section .sis-contect-right .sisf-m-title{
+  font-size:27px !important;
+  line-height:1.18 !important;
+  font-weight:600 !important;
+  letter-spacing:-.02em;
+}
+.sis-contact-us-section .sis-contect-right .sisf-m-text p{
+  margin:6px 0 0 !important;
+  font-size:12.5px !important;
+  line-height:1.55 !important;
+  color:#657891 !important;
+}
+.sis-contact-us-section .sis-contact-right,
+.sis-contact-us-section .form-section{
+  box-sizing:border-box;
+}
+.sis-contact-us-section .form-section{
+  margin:0 14px 14px !important;
+  padding:15px 14px 13px !important;
+  background:rgba(255,255,255,.94) !important;
+  border:1px solid rgba(205,221,234,.85) !important;
+  border-radius:15px !important;
+  box-shadow:0 7px 22px rgba(25,57,83,.055) !important;
+}
+.sis-contact-us-section .form-section > form > .row{
+  row-gap:0 !important;
+}
+.sis-contact-us-section .sis-form-field{
+  margin-bottom:11px !important;
+}
+.sis-contact-us-section .sis-form-label{
+  font-size:10.5px !important;
+  line-height:1.25 !important;
+  letter-spacing:.045em !important;
+  font-weight:600 !important;
+  margin-bottom:5px !important;
+  color:#30425b !important;
+}
+.sis-contact-us-section .form-section .form-control,
+.sis-contact-us-section .form-section .sis-native-select{
+  height:38px !important;
+  min-height:38px !important;
+  border:1px solid #d4e0eb !important;
+  border-radius:9px !important;
+  background:#fff !important;
+  font-size:12.5px !important;
+  font-weight:400 !important;
+  color:#526985 !important;
+  box-shadow:none !important;
+}
+.sis-contact-us-section .form-section .form-control{
+  padding-left:40px !important;
+}
+.sis-contact-us-section .form-section .form-control::placeholder{
+  color:#94a6bb !important;
+  opacity:1 !important;
+}
+.sis-contact-us-section .sis-form-field-icon > i{
+  left:13px !important;
+  font-size:12.5px !important;
+  color:#4fa8dc !important;
+}
+.sis-contact-us-section .sis-form-field-icon:focus-within > i{
+  color:#2f8fca !important;
+}
+.sis-contact-us-section .form-section .form-control:focus{
+  border-color:#63b3e2 !important;
+  box-shadow:0 0 0 3px rgba(79,168,220,.10) !important;
+}
+.sis-contact-us-section .sis-select-field .sis-native-select{
+  padding-left:40px !important;
+  padding-right:34px !important;
+}
+.sis-contact-us-section .sis-select-field > .fa-caret-down{
+  right:12px !important;
+  color:#74869b !important;
+}
+.sis-contact-us-section .form-section textarea.form-control{
+  height:64px !important;
+  min-height:64px !important;
+  padding-top:10px !important;
+  line-height:1.45 !important;
+  resize:none !important;
+}
+.sis-contact-us-section .sis-form-consent{
+  display:flex !important;
+  align-items:flex-start !important;
+  gap:8px !important;
+  margin:1px 0 11px !important;
+  padding:8px 9px !important;
+  border:1px solid #e1e9f1 !important;
+  border-radius:8px !important;
+  background:#f9fbfd !important;
+  font-size:9.8px !important;
+  line-height:1.45 !important;
+  color:#687b92 !important;
+}
+.sis-contact-us-section .sis-form-consent input[type="checkbox"]{
+  flex:0 0 auto;
+  width:14px !important;
+  height:14px !important;
+  margin:1px 0 0 !important;
+}
+.sis-contact-us-section .sisf-m-btn .sis-btn-default{
+  width:100% !important;
+  min-height:40px !important;
+  height:40px !important;
+  padding:8px 18px !important;
+  border-radius:9px !important;
+  font-size:12.5px !important;
+  font-weight:600 !important;
+  letter-spacing:0 !important;
+  box-shadow:0 7px 18px rgba(79,168,220,.18) !important;
+}
+.sis-contact-us-section .sis-form-status{
+  margin-top:7px !important;
+  padding:6px 9px !important;
+  font-size:10px !important;
+}
+
+@media (min-width:992px){
+  .sis-contact-us-section > .container > .row{
+    align-items:flex-start !important;
+  }
+  .sis-contact-us-section > .container > .row > .col-lg-7{
+    padding-top:0 !important;
+  }
+  .sis-contact-us-section .sis-contect-right{
+    height:445px !important;
+    min-height:445px !important;
+    max-height:none !important;
+  }
+  .sis-contact-us-section .sisf-contact-left-part,
+  .sis-contact-us-section .sisf-contact-left-image,
+  .sis-contact-us-section .sisf-contact-left-image figure{
+    height:445px !important;
+  }
+  .sis-contact-us-section .sisf-contact-left-image img{
+    height:445px !important;
+    object-fit:cover !important;
+  }
+}
+
+@media (max-width:991px){
+  .sis-contact-us-section .sis-contect-right{
+    margin-top:25px !important;
+    height:auto !important;
+    min-height:0 !important;
+  }
+  .sis-contact-us-section .sisf-contact-left-part,
+  .sis-contact-us-section .sisf-contact-left-image,
+  .sis-contact-us-section .sisf-contact-left-image figure,
+  .sis-contact-us-section .sisf-contact-left-image img{
+    height:auto !important;
+    min-height:0 !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL REQUEST PASS — balanced motion + premium inquiry UI
+========================================================= */
+
+/* Typography: smaller, but never cramped. */
+body { font-size: 16px !important; }
+body p { font-size: 15px !important; line-height: 1.65 !important; }
+h1,h2,h3,h4,h5,h6 { font-weight: 600 !important; }
+.sis-section-title h1 { font-size: 46px !important; line-height: 1.16 !important; font-weight: 600 !important; }
+.sis-section-title h2,
+.sisf-sis-section-title h2,
+.sisf-m-title { font-size: 30px !important; line-height: 1.25 !important; font-weight: 600 !important; }
+.sisf-page-title .sisf-m-title { font-size: 36px !important; font-weight: 600 !important; }
+.sis-btn-default { font-size: 13px !important; font-weight: 500 !important; }
+
+/* Gentle scroll animations — keep motion, reduce travel. */
+[data-aos][data-aos] { transition-duration: .65s !important; }
+[data-aos="fade-up"] { transform: translate3d(0,18px,0) !important; }
+[data-aos="fade-down"] { transform: translate3d(0,-18px,0) !important; }
+[data-aos="fade-left"] { transform: translate3d(18px,0,0) !important; }
+[data-aos="fade-right"] { transform: translate3d(-18px,0,0) !important; }
+[data-aos="zoom-in"] { transform: scale(.975) !important; }
+
+/* Hero: visible, subtle entrance instead of a jump. */
+.home-page .hero-animate,
+.home-page .hero-main-image-animate,
+.home-page .hero-bg-animate {
+  will-change: transform, opacity;
+}
+.home-page .hero-animate {
+  opacity: 0;
+  transform: translate3d(0,8px,0);
+  animation: g2aHeroSoftIn .72s cubic-bezier(.22,.61,.36,1) both !important;
+}
+.home-page .hero-animate-1 { animation-delay:.04s !important; }
+.home-page .hero-animate-2 { animation-delay:.10s !important; }
+.home-page .hero-animate-3 { animation-delay:.16s !important; }
+.home-page .hero-animate-4 { animation-delay:.22s !important; }
+.home-page .hero-animate-5 { animation-delay:.28s !important; }
+.home-page .hero-main-image-animate {
+  opacity:0;
+  animation:g2aHeroImageSoft .82s cubic-bezier(.22,.61,.36,1) .12s both !important;
+}
+.home-page .hero-bg-animate {
+  animation:g2aHeroBgSoft .9s cubic-bezier(.22,.61,.36,1) .03s both !important;
+}
+@keyframes g2aHeroSoftIn {
+  from { opacity:0; transform:translate3d(0,8px,0); }
+  to { opacity:1; transform:translate3d(0,0,0); }
+}
+@keyframes g2aHeroImageSoft {
+  from { opacity:.55; transform:translate3d(8px,5px,0) scale(.99); }
+  to { opacity:1; transform:translate3d(0,0,0) scale(1); }
+}
+@keyframes g2aHeroBgSoft {
+  from { opacity:.78; transform:scale(1.008); }
+  to { opacity:1; transform:scale(1); }
+}
+
+/* =========================================================
+   INQUIRY / LEAD FORM — premium reference-inspired card
+========================================================= */
+.sis-contact-us-section .sis-contect-right {
+  position:relative !important;
+  margin-top:52px !important;
+  padding:0 !important;
+  border:1px solid #dce9f2 !important;
+  border-radius:22px !important;
+  background:linear-gradient(145deg,#ffffff 0%,#f8fbfd 100%) !important;
+  box-shadow:0 16px 42px rgba(18,45,72,.09) !important;
+  overflow:hidden !important;
+}
+.sis-contact-us-section .sis-contect-right::before {
+  content:"";
+  position:absolute;
+  top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,#4fa8dc,#7cc8ec,#4fa8dc);
+}
+.sis-contact-us-section .sis-contect-right > .sisf-sis-section-title {
+  margin:0 !important;
+  padding:22px 24px 10px !important;
+}
+.sis-contact-us-section .sis-contect-right .sisf-m-title {
+  margin:0 !important;
+  font-size:28px !important;
+  line-height:1.2 !important;
+  font-weight:600 !important;
+  letter-spacing:-.02em !important;
+}
+.sis-contact-us-section .sis-contect-right .sisf-m-text p {
+  margin:6px 0 0 !important;
+  font-size:12.5px !important;
+  line-height:1.55 !important;
+  color:#687b91 !important;
+}
+.sis-contact-us-section .form-section {
+  margin:0 16px 16px !important;
+  padding:16px 15px 14px !important;
+  border:1px solid #e0eaf2 !important;
+  border-radius:15px !important;
+  background:#fff !important;
+  box-shadow:0 6px 20px rgba(25,57,83,.045) !important;
+}
+.sis-contact-us-section .sis-form-field { margin-bottom:10px !important; }
+.sis-contact-us-section .sis-form-label {
+  display:block !important;
+  margin-bottom:5px !important;
+  font-size:10.5px !important;
+  line-height:1.25 !important;
+  font-weight:600 !important;
+  letter-spacing:.035em !important;
+  color:#30425b !important;
+}
+.sis-contact-us-section .form-section .form-control,
+.sis-contact-us-section .form-section .sis-native-select {
+  width:100% !important;
+  height:39px !important;
+  min-height:39px !important;
+  border:1px solid #d4e0ea !important;
+  border-radius:10px !important;
+  background:#fff !important;
+  color:#526985 !important;
+  font-size:12.5px !important;
+  font-weight:400 !important;
+  box-shadow:none !important;
+  transition:border-color .2s ease,box-shadow .2s ease !important;
+}
+.sis-contact-us-section .form-section .form-control { padding-left:40px !important; }
+.sis-contact-us-section .form-section .form-control::placeholder { color:#94a6ba !important; opacity:1 !important; }
+.sis-contact-us-section .form-section .form-control:focus,
+.sis-contact-us-section .form-section .sis-native-select:focus {
+  border-color:#62b4e3 !important;
+  box-shadow:0 0 0 3px rgba(79,168,220,.11) !important;
+  outline:none !important;
+}
+.sis-contact-us-section .sis-form-field-icon > i {
+  left:13px !important;
+  font-size:12px !important;
+  color:#4fa8dc !important;
+}
+.sis-contact-us-section .sis-select-field .sis-native-select {
+  padding-left:40px !important;
+  padding-right:34px !important;
+}
+.sis-contact-us-section .sis-select-field > .fa-caret-down { right:12px !important; color:#71859a !important; }
+.sis-contact-us-section .form-section textarea.form-control {
+  height:66px !important;
+  min-height:66px !important;
+  padding-top:11px !important;
+  line-height:1.45 !important;
+  resize:none !important;
+}
+.sis-contact-us-section .sis-form-consent {
+  display:flex !important;
+  align-items:flex-start !important;
+  gap:8px !important;
+  margin:2px 0 11px !important;
+  padding:8px 10px !important;
+  border:1px solid #e2eaf1 !important;
+  border-radius:9px !important;
+  background:#f8fbfd !important;
+  color:#6a7d93 !important;
+  font-size:10px !important;
+  line-height:1.45 !important;
+}
+.sis-contact-us-section .sis-form-consent input[type="checkbox"] {
+  flex:0 0 auto;
+  width:14px !important;height:14px !important;margin:1px 0 0 !important;
+}
+.sis-contact-us-section .sisf-m-btn .sis-btn-default {
+  width:100% !important;
+  min-height:42px !important;height:42px !important;
+  border-radius:10px !important;
+  padding:9px 18px !important;
+  font-size:12.5px !important;
+  font-weight:600 !important;
+  box-shadow:0 8px 18px rgba(79,168,220,.20) !important;
+}
+.sis-contact-us-section .sis-form-status { margin-top:7px !important; font-size:10px !important; }
+
+@media (min-width:992px) {
+  .sis-contact-us-section > .container > .row { align-items:flex-start !important; }
+  .sis-contact-us-section > .container > .row > .col-lg-7 { padding-top:52px !important; }
+  .sis-contact-us-section .sis-contect-right {
+    height:500px !important;
+    min-height:500px !important;
+    max-height:500px !important;
+  }
+  .sis-contact-us-section .sisf-contact-left-part,
+  .sis-contact-us-section .sisf-contact-left-image,
+  .sis-contact-us-section .sisf-contact-left-image figure,
+  .sis-contact-us-section .sisf-contact-left-image img {
+    height:500px !important;
+  }
+  .sis-contact-us-section .sisf-contact-left-image img { object-fit:cover !important; }
+}
+
+@media (max-width:991px) {
+  .sis-section-title h1 { font-size:40px !important; }
+  .sis-section-title h2,
+  .sisf-sis-section-title h2,
+  .sisf-m-title { font-size:27px !important; }
+  .sis-contact-us-section .sis-contect-right { margin-top:24px !important; height:auto !important; min-height:0 !important; max-height:none !important; }
+  .sis-contact-us-section .sisf-contact-left-part,
+  .sis-contact-us-section .sisf-contact-left-image,
+  .sis-contact-us-section .sisf-contact-left-image figure,
+  .sis-contact-us-section .sisf-contact-left-image img { height:auto !important; min-height:0 !important; }
+}
+
+/* Team: ensure old modal/social presentation cannot reappear. */
+.team-modal-overlay,.team-profile-modal,.sisf-m-social-icons { display:none !important; }
+
+/* Services text remains readable on transparent artwork. */
+.aboutService .sisf-sis-section-title {
+  position:relative;z-index:4;padding:16px 18px;border-radius:15px;
+  background:rgba(10,28,43,.62);border:1px solid rgba(255,255,255,.13);
+  box-shadow:0 12px 30px rgba(5,20,30,.13);backdrop-filter:blur(5px);
+}
+.aboutService .sisf-sis-section-title h2 { color:#fff !important; text-shadow:0 2px 12px rgba(0,0,0,.22); }
+.aboutService .sisf-sis-section-title .sisf-m-text p { color:rgba(255,255,255,.96) !important; text-shadow:0 1px 8px rgba(0,0,0,.2); }
+.aboutService .sisf-sis-top-left-image,.aboutService .sisf-sis-bottom-right-image { opacity:.32; }
+
+
+/* =========================================================
+   GO2ABROAD FINAL VISUAL BALANCE — TEAM / MOTION / TYPE / SERVICES / INQUIRY
+========================================================= */
+
+/* Typography: Poppins, compact but breathable. */
+html, body, button, input, select, textarea { font-family:"Poppins",sans-serif !important; }
+body { font-size:15px !important; letter-spacing:0 !important; }
+body p { font-size:14px !important; line-height:1.65 !important; letter-spacing:0 !important; }
+h1,h2,h3,h4,h5,h6 { font-family:"Poppins",sans-serif !important; font-weight:600 !important; letter-spacing:-.012em !important; line-height:1.22 !important; }
+.sisf-m-title, .sis-section-title h1, .sis-section-title h2 { font-weight:600 !important; }
+.sis-btn-default { font-weight:500 !important; letter-spacing:0 !important; }
+
+/* Restore natural site-wide motion. Less distance than the original, but visible. */
+[data-aos][data-aos] { transition-duration:.78s !important; }
+[data-aos="fade-up"] { transform:translate3d(0,35px,0) !important; }
+[data-aos="fade-down"] { transform:translate3d(0,-35px,0) !important; }
+[data-aos="fade-left"] { transform:translate3d(35px,0,0) !important; }
+[data-aos="fade-right"] { transform:translate3d(-35px,0,0) !important; }
+[data-aos="zoom-in"] { transform:scale(.95) !important; }
+[data-aos].aos-animate { transform:none !important; }
+
+/* Hero: keep the entrance animation, with a restrained range. */
+.home-page .hero-content,
+.home-page .hero-content .sis-section-title,
+.home-page .sisf-content-center { transform:none !important; }
+.home-page .hero-content .hero-animate {
+  opacity:0 !important;
+  animation:g2aHeroFinalIn .72s cubic-bezier(.22,.61,.36,1) both !important;
+}
+.home-page .hero-content .hero-animate-1 { animation-delay:.05s !important; }
+.home-page .hero-content .hero-animate-2 { animation-delay:.12s !important; }
+.home-page .hero-content .hero-animate-3 { animation-delay:.19s !important; }
+.home-page .hero-content .hero-animate-4 { animation-delay:.26s !important; }
+.home-page .hero-content .hero-animate-5 { animation-delay:.33s !important; }
+.home-page .hero-main-image-animate {
+  opacity:0 !important;
+  animation:g2aHeroFinalImage .86s cubic-bezier(.22,.61,.36,1) .12s both !important;
+}
+.home-page .hero-bg-animate { animation:g2aHeroFinalBg .9s ease-out .03s both !important; }
+@keyframes g2aHeroFinalIn { from{opacity:0;transform:translate3d(0,16px,0)} to{opacity:1;transform:translate3d(0,0,0)} }
+@keyframes g2aHeroFinalImage { from{opacity:.7;transform:translate3d(14px,5px,0) scale(.992)} to{opacity:1;transform:none} }
+@keyframes g2aHeroFinalBg { from{opacity:.82;transform:scale(1.012)} to{opacity:1;transform:none} }
+
+/* Team: original card design stays; profile details now reveal on hover instead of opening a modal. */
+.g2-team-card {
+  position:relative !important; overflow:hidden !important; border-radius:16px !important;
+  background:#fff !important; box-shadow:0 12px 28px rgba(0,0,0,.10) !important;
+  transition:transform .28s ease,box-shadow .28s ease !important;
+}
+.g2-team-card:hover { transform:translateY(-3px) !important; box-shadow:0 16px 32px rgba(0,0,0,.14) !important; }
+.g2-team-image { position:relative !important; height:330px !important; overflow:hidden !important; background:#fff !important; }
+.g2-team-image img {
+  width:100% !important; height:100% !important; object-fit:cover !important; object-position:center top !important;
+  display:block !important; transition:transform .45s ease,filter .35s ease !important;
+}
+.g2-team-card:hover .g2-team-image img { transform:scale(1.025) !important; filter:brightness(.72) !important; }
+.g2-team-hover {
+  position:absolute !important; left:0 !important; right:0 !important; bottom:0 !important; top:auto !important;
+  z-index:4 !important; display:flex !important; align-items:flex-end !important;
+  height:auto !important; min-height:165px !important; opacity:0 !important; transform:translateY(18px) !important;
+  background:linear-gradient(to top,rgba(9,30,47,.98) 0%,rgba(9,30,47,.88) 62%,rgba(9,30,47,0) 100%) !important;
+  transition:opacity .3s ease,transform .3s ease !important; pointer-events:none !important;
+}
+.g2-team-card:hover .g2-team-hover,
+.g2-team-card:focus-within .g2-team-hover {
+  opacity:1 !important; transform:translateY(0) !important;
+}
+.g2-team-hover-content { width:100% !important; padding:28px 20px 20px !important; color:#fff !important; }
+.g2-team-name-row { display:flex !important; align-items:center !important; gap:8px !important; margin-bottom:4px !important; }
+.g2-team-name-row h3 {
+  margin:0 !important; color:#fff !important; font-size:17px !important; line-height:1.25 !important; font-weight:600 !important;
+}
+.g2-team-linkedin {
+  width:27px !important; height:27px !important; border-radius:50% !important; display:inline-flex !important;
+  align-items:center !important; justify-content:center !important; background:#fff !important; color:#12304a !important;
+  text-decoration:none !important; flex:0 0 27px !important; transition:.2s ease !important; pointer-events:auto !important;
+}
+.g2-team-linkedin:hover { background:#4fa8dc !important; color:#fff !important; transform:translateY(-1px) !important; }
+.g2-team-role { display:block !important; color:#66b9e6 !important; font-size:12.5px !important; line-height:1.4 !important; font-weight:500 !important; }
+.g2-team-hover-content p {
+  margin:7px 0 0 !important; color:rgba(255,255,255,.9) !important; font-size:12px !important; line-height:1.5 !important; font-weight:400 !important;
+}
+.g2-team-arrow { display:none !important; }
+.g2-team-default-info {
+  min-height:82px !important; padding:15px 18px !important; display:flex !important; align-items:center !important;
+  justify-content:space-between !important; gap:14px !important; background:#fff !important;
+}
+.g2-team-default-info h3 {
+  margin:0 0 4px !important; color:#162536 !important; font-size:16px !important; line-height:1.25 !important; font-weight:600 !important;
+}
+.g2-team-default-info p {
+  margin:0 !important; color:#5d6f84 !important; font-size:12.5px !important; line-height:1.4 !important; font-weight:400 !important;
+}
+.g2-team-default-arrow {
+  width:42px !important; height:42px !important; border-radius:50% !important; display:flex !important; align-items:center !important;
+  justify-content:center !important; background:#112333 !important; color:#fff !important; flex:0 0 42px !important;
+  transition:transform .25s ease,background .25s ease !important;
+}
+.g2-team-card:hover .g2-team-default-arrow { transform:translateX(2px) !important; background:#4fa8dc !important; }
+.g2-team-grid { row-gap:18px !important; }
+
+@media (hover:none) {
+  .g2-team-hover { opacity:1 !important; transform:none !important; min-height:145px !important; }
+  .g2-team-image img { filter:brightness(.82) !important; }
+}
+
+/* Inquiry: more premium colour system and comfortable spacing. */
+.sis-contact-us-section .sis-contect-right {
+  border:1px solid #d9e6ef !important; border-top:4px solid #4fa8dc !important;
+  border-radius:20px !important; background:linear-gradient(145deg,#fff 0%,#f6fafc 100%) !important;
+  box-shadow:0 18px 42px rgba(13,42,66,.10) !important;
+}
+.sis-contact-us-section .sis-contect-right > .sisf-sis-section-title { padding:22px 24px 9px !important; }
+.sis-contact-us-section .sis-contect-right .sisf-m-title { font-size:28px !important; font-weight:600 !important; line-height:1.2 !important; }
+.sis-contact-us-section .sis-contect-right .sisf-m-text p { font-size:13px !important; line-height:1.55 !important; color:#667b91 !important; }
+.sis-contact-us-section .form-section {
+  margin:0 16px 16px !important; padding:16px !important; border:1px solid #e0e9f0 !important;
+  border-radius:14px !important; background:#fff !important; box-shadow:0 8px 22px rgba(18,45,72,.05) !important;
+}
+.sis-contact-us-section .sis-form-label { font-size:10.5px !important; font-weight:600 !important; color:#29415a !important; margin-bottom:5px !important; }
+.sis-contact-us-section .form-section .form-control,
+.sis-contact-us-section .form-section .sis-native-select { height:40px !important; min-height:40px !important; border-radius:9px !important; font-size:12.5px !important; }
+.sis-contact-us-section .form-section textarea.form-control { height:68px !important; min-height:68px !important; }
+.sis-contact-us-section .sis-form-field { margin-bottom:11px !important; }
+.sis-contact-us-section .sis-form-consent { font-size:10.5px !important; line-height:1.5 !important; padding:9px 10px !important; background:#f5f9fc !important; }
+.sis-contact-us-section .sisf-m-btn .sis-btn-default { height:44px !important; min-height:44px !important; font-size:13px !important; border-radius:9px !important; }
+
+/* Services: return to the original image-card composition. */
+.aboutService .sisf-sis-section-title {
+  padding:0 !important; border:0 !important; border-radius:0 !important; background:transparent !important;
+  box-shadow:none !important; backdrop-filter:none !important;
+}
+.aboutService .sisf-sis-section-title h2 { color:#fff !important; text-shadow:0 2px 10px rgba(0,0,0,.55) !important; }
+.aboutService .sisf-sis-section-title .sisf-m-text p { color:#fff !important; text-shadow:0 2px 8px rgba(0,0,0,.55) !important; }
+.aboutService .sisf-sis-e-service-list .sisf-e-inner { overflow:hidden !important; background:#fff !important; }
+.aboutService .sisf-sis-e-service-list .sisf-service-image { height:300px !important; overflow:hidden !important; }
+.aboutService .sisf-sis-e-service-list .sisf-service-image img { height:300px !important; object-fit:cover !important; transition:transform .45s ease !important; }
+.aboutService .sisf-sis-e-service-list .sisf-e-content {
+  position:absolute !important; left:0 !important; right:0 !important; bottom:0 !important; z-index:3 !important;
+  height:auto !important; min-height:118px !important; padding:22px 18px 18px !important;
+  align-items:flex-end !important; background:linear-gradient(to top,rgba(7,26,43,.94) 0%,rgba(7,26,43,.72) 58%,rgba(7,26,43,0) 100%) !important;
+}
+.aboutService .sisf-sis-e-service-list .sisf-e-title { margin:0 0 5px !important; font-size:16px !important; line-height:1.25 !important; font-weight:600 !important; }
+.aboutService .sisf-sis-e-service-list .sisf-e-title a { color:#fff !important; text-shadow:0 1px 6px rgba(0,0,0,.35) !important; }
+.aboutService .sisf-sis-e-service-list .sisf-m-text p { margin:0 !important; color:rgba(255,255,255,.94) !important; font-size:12.5px !important; line-height:1.5 !important; text-shadow:0 1px 5px rgba(0,0,0,.45) !important; }
+.aboutService .sisf-sis-e-service-list .sisf-e-service-icon { flex:0 0 auto !important; }
+.aboutService .sisf-sis-e-service-list .sisf-e-service-icon a { width:42px !important; height:42px !important; border-radius:50% !important; background:#13283a !important; color:#fff !important; display:flex !important; align-items:center !important; justify-content:center !important; }
+.aboutService .sisf-sis-e-service-list:hover .sisf-service-image img { transform:scale(1.035) !important; }
+.aboutService .sisf-sis-top-left-image,.aboutService .sisf-sis-bottom-right-image { opacity:.20 !important; }
+
+@media (max-width:991px){
+  .g2-team-image,.g2-team-image img { height:300px !important; }
+  .sis-contact-us-section .sis-contect-right { height:auto !important; min-height:0 !important; max-height:none !important; }
+  .aboutService .sisf-sis-e-service-list .sisf-service-image,
+  .aboutService .sisf-sis-e-service-list .sisf-service-image img { height:270px !important; }
+}
+@media (max-width:575px){
+  body p { font-size:13.5px !important; }
+  .g2-team-image,.g2-team-image img { height:280px !important; }
+  .g2-team-name-row h3 { font-size:17px !important; }
+  .aboutService .sisf-sis-e-service-list .sisf-service-image,
+  .aboutService .sisf-sis-e-service-list .sisf-service-image img { height:250px !important; }
+}
+
+/* =========================================================
+   FINAL TEAM HOVER PROFILE + COMPACT HEADER
+   Large reference-style profile opens on card hover.
+   ========================================================= */
+#sisf-page-header .navbar-nav > li > .nav-link {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  gap: 5px !important;
+}
+#sisf-page-header .navbar-nav { gap: 1px !important; }
+#sisf-page-header .custom-toggle-icon { font-size: 9px !important; }
+#sisf-page-header .header-btn .sis-btn-default {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  padding: 10px 18px !important;
+  min-height: 40px !important;
+}
+
+.g2-team-card { cursor: pointer !important; }
+.g2-team-hover { display:none !important; }
+.g2-team-card:hover .g2-team-image img { filter:none !important; transform:scale(1.02) !important; }
+
+.g2-team-popup-layer {
+  position:fixed !important;
+  inset:0 !important;
+  z-index:100001 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  padding:32px !important;
+  pointer-events:auto !important;
+}
+.g2-team-popup-backdrop {
+  position:absolute !important;
+  inset:0 !important;
+  background:rgba(5,20,30,.70) !important;
+  backdrop-filter:blur(5px) !important;
+}
+.g2-team-popup {
+  position:relative !important;
+  z-index:2 !important;
+  width:min(1120px, 92vw) !important;
+  min-height:570px !important;
+  max-height:calc(100vh - 64px) !important;
+  display:grid !important;
+  grid-template-columns:42% 58% !important;
+  overflow:hidden !important;
+  border-radius:20px !important;
+  background:linear-gradient(135deg,#103b29 0%,#0d2c24 48%,#10251f 100%) !important;
+  box-shadow:0 30px 90px rgba(0,0,0,.38) !important;
+  animation:g2TeamPopupIn .32s cubic-bezier(.22,.61,.36,1) both !important;
+}
+.g2-team-popup::before {
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  pointer-events:none !important;
+  background:linear-gradient(135deg,rgba(87,190,127,.12),transparent 40%,rgba(79,168,220,.08)) !important;
+}
+.g2-team-popup-image-wrap { position:relative !important; min-height:570px !important; overflow:hidden !important; }
+.g2-team-popup-image-wrap img {
+  width:100% !important; height:100% !important; object-fit:cover !important; object-position:center top !important; display:block !important;
+}
+.g2-team-popup-image-shade {
+  position:absolute !important; inset:0 !important;
+  background:linear-gradient(90deg,rgba(7,30,22,0) 55%,rgba(7,30,22,.48) 100%),linear-gradient(0deg,rgba(7,30,22,.35),transparent 35%) !important;
+}
+.g2-team-popup-content {
+  position:relative !important; z-index:2 !important; padding:42px 48px 34px !important; color:#fff !important; display:flex !important; flex-direction:column !important;
+}
+.g2-team-popup-topline { display:flex !important; justify-content:space-between !important; align-items:center !important; margin-bottom:30px !important; }
+.g2-team-popup-topline > span { font-size:11px !important; font-weight:600 !important; letter-spacing:2px !important; color:#7bd39a !important; }
+.g2-team-popup-close {
+  width:42px !important; height:42px !important; border:1px solid rgba(255,255,255,.2) !important; border-radius:50% !important; background:rgba(255,255,255,.10) !important; color:#fff !important; display:flex !important; align-items:center !important; justify-content:center !important; cursor:pointer !important;
+}
+.g2-team-popup-name-row { display:flex !important; align-items:center !important; gap:12px !important; margin-bottom:7px !important; }
+.g2-team-popup-name-row h2 { margin:0 !important; color:#fff !important; font-size:40px !important; line-height:1.1 !important; font-weight:600 !important; letter-spacing:-.5px !important; }
+.g2-team-popup-linkedin {
+  width:34px !important; height:34px !important; border-radius:50% !important; background:#fff !important; color:#0c4d3b !important; display:inline-flex !important; align-items:center !important; justify-content:center !important; text-decoration:none !important; flex:0 0 34px !important; transition:.2s ease !important;
+}
+.g2-team-popup-linkedin:hover { background:#62c987 !important; color:#fff !important; transform:translateY(-2px) !important; }
+.g2-team-popup-role { font-size:16px !important; line-height:1.4 !important; color:#6ed49a !important; font-weight:500 !important; }
+.g2-team-popup-line { width:62px !important; height:3px !important; border-radius:4px !important; background:#59c785 !important; margin:28px 0 24px !important; }
+.g2-team-popup-content h3 { margin:0 0 13px !important; color:#fff !important; font-size:20px !important; line-height:1.35 !important; font-weight:600 !important; }
+.g2-team-popup-description { margin:0 !important; max-width:650px !important; color:rgba(255,255,255,.82) !important; font-size:14px !important; line-height:1.75 !important; font-weight:400 !important; }
+.g2-team-popup-contact { display:flex !important; flex-direction:column !important; gap:9px !important; margin-top:26px !important; }
+.g2-team-popup-contact a { color:rgba(255,255,255,.9) !important; text-decoration:none !important; font-size:13.5px !important; font-weight:400 !important; display:flex !important; align-items:center !important; gap:11px !important; }
+.g2-team-popup-contact i { width:27px !important; color:#67cf91 !important; }
+.g2-team-popup-footer { margin-top:auto !important; padding-top:24px !important; border-top:1px solid rgba(255,255,255,.13) !important; display:flex !important; align-items:center !important; justify-content:space-between !important; gap:16px !important; }
+.g2-team-popup-footer > span { color:rgba(255,255,255,.58) !important; font-size:11.5px !important; }
+.g2-team-popup-cta { display:inline-flex !important; align-items:center !important; gap:8px !important; color:#0d3225 !important; background:#72d39a !important; border-radius:50px !important; padding:11px 16px !important; font-size:12px !important; font-weight:600 !important; text-decoration:none !important; white-space:nowrap !important; }
+.g2-team-popup-cta:hover { background:#fff !important; color:#0d3225 !important; }
+@keyframes g2TeamPopupIn { from { opacity:0; transform:translateY(14px) scale(.985); } to { opacity:1; transform:none; } }
+
+@media (max-width:991px){
+  #sisf-page-header .navbar-nav > li > .nav-link { font-size:13px !important; padding-left:5px !important; padding-right:5px !important; }
+  .g2-team-popup-layer { padding:18px !important; }
+  .g2-team-popup { width:94vw !important; min-height:0 !important; max-height:calc(100vh - 36px) !important; grid-template-columns:36% 64% !important; }
+  .g2-team-popup-image-wrap { min-height:500px !important; }
+  .g2-team-popup-content { padding:30px !important; overflow:auto !important; }
+  .g2-team-popup-name-row h2 { font-size:30px !important; }
+}
+@media (max-width:767px){
+  .g2-team-popup { display:block !important; max-height:calc(100vh - 28px) !important; overflow:auto !important; }
+  .g2-team-popup-image-wrap { height:250px !important; min-height:250px !important; }
+  .g2-team-popup-content { padding:24px !important; }
+  .g2-team-popup-topline { margin-bottom:18px !important; }
+  .g2-team-popup-name-row h2 { font-size:26px !important; }
+  .g2-team-popup-role { font-size:13px !important; }
+  .g2-team-popup-content h3 { font-size:17px !important; }
+  .g2-team-popup-description { font-size:13px !important; }
+  .g2-team-popup-footer { align-items:flex-start !important; flex-direction:column !important; }
+}
+
+/* =========================================================
+   FINAL STABILITY + SPACING PASS
+   Keep the existing design, restore gentle hero motion,
+   prevent decorative images from covering readable content.
+========================================================= */
+
+/* Global text rhythm: avoid words touching while keeping typography compact. */
+body, body p, body li, body a, body span, body label,
+.sis-section-title, .sisf-m-title, .sisf-e-title,
+.sisf-e-discription, .sisf-m-text {
+  word-spacing: .6px !important;
+}
+
+/* Keep headings readable without excessive boldness. */
+h1, h2, h3, h4, h5, h6,
+.sisf-m-title, .sis-section-title h1, .sis-section-title h2 {
+  font-weight: 500 !important;
+}
+.sisf-e-title, .sisf-e-title a,
+.sisf-e-author-name, .sisf-e-author-role {
+  font-weight: 500 !important;
+}
+
+/* Header: compact but breathable. */
+#sisf-page-header .navbar-nav { gap: 0 !important; }
+#sisf-page-header .navbar-nav > li > .nav-link {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+#sisf-page-header .custom-toggle-icon { font-size: 8px !important; }
+
+/* Restore the hero entrance animation. The old neutralising rules are
+   intentionally overridden here with higher specificity. */
+.home-page .hero-content .hero-animate.hero-animate {
+  opacity: 0 !important;
+  visibility: visible !important;
+  animation: g2aHeroGentleIn .72s cubic-bezier(.22,.61,.36,1) both !important;
+}
+.home-page .hero-content .hero-animate-1.hero-animate-1 { animation-delay: .05s !important; }
+.home-page .hero-content .hero-animate-2.hero-animate-2 { animation-delay: .12s !important; }
+.home-page .hero-content .hero-animate-3.hero-animate-3 { animation-delay: .19s !important; }
+.home-page .hero-content .hero-animate-4.hero-animate-4 { animation-delay: .26s !important; }
+.home-page .hero-content .hero-animate-5.hero-animate-5 { animation-delay: .33s !important; }
+.home-page .hero-main-image-animate {
+  opacity: 0 !important;
+  animation: g2aHeroImageGentle .82s cubic-bezier(.22,.61,.36,1) .10s both !important;
+}
+.home-page .hero-bg-animate {
+  animation: g2aHeroBgGentle .9s ease-out .02s both !important;
+}
+@keyframes g2aHeroGentleIn {
+  from { opacity: 0; transform: translate3d(0,10px,0); }
+  to { opacity: 1; transform: translate3d(0,0,0); }
+}
+@keyframes g2aHeroImageGentle {
+  from { opacity: .75; transform: translate3d(9px,3px,0) scale(.996); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes g2aHeroBgGentle {
+  from { opacity: .86; transform: scale(1.008); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Valid Swiper container/slide sizing. */
+.home-page .hero-swiper.swiper { width:100%; overflow:hidden !important; }
+.home-page .hero-swiper .swiper-slide { height:auto !important; }
+
+/* Success Stories: decorative globe must stay behind all cards/content. */
+.sis-success-stories-section { position:relative !important; overflow:hidden !important; }
+.sis-success-stories-section > .sisf-sis-bottom-left-image {
+  z-index:0 !important;
+  opacity:.16 !important;
+  pointer-events:none !important;
+}
+.sis-success-stories-section > .container { position:relative !important; z-index:2 !important; }
+.sis-success-stories-section .testimonial-left,
+.sis-success-stories-section .testimonial-right,
+.sis-success-stories-section .sisf-e-inner,
+.sis-success-stories-section .sisf-sis-section-title { position:relative !important; z-index:3 !important; }
+.sis-success-stories-section .sisf-sis-bottom-left-image img { opacity:.72 !important; }
+.sis-success-stories-section .sisf-sis-section-title h2 {
+  position:relative !important;
+  z-index:4 !important;
+  font-weight:500 !important;
+  line-height:1.25 !important;
+}
+
+/* Equal breathing room for major sections without changing hero/header. */
+main > .section:not(.sis-hero),
+.home-page > .section:not(.sis-hero) {
+  padding-top:68px !important;
+  padding-bottom:68px !important;
+}
+.sis-contact-us-section.section { padding-top:68px !important; padding-bottom:68px !important; }
+
+/* Inquiry form: enough vertical room so the CTA/status is never clipped. */
+.sis-contact-us-section .sis-contect-right {
+  margin-top:34px !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  overflow:visible !important;
+  border:1px solid #d8e6ef !important;
+  border-top:4px solid #54a9db !important;
+  border-radius:20px !important;
+  background:linear-gradient(145deg,#ffffff 0%,#f2f8fc 100%) !important;
+  box-shadow:0 18px 44px rgba(18,45,72,.10) !important;
+}
+.sis-contact-us-section .sis-contect-right > .sisf-sis-section-title {
+  padding:22px 24px 12px !important;
+}
+.sis-contact-us-section .sis-contect-right .sisf-m-title {
+  font-size:27px !important;
+  font-weight:500 !important;
+  line-height:1.22 !important;
+}
+.sis-contact-us-section .sis-contect-right .sisf-m-text p {
+  font-size:13px !important;
+  line-height:1.55 !important;
+}
+.sis-contact-us-section .form-section {
+  margin:0 16px 16px !important;
+  padding:17px 16px 15px !important;
+  border-radius:15px !important;
+}
+.sis-contact-us-section .sis-form-field { margin-bottom:12px !important; }
+.sis-contact-us-section .sis-form-label { font-size:10.5px !important; font-weight:500 !important; }
+.sis-contact-us-section .form-section .form-control,
+.sis-contact-us-section .form-section .sis-native-select {
+  height:41px !important;
+  min-height:41px !important;
+  font-size:13px !important;
+}
+.sis-contact-us-section .form-section textarea.form-control {
+  height:72px !important;
+  min-height:72px !important;
+}
+.sis-contact-us-section .sis-form-consent {
+  font-size:10.5px !important;
+  line-height:1.55 !important;
+  padding:9px 10px !important;
+}
+.sis-contact-us-section .sisf-m-btn .sis-btn-default {
+  height:44px !important;
+  min-height:44px !important;
+  font-size:13px !important;
+}
+
+/* Contact-location typography: labels normal, values readable. */
+.sis-location-info .sis-info-content > span,
+.sis-location-info .sis-info-content > span b {
+  font-weight:400 !important;
+  font-size:12px !important;
+  letter-spacing:.02em !important;
+}
+.sis-location-info .sis-info-content p {
+  font-size:14px !important;
+  font-weight:400 !important;
+  line-height:1.55 !important;
+  word-spacing:.8px !important;
+}
+
+/* Prevent decorative/background images from overlapping text across sections. */
+.sis-success-stories-section .sisf-sis-bottom-left-image,
+.sis-success-stories-section .sisf-sis-bottom-left-image figure,
+.sis-success-stories-section .sisf-sis-bottom-left-image img {
+  pointer-events:none !important;
+}
+
+@media (min-width:992px) {
+  .sis-contact-us-section > .container > .row {
+    align-items:flex-start !important;
+  }
+  .sis-contact-us-section > .container > .row > .col-lg-7 {
+    padding-top:68px !important;
+  }
+  .sis-contact-us-section .sisf-contact-left-part,
+  .sis-contact-us-section .sisf-contact-left-image,
+  .sis-contact-us-section .sisf-contact-left-image figure,
+  .sis-contact-us-section .sisf-contact-left-image img {
+    height:500px !important;
+  }
+  .sis-contact-us-section .sis-contect-right {
+    margin-top:68px !important;
+  }
+}
+
+@media (max-width:991px) {
+  main > .section:not(.sis-hero),
+  .home-page > .section:not(.sis-hero) {
+    padding-top:54px !important;
+    padding-bottom:54px !important;
+  }
+  .sis-contact-us-section.section { padding-top:54px !important; padding-bottom:54px !important; }
+  .sis-contact-us-section .sis-contect-right { margin-top:22px !important; }
+}
+
+@media (max-width:575px) {
+  body { font-size:14px !important; }
+  body p { font-size:13.5px !important; }
+  h1,h2,h3,h4,h5,h6 { font-weight:500 !important; }
+  #sisf-page-header .navbar-nav > li > .nav-link { font-size:13px !important; }
+  .sis-contact-us-section .sis-contect-right .sisf-m-title { font-size:24px !important; }
+}
+
+/* =========================================================
+   FINAL STABILITY PATCH — HERO / SPACING / TESTIMONIAL / FORM
+   The hero must never depend on an opacity animation to become visible.
+========================================================= */
+
+/* Hero: visible on first paint, then gently settles into place. */
+.home-page .hero-animate,
+.home-page .hero-main-image-animate,
+.home-page .hero-bg-animate {
+  opacity:1 !important;
+  visibility:visible !important;
+  animation:none !important;
+  will-change:transform !important;
+}
+.home-page .hero-animate {
+  transform:translate3d(0,8px,0) !important;
+  transition:transform .62s cubic-bezier(.22,.61,.36,1) !important;
+}
+.home-page.hero-ready .hero-animate {
+  transform:translate3d(0,0,0) !important;
+}
+.home-page .hero-animate-1 { transition-delay:.03s !important; }
+.home-page .hero-animate-2 { transition-delay:.08s !important; }
+.home-page .hero-animate-3 { transition-delay:.13s !important; }
+.home-page .hero-animate-4 { transition-delay:.18s !important; }
+.home-page .hero-animate-5 { transition-delay:.23s !important; }
+.home-page .hero-main-image-animate {
+  transform:translate3d(8px,3px,0) scale(.997) !important;
+  transition:transform .72s cubic-bezier(.22,.61,.36,1) !important;
+}
+.home-page.hero-ready .hero-main-image-animate {
+  transform:none !important;
+}
+.home-page .hero-bg-animate {
+  transform:scale(1.006) !important;
+  transition:transform .9s ease-out !important;
+}
+.home-page.hero-ready .hero-bg-animate { transform:none !important; }
+
+/* Never hide the hero because a legacy plugin has not initialised yet. */
+.home-page .hero-swiper,
+.home-page .hero-slide,
+.home-page .hero-content,
+.home-page .sisf-hero-content-right {
+  visibility:visible !important;
+}
+.home-page .hero-swiper .swiper-wrapper { height:auto !important; }
+.home-page .hero-swiper .swiper-slide { opacity:1 !important; }
+
+/* Testimonial heading/content: lighter weight and clearer rhythm. */
+.sis-success-stories-section .sisf-sis-section-title h2 {
+  font-weight:500 !important;
+  letter-spacing:-.01em !important;
+}
+.sis-success-stories-section .sisf-e-author-name,
+.sis-success-stories-section .sisf-e-author-role,
+.sis-success-stories-section .sisf-e-discription p,
+.sis-success-stories-section .sisf-e-title,
+.sis-success-stories-section .sis-m-overview-item span {
+  font-weight:400 !important;
+}
+.sis-success-stories-section .sisf-e-author-name { font-weight:500 !important; }
+.sis-success-stories-section .sisf-e-discription p {
+  line-height:1.65 !important;
+  word-spacing:.8px !important;
+}
+
+/* Decorative testimonial globe stays behind the cards and remains subtle. */
+.sis-success-stories-section > .sisf-sis-bottom-left-image {
+  z-index:0 !important;
+  opacity:.10 !important;
+  pointer-events:none !important;
+}
+.sis-success-stories-section > .sisf-sis-bottom-left-image img {
+  opacity:1 !important;
+}
+.sis-success-stories-section > .container { z-index:2 !important; }
+
+/* Equal top/bottom rhythm for the home sections. */
+main > .section {
+  padding-top:58px !important;
+  padding-bottom:58px !important;
+}
+main > .sis-hero { padding-top:0 !important; padding-bottom:0 !important; }
+
+/* Inquiry form: don't clip the bottom of the card or CTA. */
+.sis-contact-us-section .sis-contect-right {
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  overflow:visible !important;
+  box-sizing:border-box !important;
+}
+.sis-contact-us-section .form-section {
+  overflow:visible !important;
+}
+@media (min-width:992px) {
+  .sis-contact-us-section .sis-contect-right {
+    min-height:500px !important;
+  }
+  .sis-contact-us-section > .container > .row > .col-lg-7 {
+    padding-top:58px !important;
+  }
+}
+
+/* Prevent accidental image layers from covering readable section content. */
+main img[aria-hidden="true"],
+.sis-success-stories-section .sisf-sis-bottom-left-image img {
+  pointer-events:none !important;
+}
+
+@media (max-width:991px) {
+  main > .section {
+    padding-top:46px !important;
+    padding-bottom:46px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL HOME STABILITY — keep the React hero visible and animated
+   without letting legacy Swiper/GSAP hide the first slide.
+========================================================= */
+.home-page .hero-slider-layout,
+.home-page .hero-slider-layout .hero-swiper,
+.home-page .hero-slider-layout .hero-swiper .swiper-wrapper,
+.home-page .hero-slider-layout .hero-slide,
+.home-page .hero-slider-layout .hero-content,
+.home-page .hero-slider-layout .hero-content .sis-section-title,
+.home-page .hero-slider-layout .sisf-content-center,
+.home-page .hero-slider-layout .sisf-hero-content-right {
+  visibility:visible !important;
+  opacity:1 !important;
+}
+
+/* The current React home has one real hero slide. Keep its content visible
+   and use a small, safe CSS entrance instead of plugin-dependent hiding. */
+.home-page .hero-content .hero-animate,
+.home-page .hero-content .hero-animate-1,
+.home-page .hero-content .hero-animate-2,
+.home-page .hero-content .hero-animate-3,
+.home-page .hero-content .hero-animate-4,
+.home-page .hero-content .hero-animate-5 {
+  visibility:visible !important;
+  opacity:1 !important;
+  transform:translate3d(0,0,0) !important;
+  animation:none !important;
+}
+.home-page .hero-main-image-animate,
+.home-page .hero-bg-animate {
+  visibility:visible !important;
+  opacity:1 !important;
+  transform:none !important;
+  animation:none !important;
+}
+
+/* Gentle motion is driven by the loaded page, not opacity/visibility. */
+.home-page.hero-motion-ready .hero-content .hero-animate-1 { animation:g2aSafeHeroIn .58s ease-out .02s both !important; }
+.home-page.hero-motion-ready .hero-content .hero-animate-2 { animation:g2aSafeHeroIn .58s ease-out .08s both !important; }
+.home-page.hero-motion-ready .hero-content .hero-animate-3 { animation:g2aSafeHeroIn .58s ease-out .14s both !important; }
+.home-page.hero-motion-ready .hero-content .hero-animate-4 { animation:g2aSafeHeroIn .58s ease-out .20s both !important; }
+.home-page.hero-motion-ready .hero-content .hero-animate-5 { animation:g2aSafeHeroIn .58s ease-out .26s both !important; }
+.home-page.hero-motion-ready .hero-main-image-animate { animation:g2aSafeHeroImage .68s ease-out .06s both !important; }
+@keyframes g2aSafeHeroIn {
+  from { opacity:.94; transform:translate3d(0,8px,0); }
+  to { opacity:1; transform:none; }
+}
+@keyframes g2aSafeHeroImage {
+  from { opacity:.96; transform:translate3d(7px,2px,0) scale(.998); }
+  to { opacity:1; transform:none; }
+}
+
+/* Equal vertical rhythm on the home page. */
+.home-page ~ .section {
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  padding-top:52px !important;
+  padding-bottom:52px !important;
+}
+.home-page ~ .section.pt-0,
+.home-page ~ .section.pb-0 {
+  padding-top:52px !important;
+  padding-bottom:52px !important;
+}
+
+/* Testimonial typography: normal body copy, only names get a modest emphasis. */
+.sis-success-stories-section .sisf-e-author-name {
+  font-weight:500 !important;
+}
+.sis-success-stories-section .sisf-e-author-role,
+.sis-success-stories-section .sisf-e-discription,
+.sis-success-stories-section .sisf-e-discription p,
+.sis-success-stories-section .sisf-e-title,
+.sis-success-stories-section .sis-m-overview-item,
+.sis-success-stories-section .sis-m-overview-item span,
+.sis-success-stories-section .sisf-m-text,
+.sis-success-stories-section .sisf-m-text p {
+  font-weight:400 !important;
+}
+.sis-success-stories-section .sisf-e-discription p {
+  line-height:1.7 !important;
+  letter-spacing:0 !important;
+  word-spacing:.45px !important;
+}
+.sis-success-stories-section .sisf-sis-section-title h2 {
+  font-weight:500 !important;
+  letter-spacing:-.01em !important;
+}
+
+/* Keep decorative globe behind all testimonial content. */
+.sis-success-stories-section > .sisf-sis-bottom-left-image {
+  z-index:0 !important;
+  opacity:.07 !important;
+  pointer-events:none !important;
+}
+.sis-success-stories-section > .container,
+.sis-success-stories-section > .container .row,
+.sis-success-stories-section .testimonial-right,
+.sis-success-stories-section .sisf-e-inner {
+  position:relative !important;
+  z-index:2 !important;
+}
+
+@media (max-width:991px) {
+  .home-page ~ .section {
+    padding-top:42px !important;
+    padding-bottom:42px !important;
+  }
+}
+
+/* =========================================================
+   FINAL USER FIX — HERO VISIBILITY + GENTLE MOTION + RHYTHM
+   Keep existing components/functionality unchanged.
+========================================================= */
+
+/* HERO: never hide content while waiting for animation. */
+.home-page .hero-content .hero-animate,
+.home-page .hero-content .hero-animate-1,
+.home-page .hero-content .hero-animate-2,
+.home-page .hero-content .hero-animate-3,
+.home-page .hero-content .hero-animate-4,
+.home-page .hero-content .hero-animate-5 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  will-change: transform !important;
+}
+
+/* Animation uses transform only; opacity stays visible throughout. */
+.home-page.hero-motion-ready .hero-content .hero-animate-1 {
+  animation: g2aHeroMoveOnly .62s cubic-bezier(.22,.61,.36,1) .03s both !important;
+}
+.home-page.hero-motion-ready .hero-content .hero-animate-2 {
+  animation: g2aHeroMoveOnly .62s cubic-bezier(.22,.61,.36,1) .09s both !important;
+}
+.home-page.hero-motion-ready .hero-content .hero-animate-3 {
+  animation: g2aHeroMoveOnly .62s cubic-bezier(.22,.61,.36,1) .15s both !important;
+}
+.home-page.hero-motion-ready .hero-content .hero-animate-4 {
+  animation: g2aHeroMoveOnly .62s cubic-bezier(.22,.61,.36,1) .21s both !important;
+}
+.home-page.hero-motion-ready .hero-content .hero-animate-5 {
+  animation: g2aHeroMoveOnly .62s cubic-bezier(.22,.61,.36,1) .27s both !important;
+}
+
+@keyframes g2aHeroMoveOnly {
+  from { opacity: 1; transform: translate3d(0, 8px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+.home-page .hero-main-image-animate,
+.home-page .hero-bg-animate {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.home-page.hero-motion-ready .hero-main-image-animate {
+  animation: g2aHeroImageMoveOnly .72s cubic-bezier(.22,.61,.36,1) .06s both !important;
+}
+@keyframes g2aHeroImageMoveOnly {
+  from { opacity: 1; transform: translate3d(7px, 2px, 0) scale(.998); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+/* Equal section breathing room on the home page. */
+.home-page ~ .section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 52px !important;
+  padding-bottom: 52px !important;
+}
+.home-page ~ .section > .container:first-child {
+  margin-top: 0 !important;
+}
+.home-page ~ .section > .container:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* FAQ/question typography: readable but not heavy. */
+.sis-faq-section .accordion-button,
+.sis-faq-section .accordion-button:not(.collapsed),
+.sis-faq-section .sisf-e-title,
+.sis-faq-section .sisf-e-title a,
+.sis-faq-section .faq-question,
+.sis-faq-section button {
+  font-weight: 500 !important;
+}
+.sis-faq-section .accordion-body,
+.sis-faq-section .accordion-body p {
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+}
+
+@media (max-width: 991px) {
+  .home-page ~ .section {
+    padding-top: 42px !important;
+    padding-bottom: 42px !important;
+  }
+}
+
+
+/* =========================================================
+   DEFINITIVE HERO FIX — isolated React classes
+   These classes intentionally do not use the legacy hero-animate
+   selectors, which were forcing opacity:0 in the old stylesheet.
+========================================================= */
+.g2a-hero-content,
+.g2a-hero-content .g2a-hero-item,
+.g2a-hero-content .g2a-hero-item.g2a-hero-1,
+.g2a-hero-content .g2a-hero-item.g2a-hero-2,
+.g2a-hero-content .g2a-hero-item.g2a-hero-3,
+.g2a-hero-content .g2a-hero-item.g2a-hero-4,
+.g2a-hero-content .g2a-hero-item.g2a-hero-5 {
+  opacity:1 !important;
+  visibility:visible !important;
+  will-change:transform !important;
+}
+
+.g2a-hero-content .g2a-hero-item {
+  transform:translate3d(0,0,0) !important;
+}
+
+.g2a-hero-content .g2a-hero-1 { animation:g2aHeroSafeMove .62s cubic-bezier(.22,.61,.36,1) .03s both !important; }
+.g2a-hero-content .g2a-hero-2 { animation:g2aHeroSafeMove .62s cubic-bezier(.22,.61,.36,1) .09s both !important; }
+.g2a-hero-content .g2a-hero-3 { animation:g2aHeroSafeMove .62s cubic-bezier(.22,.61,.36,1) .15s both !important; }
+.g2a-hero-content .g2a-hero-4 { animation:g2aHeroSafeMove .62s cubic-bezier(.22,.61,.36,1) .21s both !important; }
+.g2a-hero-content .g2a-hero-5 { animation:g2aHeroSafeMove .62s cubic-bezier(.22,.61,.36,1) .27s both !important; }
+
+@keyframes g2aHeroSafeMove {
+  from { opacity:1; visibility:visible; transform:translate3d(0,8px,0); }
+  to { opacity:1; visibility:visible; transform:translate3d(0,0,0); }
+}
+
+.g2a-hero-image,
+.g2a-hero-bg {
+  opacity:1 !important;
+  visibility:visible !important;
+}
+.g2a-hero-image { animation:g2aHeroSafeImage .72s cubic-bezier(.22,.61,.36,1) .06s both !important; }
+@keyframes g2aHeroSafeImage {
+  from { opacity:1; transform:translate3d(7px,2px,0) scale(.998); }
+  to { opacity:1; transform:translate3d(0,0,0) scale(1); }
+}
+
+/* Keep every normal home section visually balanced top-to-bottom. */
+.sis-hero ~ .section {
+  padding-top:52px !important;
+  padding-bottom:52px !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+}
+@media (max-width:991px) {
+  .sis-hero ~ .section {
+    padding-top:42px !important;
+    padding-bottom:42px !important;
+  }
+}
+
+/* =========================================================
+   LATEST USER REQUEST — HERO MOTION + INQUIRY POSITION
+   Keep all existing functionality/design intact.
+========================================================= */
+
+/* Hero: restore the original-style staggered entrance without opacity hiding.
+   Opacity always stays visible so legacy rules cannot blank the hero. */
+.home-page .g2a-hero-item,
+.home-page .g2a-hero-image,
+.home-page .g2a-hero-bg {
+  opacity:1 !important;
+  visibility:visible !important;
+  will-change:transform !important;
+}
+
+.home-page.hero-ready .g2a-hero-1 {
+  animation:g2aFinalHeroIn .70s cubic-bezier(.22,.61,.36,1) .04s both !important;
+}
+.home-page.hero-ready .g2a-hero-2 {
+  animation:g2aFinalHeroIn .70s cubic-bezier(.22,.61,.36,1) .11s both !important;
+}
+.home-page.hero-ready .g2a-hero-3 {
+  animation:g2aFinalHeroIn .70s cubic-bezier(.22,.61,.36,1) .18s both !important;
+}
+.home-page.hero-ready .g2a-hero-4 {
+  animation:g2aFinalHeroIn .70s cubic-bezier(.22,.61,.36,1) .25s both !important;
+}
+.home-page.hero-ready .g2a-hero-5 {
+  animation:g2aFinalHeroIn .70s cubic-bezier(.22,.61,.36,1) .32s both !important;
+}
+
+@keyframes g2aFinalHeroIn {
+  from { opacity:1; visibility:visible; transform:translate3d(0,10px,0); }
+  to   { opacity:1; visibility:visible; transform:translate3d(0,0,0); }
+}
+
+.home-page.hero-ready .g2a-hero-image {
+  animation:g2aFinalHeroImage .82s cubic-bezier(.22,.61,.36,1) .08s both !important;
+}
+
+@keyframes g2aFinalHeroImage {
+  from { opacity:1; visibility:visible; transform:translate3d(9px,3px,0) scale(.997); }
+  to   { opacity:1; visibility:visible; transform:translate3d(0,0,0) scale(1); }
+}
+
+/* Inquiry form: move the right card upward on desktop only.
+   Do not change fields, validation or submission logic. */
+@media (min-width:992px) {
+  .sis-contact-us-section > .container > .row > .col-lg-7 {
+    padding-top:0 !important;
+  }
+  .sis-contact-us-section .sis-contect-right {
+    margin-top:24px !important;
+  }
+}
+
+@media (max-width:991px) {
+  .sis-contact-us-section .sis-contect-right {
+    margin-top:20px !important;
+  }
+}
+
+
+/* FINAL GLOBAL TYPOGRAPHY — Poppins across React preview */
+html, body, #root, button, input, select, textarea {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+/* FINAL HERO SHAKE FIX — preserve working hero animation, prevent single-slide loop jitter */
+.home-page .hero-slider-layout,
+.home-page .hero-slider-layout .hero-swiper,
+.home-page .hero-slider-layout .swiper-wrapper,
+.home-page .hero-slider-layout .hero-slide {
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+}
+.home-page .hero-slider-layout .swiper-wrapper {
+  will-change: transform !important;
+}
+.home-page .hero-slider-layout .hero-slide {
+  transform: translate3d(0,0,0);
+}
+
+/* FINAL ALL-SECTIONS STABILITY */
+html, body {
+  max-width:100% !important;
+  overflow-x:hidden !important;
+}
+#root { max-width:100% !important; overflow-x:hidden !important; }
+
+/* Services: keep typography crisp; shadows stay on cards/images only. */
+.aboutService .sisf-sis-section-title h2,
+.aboutService .sisf-sis-section-title .sisf-m-text p,
+.aboutService .sisf-sis-e-service-list .sisf-e-title a,
+.aboutService .sisf-sis-e-service-list .sisf-m-text p {
+  text-shadow:none !important;
+  -webkit-font-smoothing:antialiased !important;
+  text-rendering:optimizeLegibility !important;
+}
+.aboutService .sisf-sis-section-title,
+.aboutService .sisf-sis-e-service-list .sisf-e-content {
+  -webkit-backdrop-filter:none !important;
+  backdrop-filter:none !important;
+}
+
+/* Inquiry fields: prevent legacy plugin styles from stretching the form. */
+.sis-contact-us-section .form-section,
+.sis-contact-us-section .form-section .row,
+.sis-contact-us-section .form-section [class*="col-"] {
+  box-sizing:border-box !important;
+  max-width:100% !important;
+}
+.sis-contact-us-section .form-section .form-control,
+.sis-contact-us-section .form-section .sis-native-select,
+.sis-contact-us-section .form-section textarea {
+  font-family:"Poppins",sans-serif !important;
+  box-sizing:border-box !important;
+}
+
+/* Hero: remove only the single-slide Swiper jitter; keep the working hero look. */
+.home-page .hero-slider-layout .swiper-wrapper,
+.home-page .hero-slider-layout .swiper-slide {
+  backface-visibility:hidden !important;
+  -webkit-backface-visibility:hidden !important;
+}
+
+
+/* FINAL VERIFIED HERO SHAKE PATCH — do not alter slider animation/layout */
+.home-page .hero-slider-layout .hero-swiper,
+.home-page .hero-slider-layout .hero-swiper .swiper-wrapper,
+.home-page .hero-slider-layout .hero-slide {
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+  perspective: 1000px !important;
+}
+.home-page .hero-slider-layout .hero-slide {
+  transform: translate3d(0,0,0) !important;
+}
+
+/* =========================================================
+   TARGETED FINAL PATCH — TEAM HOVER + HERO HEADING SIZE
+   Do not alter the existing hero slider implementation.
+========================================================= */
+
+/* Restore the Team card hover profile that was hidden by the later modal rules. */
+.g2-team-card .g2-team-hover {
+  display:flex !important;
+  opacity:0 !important;
+  visibility:visible !important;
+  transform:translateY(18px) !important;
+  pointer-events:none !important;
+  transition:opacity .30s ease, transform .30s ease !important;
+}
+.g2-team-card:hover .g2-team-hover,
+.g2-team-card:focus-within .g2-team-hover {
+  display:flex !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  transform:translateY(0) !important;
+  pointer-events:auto !important;
+}
+.g2-team-card:hover .g2-team-image img {
+  filter:brightness(.72) !important;
+  transform:scale(1.025) !important;
+}
+.g2-team-card .g2-team-linkedin {
+  pointer-events:auto !important;
+}
+
+/* Hero: only increase heading size; existing slider/animation remains untouched. */
+@media (min-width:992px) {
+  .home-page .hero-slider-layout .hero-content h1 {
+    font-family:"Poppins",sans-serif !important;
+    font-size:60px !important;
+    line-height:1.13 !important;
+    letter-spacing:-0.025em !important;
+    font-weight:600 !important;
+  }
+}
+@media (min-width:1200px) {
+  .home-page .hero-slider-layout .hero-content h1 {
+    font-size:64px !important;
+  }
+}
+@media (max-width:991px) {
+  .home-page .hero-slider-layout .hero-content h1 {
+    font-family:"Poppins",sans-serif !important;
+    font-size:clamp(36px,7vw,52px) !important;
+    line-height:1.14 !important;
+  }
+}
+
+
+/* =========================================================
+   TEAM LARGE PROFILE — HOVER OPEN ONLY
+   Targeted TeamMember patch. Existing site code untouched.
+========================================================= */
+.g2-team-card { cursor:pointer !important; }
+.g2-team-popup-layer {
+  position:fixed !important; inset:0 !important; z-index:100001 !important;
+  display:flex !important; align-items:center !important; justify-content:center !important;
+  padding:32px !important; pointer-events:auto !important;
+}
+.g2-team-popup-backdrop { cursor:default !important; }
+.g2-team-popup {
+  width:min(1120px,92vw) !important;
+  min-height:570px !important;
+}
+body.team-modal-open { overflow:hidden !important; }
+@media (max-width:767px){
+  .g2-team-popup-layer { padding:14px !important; }
+  .g2-team-popup { width:96vw !important; max-height:calc(100vh - 28px) !important; }
+}
+
+/* =========================================================
+   HERO FINAL VISIBILITY PATCH
+   Keep existing slider/animation implementation untouched.
+   Only prevent the animation CSS from leaving content invisible.
+========================================================= */
+.home-page .hero-content .hero-animate,
+.home-page .hero-content .hero-animate-1,
+.home-page .hero-content .hero-animate-2,
+.home-page .hero-content .hero-animate-3,
+.home-page .hero-content .hero-animate-4,
+.home-page .hero-content .hero-animate-5,
+.home-page .sisf-content-center.hero-animate {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Preserve a smooth entrance using transform only; no opacity hiding. */
+.home-page.hero-motion-ready .hero-content .hero-animate-1 { animation:g2aHeroVisibleMove .62s cubic-bezier(.22,.61,.36,1) .03s both !important; }
+.home-page.hero-motion-ready .hero-content .hero-animate-2 { animation:g2aHeroVisibleMove .62s cubic-bezier(.22,.61,.36,1) .09s both !important; }
+.home-page.hero-motion-ready .hero-content .hero-animate-3 { animation:g2aHeroVisibleMove .62s cubic-bezier(.22,.61,.36,1) .15s both !important; }
+.home-page.hero-motion-ready .hero-content .hero-animate-4 { animation:g2aHeroVisibleMove .62s cubic-bezier(.22,.61,.36,1) .21s both !important; }
+.home-page.hero-motion-ready .sisf-content-center.hero-animate { animation:g2aHeroVisibleMove .62s cubic-bezier(.22,.61,.36,1) .27s both !important; }
+
+@keyframes g2aHeroVisibleMove {
+  from { opacity:1; visibility:visible; transform:translate3d(0,8px,0); }
+  to   { opacity:1; visibility:visible; transform:translate3d(0,0,0); }
+}
+
+.home-page .hero-main-image-animate,
+.home-page .hero-main-image-animate img,
+.home-page .hero-bg-animate,
+.home-page .hero-bg-animate img {
+  opacity:1 !important;
+  visibility:visible !important;
+  display:block !important;
+}
+
+.home-page.hero-motion-ready .hero-main-image-animate {
+  animation:g2aHeroVisibleImage .72s cubic-bezier(.22,.61,.36,1) .06s both !important;
+}
+@keyframes g2aHeroVisibleImage {
+  from { opacity:1; transform:translate3d(7px,2px,0) scale(.998); }
+  to   { opacity:1; transform:translate3d(0,0,0) scale(1); }
+}
+
+/* Keep hero columns/content above the decorative background, without changing layout. */
+.home-page .hero-slider-layout .container,
+.home-page .hero-slider-layout .row,
+.home-page .hero-content,
+.home-page .sisf-content-center {
+  position:relative !important;
+}
+.home-page .hero-content,
+.home-page .sisf-content-center { z-index:5 !important; }
+.home-page .sisf-hero-content-right { z-index:4 !important; }
+
+/* =========================================================
+   TARGETED ADD-ON — FOOTER PARTNERS
+   Only adds the requested Our Partner section.
+========================================================= */
+.g2-footer-partners {
+  position:relative !important;
+  z-index:3 !important;
+  padding:30px 0 26px !important;
+  background:#15202b !important;
+  border-top:1px solid rgba(255,255,255,.10) !important;
+  border-bottom:1px solid rgba(255,255,255,.10) !important;
+}
+.g2-footer-partners-head {
+  display:flex !important;
+  align-items:flex-start !important;
+  justify-content:space-between !important;
+  gap:40px !important;
+  margin-bottom:22px !important;
+}
+.g2-footer-partners-head h2 {
+  margin:0 !important;
+  color:#fff !important;
+  font-family:"Poppins",sans-serif !important;
+  font-size:25px !important;
+  line-height:1.2 !important;
+  font-weight:700 !important;
+}
+.g2-footer-partners-head p {
+  width:min(620px,55%) !important;
+  margin:0 !important;
+  color:#fff !important;
+  font-family:"Poppins",sans-serif !important;
+  font-size:14px !important;
+  line-height:1.55 !important;
+  font-weight:500 !important;
+}
+.g2-footer-partners-grid {
+  display:grid !important;
+  grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+  gap:20px !important;
+}
+.g2-partner-card {
+  min-height:60px !important;
+  padding:8px 12px !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:14px !important;
+  background:#fff !important;
+  border-radius:3px !important;
+  box-shadow:0 3px 10px rgba(0,0,0,.08) !important;
+  color:#0f172a !important;
+  font-family:"Poppins",sans-serif !important;
+}
+.g2-partner-card strong { font-size:14px !important; font-weight:600 !important; }
+.g2-partner-mark {
+  width:44px !important;
+  min-width:44px !important;
+  height:44px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  border-radius:50% !important;
+  background:#f4f5f7 !important;
+  color:#111827 !important;
+  font-family:Arial,sans-serif !important;
+  font-weight:800 !important;
+  overflow:hidden !important;
+}
+.g2-artech { font-size:9px !important; color:#176b86 !important; border:1px solid #e5e7eb !important; background:#fafafa !important; }
+.g2-google { font-size:28px !important; background:#fff !important; }
+.g2-google b { font-weight:700 !important; background:linear-gradient(90deg,#4285f4 0 25%,#ea4335 25% 50%,#fbbc05 50% 75%,#34a853 75%) !important; -webkit-background-clip:text !important; background-clip:text !important; color:transparent !important; }
+.g2-apple { font-size:28px !important; background:#fff !important; }
+.g2-micromax { border-radius:10px !important; background:#fff !important; color:#f36f21 !important; font-size:24px !important; }
+.g2-samsung { background:#555 !important; color:#fff !important; font-size:7px !important; letter-spacing:.3px !important; }
+.g2-adobe { background:#ff3b1f !important; color:#fff !important; font-size:23px !important; border-radius:50% !important; }
+
+/* Team modal background: match the supplied dark-green reference while keeping the modal layout intact. */
+.g2-team-popup {
+  background:
+    linear-gradient(135deg, rgba(35,103,70,.20) 0%, transparent 24%),
+    linear-gradient(160deg, #0c3b2b 0%, #092f24 48%, #081f19 100%) !important;
+  border:1px solid rgba(108,211,151,.08) !important;
+  box-shadow:0 28px 90px rgba(0,0,0,.42) !important;
+  overflow:hidden !important;
+}
+.g2-team-popup::after {
+  content:"" !important;
+  position:absolute !important;
+  inset:-30% 55% 35% -20% !important;
+  background:linear-gradient(135deg, transparent 0 45%, rgba(94,190,133,.09) 45% 55%, transparent 55%) !important;
+  pointer-events:none !important;
+}
+.g2-team-popup-content { position:relative !important; z-index:2 !important; }
+.g2-team-popup-image-wrap { position:relative !important; z-index:2 !important; }
+
+@media (max-width:991px) {
+  .g2-footer-partners-head { flex-direction:column !important; gap:10px !important; }
+  .g2-footer-partners-head p { width:100% !important; }
+  .g2-footer-partners-grid { grid-template-columns:repeat(3,minmax(0,1fr)) !important; }
+}
+@media (max-width:575px) {
+  .g2-footer-partners { padding:24px 0 20px !important; }
+  .g2-footer-partners-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:12px !important; }
+  .g2-partner-card { min-height:56px !important; padding:7px 9px !important; gap:9px !important; }
+  .g2-partner-mark { width:38px !important; min-width:38px !important; height:38px !important; }
+  .g2-partner-card strong { font-size:12px !important; }
+}
+
+/* =========================================================
+   OUR PARTNER — SINGLE LINE INFINITE SLIDER
+   Targeted footer-only change.
+========================================================= */
+.g2-footer-partners-marquee {
+  width:100% !important;
+  overflow:hidden !important;
+  position:relative !important;
+}
+.g2-footer-partners-track {
+  display:flex !important;
+  width:max-content !important;
+  align-items:center !important;
+  gap:20px !important;
+  animation:g2PartnerMarquee 42s linear infinite !important;
+  will-change:transform !important;
+}
+.g2-footer-partners-track:hover {
+  animation-play-state:paused !important;
+}
+.g2-footer-partners-marquee .g2-partner-card {
+  flex:0 0 205px !important;
+  width:205px !important;
+  min-height:60px !important;
+  padding:8px 12px !important;
+  box-sizing:border-box !important;
+}
+.g2-footer-partners-marquee .g2-partner-mark {
+  flex:0 0 44px !important;
+  width:44px !important;
+  min-width:44px !important;
+  height:44px !important;
+  background:#f8fafc !important;
+  border:1px solid #e8edf2 !important;
+  border-radius:50% !important;
+}
+.g2-footer-partners-marquee .g2-partner-mark img {
+  width:30px !important;
+  height:30px !important;
+  object-fit:contain !important;
+  display:block !important;
+}
+.g2-footer-partners-marquee .g2-partner-fallback {
+  display:none;
+  font-size:9px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  color:#174f68 !important;
+  text-align:center !important;
+}
+.g2-footer-partners-marquee .g2-partner-card strong {
+  white-space:nowrap !important;
+  font-size:13px !important;
+  line-height:1.25 !important;
+}
+@keyframes g2PartnerMarquee {
+  from { transform:translate3d(0,0,0); }
+  to { transform:translate3d(-50%,0,0); }
+}
+@media (max-width:575px) {
+  .g2-footer-partners-track { gap:12px !important; animation-duration:34s !important; }
+  .g2-footer-partners-marquee .g2-partner-card { flex-basis:190px !important; width:190px !important; }
+}
+
+.testimonial-right .sisf-e-media-image img{
+	border-radius: 50%;
+    width: 65px !important;
+    border: 1px solid #e2e2e2;
+    height: 65px;
 }

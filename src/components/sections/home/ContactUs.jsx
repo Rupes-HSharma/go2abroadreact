@@ -57,13 +57,13 @@ export default function ContactUs() {
                 <div className="sisf-sis-contact-information">
                   <div className="sisf-contact-box mb-3 d-flex align-items-center gap-3">
                     <div className="sisf-icon">
-                      <a href="tel:+917068821760">
+                      <a href="tel:+917068821740">
                         <i className="fa-solid fa-phone-volume"></i>
                       </a>
                     </div>
                     <div className="sisf-sis-e-content">
-                      <a href="tel:+917068821760" className="sis-title text-white d-block">
-                        +91-7068821760, +91-9958155484
+                      <a href="tel:+917068821740" className="sis-title text-white d-block">
+                        +91-70688 21740, +91-79053 77279
                       </a>
                       <span className="sis-title text-white d-block">
                         Phone
@@ -87,12 +87,12 @@ export default function ContactUs() {
                   </div>
                   <div className="sisf-contact-box mb-0 d-flex align-items-center gap-3">
                     <div className="sisf-icon">
-                      <a href="https://wa.me/919958155484" target="_blank" rel="noopener">
+                      <a href="https://wa.me/917068821740" target="_blank" rel="noopener">
                         <i className="fa-brands fa-whatsapp"></i>
                       </a>
                     </div>
                     <div className="sisf-sis-e-content">
-                      <a href="https://wa.me/919958155484" target="_blank" rel="noopener" className="sis-title text-white d-block">
+                      <a href="https://wa.me/917068821740" target="_blank" rel="noopener" className="sis-title text-white d-block">
                         WhatsApp
                       </a>
                       <span className="sis-title text-white d-block">

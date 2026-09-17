@@ -9,6 +9,70 @@ export default function Footer() {
             <img src={img("/images/footer-bg.png")} alt="" />
           </figure>
         </div>
+        <section className="g2-footer-partners" aria-label="Our Partner">
+          <div className="container">
+            <div className="g2-footer-partners-head">
+              <h2>OUR PARTNER</h2>
+              <p>
+                Helping students, professionals, families, and entrepreneurs navigate
+                immigration pathways with confidence.
+              </p>
+            </div>
+            <div className="g2-footer-partners-marquee" aria-label="Partner companies">
+              <div className="g2-footer-partners-track">
+                {[
+                  ["Credila", "credila.com", "CR"],
+                  ["Avanse", "avanse.com", "A"],
+                  ["Poonawalla Fincorp", "poonawallafincorp.com", "PF"],
+                  ["Yes Bank", "yesbank.in", "YES"],
+                  ["Axis Bank", "axisbank.com", "AXIS"],
+                  ["ICICI Bank", "icicibank.com", "ICICI"],
+                  ["IDFC First", "idfcfirstbank.com", "IDFC"],
+                  ["Auxilo", "auxilo.com", "AUX"],
+                  ["InCred", "incred.com", "IN"],
+                  ["EdGro", "edgro.in", "EG"],
+                  ["Tata Capital", "tatacapital.com", "TATA"],
+                  ["MPower (Int. Lender)", "mpowerfinancing.com", "MPOWER"],
+                  ["Prodigy (Int. Lender)", "prodigyfinance.com", "P"],
+                  ["US Cosigner (Int. Lender)", "uscosigner.com", "USC"],
+                  ["Saraswat Bank", "saraswatbank.com", "SB"]
+                ].concat([
+                  ["Credila", "credila.com", "CR"],
+                  ["Avanse", "avanse.com", "A"],
+                  ["Poonawalla Fincorp", "poonawallafincorp.com", "PF"],
+                  ["Yes Bank", "yesbank.in", "YES"],
+                  ["Axis Bank", "axisbank.com", "AXIS"],
+                  ["ICICI Bank", "icicibank.com", "ICICI"],
+                  ["IDFC First", "idfcfirstbank.com", "IDFC"],
+                  ["Auxilo", "auxilo.com", "AUX"],
+                  ["InCred", "incred.com", "IN"],
+                  ["EdGro", "edgro.in", "EG"],
+                  ["Tata Capital", "tatacapital.com", "TATA"],
+                  ["MPower (Int. Lender)", "mpowerfinancing.com", "MPOWER"],
+                  ["Prodigy (Int. Lender)", "prodigyfinance.com", "P"],
+                  ["US Cosigner (Int. Lender)", "uscosigner.com", "USC"],
+                  ["Saraswat Bank", "saraswatbank.com", "SB"]
+                ]).map(([name, domain, fallback], index) => (
+                  <div className="g2-partner-card" key={`${name}-${index}`}>
+                    <span className="g2-partner-mark">
+                      <img
+                        src={`https://www.google.com/s2/favicons?domain=${domain}&sz=64`}
+                        alt=""
+                        loading="lazy"
+                        onError={(e) => {
+                          e.currentTarget.style.display = "none";
+                          e.currentTarget.nextElementSibling.style.display = "inline";
+                        }}
+                      />
+                      <span className="g2-partner-fallback">{fallback}</span>
+                    </span>
+                    <strong>{name}</strong>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
         <div className="sisf-page-footer-middle-area pt-4">
           <div className="container">
             <div className="row">
@@ -153,16 +217,18 @@ export default function Footer() {
                   <div className="sisf-sis-contact-information">
                     <div className="sisf-contact-box mb-3 d-flex align-items-center gap-3">
                       <div className="sisf-icon">
-                        <a href="tel:+917068821760">
+                        <a href="tel:+917068821740">
                           <i className="fa-solid fa-phone-volume"></i>
                         </a>
                       </div>
                       <div className="sisf-sis-e-content">
                         <span className="sis-title text-white d-block">
-                          Call us on
+                          Call / WhatsApp
                         </span>
-                        <a href="tel:+917068821760" className="sis-title text-white d-block">
-                          +91-7068821760
+                        <a href="tel:+917068821740" className="sis-title text-white d-block">
+                 
+                          +91-7905377279
+
                         </a>
                       </div>
                     </div>
@@ -189,10 +255,25 @@ export default function Footer() {
                       </div>
                       <div className="sisf-sis-e-content">
                         <span className="sis-title text-white d-block">
-                          Head Office (Delhi NCR)
+                          Delhi Office
                         </span>
                         <Link className="sis-title text-white d-block" to="/contact">
-                          B-395, 2nd Floor, Nehru Ground, Neelam Chowk, Faridabad, Haryana - 121001
+                          Connaught Place, New Delhi, Delhi, India
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="sisf-contact-box mb-3 d-flex align-items-center gap-3">
+                      <div className="sisf-icon">
+                        <Link to="/contact">
+                          <i className="fa-solid fa-location-dot"></i>
+                        </Link>
+                      </div>
+                      <div className="sisf-sis-e-content">
+                        <span className="sis-title text-white d-block">
+                          Panipat Office
+                        </span>
+                        <Link className="sis-title text-white d-block" to="/contact">
+                          SCO 223, Sector 13-17 Main Rd, HUDA, Panipat, Haryana, India
                         </Link>
                       </div>
                     </div>
@@ -207,7 +288,7 @@ export default function Footer() {
                           Office Timings
                         </span>
                         <a href="#" className="sis-title text-white d-block">
-                          Mon - Sat: 11:00 AM - 07:00 PM
+                          Mon - Sun: 09:00 AM - 09:00 PM
                         </a>
                       </div>
                     </div>
