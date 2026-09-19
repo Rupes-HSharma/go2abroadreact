@@ -22,9 +22,7 @@ export default function Services() {
               </span>
               <h2 className="sisf-m-title text-white sis-text-anime-style-3">
                 <span className="sisf-e-colored">
-                  End-to-End Support
-                </span>
-                for Every Step of Your Study Abroad Journey.
+                  End-to-End Support  </span>  for Every Step of Your Study Abroad Journey.
               </h2>
             </div>
           </div>

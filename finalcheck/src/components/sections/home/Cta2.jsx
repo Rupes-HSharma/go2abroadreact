@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function Cta2() {
   return (
-    <div className="sis-cta-wrap py-5">
+    <div className="sis-cta-wrap py-0">
       <div className="container">
         <div className="sis-cta-banner cta-image" style={{backgroundImage: `url(${img("/images/video-bg.jpg")})`}} data-aos="fade-up">
           <div className="sis-cta-inner">

@@ -49,16 +49,18 @@ const pathD =
   "M40,26 C82,26 82,156 124,156 C166,156 166,26 208,26 C250,26 250,156 292,156 C334,156 334,26 376,26 C418,26 418,156 460,156";
 
 export default function About() {
+  const sectionRef = useRef(null);
   const wrapRef = useRef(null);
   const pathRef = useRef(null);
   const animationRef = useRef(null);
   const [started, setStarted] = useState(false);
 
   useEffect(() => {
+    const section = sectionRef.current;
     const wrap = wrapRef.current;
     const path = pathRef.current;
 
-    if (!wrap || !path) return;
+    if (!section || !wrap || !path) return;
 
     const icons = Array.from(
       wrap.querySelectorAll(".sis-step-icon")
@@ -121,13 +123,9 @@ export default function About() {
 
           if (progress >= threshold && !icon.classList.contains("sis-journey-active")) {
             icon.classList.add("sis-journey-active");
-            icon.classList.add("sis-journey-current");
-
-            // Remove current after the one-time ripple so the completed
-            // circles stay light green without continuously blinking.
-            window.setTimeout(() => {
-              icon.classList.remove("sis-journey-current");
-            }, 1500);
+            // Keep the completed step in the continuous soft-blink state.
+            // No one-time pulse class is applied, so there is no second jolt.
+            icon.classList.remove("sis-journey-current");
           }
         });
 
@@ -149,16 +147,17 @@ export default function About() {
         setStarted(true);
         resetJourney();
 
-        // Let the section become visible first, then start the graph.
-        window.setTimeout(startAnimation, 180);
+        // Start as soon as the Journey section itself enters the viewport.
+        window.setTimeout(startAnimation, 80);
         observer.disconnect();
       },
       {
-        threshold: 0.28,
+        threshold: 0,
+        rootMargin: "0px 0px 0px 0px",
       }
     );
 
-    observer.observe(wrap);
+    observer.observe(section);
 
     return () => {
       observer.disconnect();
@@ -167,7 +166,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="sis-about-section section pt-0 sis-journey-section">
+    <div ref={sectionRef} className="sis-about-section section pt-0 sis-journey-section">
       <div className="container">
         <div className="row">
           <div className="col-12">

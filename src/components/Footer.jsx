@@ -277,21 +277,7 @@ export default function Footer() {
                         </Link>
                       </div>
                     </div>
-                    <div className="sisf-contact-box mb-3 d-flex align-items-center gap-3">
-                      <div className="sisf-icon">
-                        <a href="#">
-                          <i className="fa-regular fa-clock"></i>
-                        </a>
-                      </div>
-                      <div className="sisf-sis-e-content">
-                        <span className="sis-title text-white d-block">
-                          Office Timings
-                        </span>
-                        <a href="#" className="sis-title text-white d-block">
-                          Mon - Sun: 09:00 AM - 09:00 PM
-                        </a>
-                      </div>
-                    </div>
+                  
                   </div>
                 </div>
               </div>

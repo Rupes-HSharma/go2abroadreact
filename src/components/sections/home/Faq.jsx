@@ -35,7 +35,7 @@ every step of your immigration journey.
                     <h2 className="accordion-header sis-comman-title">
                       <button className="accordion-button mt-0" data-bs-toggle="collapse" data-bs-target="#sis-one">
                         <span>
-                          1. What services does Leverage Edu offer?
+                          1. What services does Go2Abroad Edu offer?
                         </span>
                       </button>
                     </h2>

@@ -11,8 +11,7 @@ export default function LetestBlog() {
                 LATEST INSIGHTS
               </span>
               <h2 className="sisf-m-title sis-text-anime-style-3">
-                Places that feel like
-                <span className="sisf-e-colored">
+                Places that feel like  <span className="sisf-e-colored">
                   Possibility
                 </span>
               </h2>

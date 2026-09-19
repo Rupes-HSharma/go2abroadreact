@@ -44,7 +44,7 @@ export default function SuccessStories() {
                   <div className="sisf-content-inner">
                     <div className="sisf-m-inner d-flex align-items-center gap-4">
                       <div className="sisf-e-media-image">
-                        <img src={img("/images/profile-img1.png")} className="w-100" alt="Go2Abroad" />
+                        <img src={img("/images/jagpritt.png")} className="w-100" alt="Go2Abroad" />
                       </div>
                       <div className="sisf-e-author">
                         <span className="sisf-e-author-name sis-comman-title d-block">
@@ -213,7 +213,7 @@ export default function SuccessStories() {
                   <div className="sisf-content-inner">
                     <div className="sisf-m-inner d-flex align-items-center gap-4">
                       <div className="sisf-e-media-image">
-                        <img src={img("/images/profile-img1.png")} className="w-100" alt="Go2Abroad" />
+                        <img src={img("/images/Suhaib_profile_photo.jpg")} className="w-100" alt="Go2Abroad" />
                       </div>
                       <div className="sisf-e-author">
                         <span className="sisf-e-author-name sis-comman-title d-block">

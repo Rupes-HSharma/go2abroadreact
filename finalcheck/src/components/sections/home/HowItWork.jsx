@@ -16,8 +16,7 @@ export default function HowItWork() {
                 ABOUT US · WHY CHOOSE GO2ABROAD
               </span>
               <h2 className="sisf-m-title sis-text-anime-style-3">
-                Why choose
-                <span className="sisf-e-colored">
+                Why choose  <span className="sisf-e-colored">
                   Go2Abroad.
                 </span>
               </h2>

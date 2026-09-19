@@ -7,7 +7,7 @@ const img = (path) =>
 const TEAM_PROFILES = {
   "Chakrapalit Narayan": {
     role: "Founder & CEO of Go2Abroad",
-    image: img("/images/Chakrapalit_Narayan.jpg"),
+    image: img("/images/Chakrapalit_Narayan.png"),
     linkedin:
       "https://in.linkedin.com/in/chakrapalit-narayan-%E0%A4%9A%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%A4-%E0%A4%A8%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%A3-770553166",
     short:
@@ -28,7 +28,7 @@ const TEAM_PROFILES = {
   },
   "Sandhya Kathuria": {
     role: "Cheif Business Officer",
-    image: img("/images/sandhya.jpeg"),
+    image: img("/images/sandhya.png"),
     linkedin: "https://in.linkedin.com/in/sandhya-jhamtani-912ba587",
     short:
       "Bringing deep international education experience and student-focused guidance to every journey.",
@@ -126,7 +126,7 @@ function TeamProfileModal({ member, onClose }) {
           </div>
           <div className="g2-team-popup-footer">
             <span>Helping students move from ambition to arrival.</span>
-            <Link className="g2-team-popup-cta" to="/contact" onClick={onClose}>Talk To Our Counsellors <i className="fa-solid fa-arrow-right-long" /></Link>
+            <Link className="g2-team-popup-cta" to="/contact" onClick={onClose}>View Full Profile <i className="fa-solid fa-arrow-right-long" /></Link>
           </div>
         </div>
       </div>

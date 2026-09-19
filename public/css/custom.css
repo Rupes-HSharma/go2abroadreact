@@ -2473,7 +2473,7 @@ i::before {
 
 .sisf-sis-contact-information .sisf-icon a {
     width: 50px;
-    height: 50px;
+    min-height: 50px;
     min-width: 50px;
     display: flex;
     align-items: center;
@@ -9001,7 +9001,7 @@ body {
 
 #sisf-page-header .header-btn .sis-btn-default:hover {
   background: var(--main-color) !important;
-  color: var(--white-color) !important;
+  color: var(--primary-color) !important;
 }
 
 /* ---------- NEVER leave reveal images invisible if a legacy plugin
@@ -9926,7 +9926,7 @@ body.team-modal-open {
   row-gap:2px;
 }
 .sis-contact-us-section .sis-form-field{
-  margin-bottom:16px;
+  margin-bottom:5px;
 }
 .sis-contact-us-section .sis-form-label{
   font-size:11.5px;
@@ -10947,7 +10947,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: 600 !important; }
 .sis-section-title h1 { font-size: 46px !important; line-height: 1.16 !important; font-weight: 600 !important; }
 .sis-section-title h2,
 .sisf-sis-section-title h2,
-.sisf-m-title { font-size: 30px !important; line-height: 1.25 !important; font-weight: 600 !important; }
+.sisf-m-title { font-size: 36px !important; line-height: 1.25 !important; font-weight: 600 !important; }
 .sisf-page-title .sisf-m-title { font-size: 36px !important; font-weight: 600 !important; }
 .sis-btn-default { font-size: 13px !important; font-weight: 500 !important; }
 
@@ -11397,7 +11397,7 @@ h1,h2,h3,h4,h5,h6 { font-family:"Poppins",sans-serif !important; font-weight:600
   position:relative !important; z-index:2 !important; padding:42px 48px 34px !important; color:#fff !important; display:flex !important; flex-direction:column !important;
 }
 .g2-team-popup-topline { display:flex !important; justify-content:space-between !important; align-items:center !important; margin-bottom:30px !important; }
-.g2-team-popup-topline > span { font-size:11px !important; font-weight:600 !important; letter-spacing:2px !important; color:#7bd39a !important; }
+.g2-team-popup-topline > span { font-size:11px !important; font-weight:600 !important; letter-spacing:2px !important; color:#fff !important; }
 .g2-team-popup-close {
   width:42px !important; height:42px !important; border:1px solid rgba(255,255,255,.2) !important; border-radius:50% !important; background:rgba(255,255,255,.10) !important; color:#fff !important; display:flex !important; align-items:center !important; justify-content:center !important; cursor:pointer !important;
 }
@@ -11407,7 +11407,7 @@ h1,h2,h3,h4,h5,h6 { font-family:"Poppins",sans-serif !important; font-weight:600
   width:34px !important; height:34px !important; border-radius:50% !important; background:#fff !important; color:#0c4d3b !important; display:inline-flex !important; align-items:center !important; justify-content:center !important; text-decoration:none !important; flex:0 0 34px !important; transition:.2s ease !important;
 }
 .g2-team-popup-linkedin:hover { background:#62c987 !important; color:#fff !important; transform:translateY(-2px) !important; }
-.g2-team-popup-role { font-size:16px !important; line-height:1.4 !important; color:#6ed49a !important; font-weight:500 !important; }
+.g2-team-popup-role { font-size:16px !important; line-height:1.4 !important; color:#fff !important; font-weight:500 !important; }
 .g2-team-popup-line { width:62px !important; height:3px !important; border-radius:4px !important; background:#59c785 !important; margin:28px 0 24px !important; }
 .g2-team-popup-content h3 { margin:0 0 13px !important; color:#fff !important; font-size:20px !important; line-height:1.35 !important; font-weight:600 !important; }
 .g2-team-popup-description { margin:0 !important; max-width:650px !important; color:rgba(255,255,255,.82) !important; font-size:14px !important; line-height:1.75 !important; font-weight:400 !important; }
@@ -11416,7 +11416,7 @@ h1,h2,h3,h4,h5,h6 { font-family:"Poppins",sans-serif !important; font-weight:600
 .g2-team-popup-contact i { width:27px !important; color:#67cf91 !important; }
 .g2-team-popup-footer { margin-top:auto !important; padding-top:24px !important; border-top:1px solid rgba(255,255,255,.13) !important; display:flex !important; align-items:center !important; justify-content:space-between !important; gap:16px !important; }
 .g2-team-popup-footer > span { color:rgba(255,255,255,.58) !important; font-size:11.5px !important; }
-.g2-team-popup-cta { display:inline-flex !important; align-items:center !important; gap:8px !important; color:#0d3225 !important; background:#72d39a !important; border-radius:50px !important; padding:11px 16px !important; font-size:12px !important; font-weight:600 !important; text-decoration:none !important; white-space:nowrap !important; }
+.g2-team-popup-cta { display:inline-flex !important; align-items:center !important; gap:8px !important; color:#000 !important; background:#fff !important; border-radius:50px !important; padding:11px 16px !important; font-size:12px !important; font-weight:600 !important; text-decoration:none !important; white-space:nowrap !important; }
 .g2-team-popup-cta:hover { background:#fff !important; color:#0d3225 !important; }
 @keyframes g2TeamPopupIn { from { opacity:0; transform:translateY(14px) scale(.985); } to { opacity:1; transform:none; } }
 
@@ -11456,7 +11456,7 @@ body, body p, body li, body a, body span, body label,
 /* Keep headings readable without excessive boldness. */
 h1, h2, h3, h4, h5, h6,
 .sisf-m-title, .sis-section-title h1, .sis-section-title h2 {
-  font-weight: 500 !important;
+  font-weight: 700 !important;
 }
 .sisf-e-title, .sisf-e-title a,
 .sisf-e-author-name, .sisf-e-author-role {
@@ -11567,7 +11567,7 @@ main > .section:not(.sis-hero),
   padding:17px 16px 15px !important;
   border-radius:15px !important;
 }
-.sis-contact-us-section .sis-form-field { margin-bottom:12px !important; }
+.sis-contact-us-section .sis-form-field { margin-bottom:5px !important; }
 .sis-contact-us-section .sis-form-label { font-size:10.5px !important; font-weight:500 !important; }
 .sis-contact-us-section .form-section .form-control,
 .sis-contact-us-section .form-section .sis-native-select {
@@ -11635,7 +11635,7 @@ main > .section:not(.sis-hero),
     padding-top:54px !important;
     padding-bottom:54px !important;
   }
-  .sis-contact-us-section.section { padding-top:54px !important; padding-bottom:54px !important; }
+  .sis-contact-us-section.section { padding-top:15px !important; padding-bottom:54px !important; }
   .sis-contact-us-section .sis-contect-right { margin-top:22px !important; }
 }
 
@@ -11828,8 +11828,8 @@ main img[aria-hidden="true"],
 }
 .home-page ~ .section.pt-0,
 .home-page ~ .section.pb-0 {
-  padding-top:52px !important;
-  padding-bottom:52px !important;
+  padding-top:30px !important;
+  padding-bottom:30px !important;
 }
 
 /* Testimonial typography: normal body copy, only names get a modest emphasis. */
@@ -11852,7 +11852,7 @@ main img[aria-hidden="true"],
   word-spacing:.45px !important;
 }
 .sis-success-stories-section .sisf-sis-section-title h2 {
-  font-weight:500 !important;
+  font-weight:700 !important;
   letter-spacing:-.01em !important;
 }
 
@@ -12375,9 +12375,9 @@ body.team-modal-open { overflow:hidden !important; }
 
 /* Team modal background: match the supplied dark-green reference while keeping the modal layout intact. */
 .g2-team-popup {
-  background:
-    linear-gradient(135deg, rgba(35,103,70,.20) 0%, transparent 24%),
-    linear-gradient(160deg, #0c3b2b 0%, #092f24 48%, #081f19 100%) !important;
+ 
+  background: linear-gradient(135deg, rgba(35, 103, 70, .20) 0%, transparent 24%),
+              linear-gradient(160deg, #4FA8DC 0%, #000000 48%, #4FA8DC 100%) !important;
   border:1px solid rgba(108,211,151,.08) !important;
   box-shadow:0 28px 90px rgba(0,0,0,.42) !important;
   overflow:hidden !important;
@@ -12474,4 +12474,1609 @@ body.team-modal-open { overflow:hidden !important; }
     width: 65px !important;
     border: 1px solid #e2e2e2;
     height: 65px;
+}
+
+ /* =========================================================
+   GO2ABROAD CONTACT / INQUIRY SECTION
+   Full CSS
+========================================================= */
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.sis-contact-us-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.sis-contact-us-section .row {
+    align-items: stretch;
+}
+
+.sis-contact-us-section .row.g-4 {
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 24px;
+}
+
+
+/* =========================================================
+   LEFT MAIN WRAPPER
+========================================================= */
+
+.sis-contact-left-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   LEFT HEADING
+========================================================= */
+
+.sis-contact-left-wrapper .sis-section-title {
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+}
+
+.sis-contact-left-wrapper .sisf-m-subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #4ea9df;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 1;
+    box-shadow: 0 4px 15px rgba(21, 32, 43, .05);
+}
+
+.sis-title-dot {
+    width: 6px;
+    height: 6px;
+    background: #4ea9df;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.sis-contact-left-wrapper .sisf-m-title {
+    margin: 12px 0 0;
+    color: #15202B;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+
+.sis-contact-left-wrapper .sisf-e-colored {
+    color: #4ea9df;
+}
+
+
+/* =========================================================
+   LEFT IMAGE / CONTACT AREA
+========================================================= */
+
+.sisf-contact-left-part {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    min-height: 390px;
+    flex: 0 0 390px;
+    overflow: hidden;
+    border-radius: 14px;
+    isolation: isolate;
+}
+
+.sisf-contact-left-image,
+.sisf-contact-left-image figure {
+    position: relative;
+    width: 100%;
+    height: 100% !important;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.sisf-contact-left-image img {
+    width: 100%;
+    height: 100% !important;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* =========================================================
+   IMAGE DARK OVERLAY
+========================================================= */
+
+.sisf-contact-left-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(21, 32, 43, .03) 0%,
+            rgba(21, 32, 43, .12) 28%,
+            rgba(21, 32, 43, .42) 57%,
+            rgba(21, 32, 43, .92) 100%
+        );
+}
+
+
+/* =========================================================
+   LEFT CONTACT DETAILS
+========================================================= */
+
+.sisf-contact-left-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+
+    padding: 24px 25px 22px;
+}
+
+.sisf-sis-contact-information {
+    width: 100%;
+}
+
+.sisf-contact-box {
+    display: flex;
+    align-items: center;
+    gap: 12px !important;
+    margin-bottom: 12px !important;
+}
+
+.sisf-contact-box:last-child {
+    margin-bottom: 0 !important;
+}
+
+
+/* Contact icon */
+
+.sisf-contact-box .sisf-icon {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #4ea9df;
+    border-radius: 50%;
+
+    box-shadow:
+        0 7px 18px rgba(78, 169, 223, .25);
+}
+
+.sisf-contact-box .sisf-icon a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* Contact text */
+
+.sisf-contact-box .sisf-sis-e-content {
+    min-width: 0;
+}
+
+.sisf-contact-box .sis-title {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.sisf-contact-box a.sis-title {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sisf-contact-box span.sis-title {
+    margin-top: 2px;
+    font-size: 10px;
+    opacity: .92;
+}
+
+.sisf-contact-box span i {
+    margin-left: 3px;
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   RIGHT FORM CARD
+========================================================= */
+
+.sis-contact-us-section .col-lg-6 {
+    display: flex;
+}
+
+.sis-contact-form-card {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(78, 169, 223, .22);
+    border-radius: 0px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 55px rgba(21, 32, 43, .10);
+
+    padding: 0;
+}
+
+
+/* Top blue line */
+
+.sis-contact-form-card::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #4ea9df 0%,
+        #2183a1 50%,
+        #4ea9df 100%
+    );
+
+    z-index: 5;
+}
+
+
+/* =========================================================
+   FORM HEADER
+========================================================= */
+
+ .sis-contact-header {
+    position: relative;
+    padding: 7px 10px 0px;
+    background: radial-gradient(
+            circle at 95% 8%,
+            rgba(78, 169, 223, .15),
+            transparent 26%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f7fbfe 100%
+        );
+    margin-bottom: 8px;
+	    height: 77px;
+}
+
+
+/* Eyebrow */
+
+.sis-contact-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-bottom: 6px;
+
+    color: #2183a1;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1.6px;
+    line-height: 1;
+}
+
+.sis-contact-eyebrow span {
+    width: 6px;
+    height: 6px;
+
+    display: inline-block;
+
+    background: #4ea9df;
+    border-radius: 50%;
+}
+
+
+/* Heading row */
+
+.sis-contact-heading-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+
+/* Heading */
+
+.sis-contact-header h2 {
+    margin: 0;
+
+    color: #15202B;
+
+    font-size: 27px;
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: -.5px;
+}
+
+.sis-contact-header h2 span {
+    color: #4ea9df;
+}
+
+
+/* Description */
+
+.sis-contact-header p {
+    margin: 7px 0 0;
+
+    max-width: 580px;
+
+    color: #71849a;
+
+    font-size: 10px;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   PAPER PLANE
+========================================================= */
+
+.sis-contact-plane {
+    position: relative;
+
+    min-width: 90px;
+    height: 58px;
+
+    text-align: right;
+    top: -22px;
+    color: #2183a1;
+}
+
+.sis-contact-plane > i {
+    display: inline-block;
+
+    font-size: 22px;
+
+    transform: rotate(-18deg);
+}
+
+.sis-contact-plane small {
+    display: block;
+
+    margin-top: 1px;
+
+    color: #2183a1;
+
+    font-size: 7px;
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+.sis-plane-line {
+    position: absolute;
+
+    width: 47px;
+    height: 16px;
+
+    left: 0;
+    top: 9px;
+
+    border-top: 1.5px dashed rgba(78, 169, 223, .65);
+
+    border-radius: 50%;
+
+    transform: rotate(-12deg);
+}
+
+
+/* =========================================================
+   FORM INNER CARD
+========================================================= */
+
+.sis-form-inner {
+    margin: 0 12px 12px;
+
+    padding: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4edf4;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 8px 25px rgba(21, 32, 43, .045);
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.sis-form-inner .row.g-3 {
+    --bs-gutter-x: 12px;
+    --bs-gutter-y: 10px;
+}
+
+
+/* =========================================================
+   FORM FIELD
+========================================================= */
+
+.sis-form-field {
+    margin-bottom: 0;
+}
+
+.sis-form-field label {
+    display: block;
+
+    margin: 0 0 5px;
+
+    color: #15202B;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+.sis-form-field label span {
+    color: #e74c3c;
+    margin-left: 2px;
+}
+
+
+/* =========================================================
+   COMMON INPUT
+========================================================= */
+
+.sis-input-wrap {
+position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 38px;
+    background: #f0ffdf;
+    border: 1px solid #8bc34a8a;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+.sis-input-yellow {
+	    background: #efefdc;
+    border: 1px solid #eddc88;
+}
+.sis-input-cyan{
+    border: 1px solid #d5e2eb;
+    background: #f6f6f6;
+}
+.sis-input-purple{
+    background: #e3ddff;
+    border: 1px solid #673ab763;
+}
+.sis-phone-wrap{
+	   background: #e3ddff;
+    border: 1px solid #673ab763;
+}
+.sis-input-wrap:hover {
+    border-color: #4ea9df;
+}
+
+.sis-input-wrap:focus-within {
+    border-color: #4ea9df;
+
+    box-shadow:
+        0 0 0 3px rgba(78, 169, 223, .09);
+}
+
+
+/* =========================================================
+   INPUT ICON
+========================================================= */
+
+.sis-input-icon {
+    width: 36px;
+    min-width: 36px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(78, 169, 223, .10);
+
+    color: #4ea9df;
+
+    font-size: 11px;
+}
+
+.sis-input-wrap .form-control {
+    height: 36px;
+
+    flex: 1;
+    min-width: 0;
+
+    border: 0 !important;
+    outline: none !important;
+
+    box-shadow: none !important;
+
+    background: transparent !important;
+
+    padding: 0 10px;
+
+    color: #15202B;
+
+    font-size: 10px;
+}
+
+.sis-input-wrap .form-control::placeholder {
+    color: #9aaebe;
+}
+
+
+/* =========================================================
+   INPUT COLOR VARIATIONS
+========================================================= */
+
+.sis-input-blue .sis-input-icon {
+    background: rgba(78, 169, 223, .10);
+    color: #4ea9df;
+}
+
+.sis-input-cyan .sis-input-icon {
+    background: rgba(33, 131, 161, .10);
+    color: #2183a1;
+}
+
+.sis-input-green .sis-input-icon {
+    background: rgba(78, 169, 223, .12);
+    color: #2183a1;
+}
+
+.sis-input-purple .sis-input-icon {
+    background: rgba(130, 100, 220, .10);
+    color: #7661d9;
+}
+
+.sis-input-yellow .sis-input-icon {
+    background: rgba(255, 193, 7, .13);
+    color: #d69b00;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.sis-select-wrap {
+    padding-right: 30px;
+}
+
+.sis-select-wrap .sis-native-select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    cursor: pointer;
+
+    padding-left: 10px !important;
+}
+
+.sis-select-arrow {
+    position: absolute;
+
+    right: 11px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #64798d;
+
+    font-size: 8px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   PHONE NUMBER
+========================================================= */
+
+.sis-phone-wrap {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 38px;
+
+      background: #f6f6f6;
+    border: 1px solid #d5e2eb;
+    border-radius: 3px;
+
+    overflow: hidden;
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.sis-phone-wrap:hover {
+    border-color: #4ea9df;
+}
+
+.sis-phone-wrap:focus-within {
+    border-color: #4ea9df;
+
+    box-shadow:
+        0 0 0 3px rgba(78, 169, 223, .09);
+}
+
+
+/* Phone icon */
+
+.sis-phone-icon {
+    width: 36px;
+    min-width: 36px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #2183a1;
+
+    background: rgba(33, 131, 161, .10);
+
+    font-size: 11px;
+}
+
+
+/* Country code */
+
+.sis-country-code {
+    position: relative;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 23px 0 7px;
+
+    border-right: 1px solid #e0e8ef;
+
+    background: #f6f6f6;
+}
+
+.sis-country-code select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #40566b;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    padding: 0;
+}
+
+.sis-country-code i {
+    position: absolute;
+
+    right: 7px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #71849a;
+
+    font-size: 7px;
+
+    pointer-events: none;
+}
+
+
+/* Phone input */
+
+.sis-phone-wrap .form-control {
+    height: 36px;
+
+    flex: 1;
+    min-width: 0;
+
+    border: 0 !important;
+    outline: 0 !important;
+
+    box-shadow: none !important;
+
+    background: transparent !important;
+
+    padding: 0 9px;
+
+    color: #15202B;
+
+    font-size: 10px;
+}
+
+.sis-phone-wrap .form-control::placeholder {
+    color: #9aaebe;
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.sis-textarea-wrap {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+
+    min-height: 50px;
+
+    background: #fdeef3;
+
+    border: 1px solid #d5e2eb;
+    border-radius: 3px;
+
+    overflow: hidden;
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.sis-textarea-wrap:hover {
+    border-color: #4ea9df;
+}
+
+.sis-textarea-wrap:focus-within {
+    border-color: #4ea9df;
+
+    box-shadow:
+        0 0 0 3px rgba(78, 169, 223, .09);
+}
+
+
+/* Textarea icon */
+
+.sis-textarea-icon {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(236, 91, 148, .10);
+
+    color: #df6a9a;
+
+    font-size: 11px;
+}
+
+
+/* Textarea */
+
+.sis-textarea-wrap textarea {
+    width: 100%;
+    min-height: 50px;
+
+    border: 0 !important;
+    outline: none !important;
+
+    box-shadow: none !important;
+
+    resize: none;
+
+    padding: 9px 38px 20px 10px;
+
+    color: #15202B;
+    background: #fdeef3;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.sis-textarea-wrap textarea::placeholder {
+    color: #9aaebe;
+}
+
+
+/* Character counter */
+
+.sis-character-count {
+    position: absolute;
+
+    right: 9px;
+    bottom: 6px;
+
+    color: #8799aa;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   CONSENT
+========================================================= */
+
+.sis-form-consent-new {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin-top: 10px;
+
+    padding: 8px 10px;
+
+    background: #f5f9fc;
+
+    border: 1px solid #e1ebf2;
+
+    border-radius: 7px;
+}
+
+.sis-form-consent-new input {
+    width: 14px;
+    height: 14px;
+
+    min-width: 14px;
+
+    margin: 1px 0 0;
+
+    accent-color: #2183a1;
+
+    cursor: pointer;
+}
+
+.sis-form-consent-new label {
+    margin: 0;
+
+    color: #728599;
+
+    font-size: 8px;
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+.sis-form-consent-new label a {
+    color: #2183a1;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.sis-form-submit {
+    margin-top: 10px;
+}
+
+.sis-modern-submit {
+    position: relative;
+
+    width: 100%;
+    min-height: 39px;
+
+    border: 0;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 0 18px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            100deg,
+            #4ea9df 0%,
+            #2183a1 100%
+        );
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 18px rgba(33, 131, 161, .20);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        opacity .25s ease;
+}
+
+.sis-modern-submit:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 10px 22px rgba(33, 131, 161, .27);
+}
+
+.sis-modern-submit:disabled {
+    opacity: .7;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+.sis-submit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sis-submit-icon i {
+    font-size: 11px;
+}
+
+.sis-submit-arrow {
+    margin-left: 3px;
+
+    font-size: 10px;
+
+    transition: transform .2s ease;
+}
+
+.sis-modern-submit:hover .sis-submit-arrow {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   FORM STATUS
+========================================================= */
+
+.sis-form-status {
+    margin-top: 8px;
+
+    text-align: center;
+
+    color: #2183a1;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TRUST FEATURES
+========================================================= */
+
+.sis-form-benefits {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 12px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #e7eef4;
+}
+
+.sis-benefit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 8px;
+}
+
+.sis-benefit + .sis-benefit {
+    border-left: 1px solid #e4ebf0;
+}
+
+
+/* Benefit icons */
+
+.sis-benefit-icon {
+    width: 30px;
+    height: 30px;
+
+    min-width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 10px;
+}
+
+.sis-benefit-icon.blue {
+    color: #4ea9df;
+
+    background:
+        rgba(78, 169, 223, .12);
+}
+
+.sis-benefit-icon.green {
+    color: #2183a1;
+
+    background:
+        rgba(33, 131, 161, .11);
+}
+
+.sis-benefit-icon.orange {
+    color: #d69b00;
+
+    background:
+        rgba(255, 193, 7, .14);
+}
+
+
+/* Benefit text */
+
+.sis-benefit strong {
+    display: block;
+
+    color: #15202B;
+
+    font-size: 9px;
+    line-height: 1.3;
+}
+
+.sis-benefit span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #8a9bab;
+
+    font-size: 7.5px;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   HELP BLOCK / VALIDATION
+========================================================= */
+
+.help-block.with-errors {
+    font-size: 9px;
+    color: #e74c3c;
+    margin-top: 3px;
+}
+
+.sis-form-field .has-error .sis-input-wrap,
+.sis-form-field .has-error .sis-phone-wrap,
+.sis-form-field .has-error .sis-textarea-wrap {
+    border-color: #e74c3c;
+}
+
+
+/* =========================================================
+   DESKTOP - IMPORTANT HEIGHT FIX
+========================================================= */
+
+@media (min-width: 992px) {
+
+    .sis-contact-us-section .row.align-items-stretch {
+        align-items: stretch !important;
+    }
+
+    .sis-contact-us-section .col-lg-6 {
+        display: flex;
+    }
+
+    /*
+       LEFT SIDE:
+       Heading + fixed image area.
+       Contact information stays INSIDE image.
+    */
+
+    .sis-contact-left-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sis-contact-left-wrapper .sis-section-title {
+        flex: 0 0 auto;
+    }
+
+    .sisf-contact-left-part {
+        height: 390px !important;
+        min-height: 390px !important;
+        flex: 0 0 390px !important;
+    }
+
+    /*
+       RIGHT SIDE
+    */
+
+    .sis-contact-form-card {
+        width: 100%;
+        height: 100% !important;
+        min-height: 0 !important;
+    }
+
+}
+
+
+/* =========================================================
+   SHORT DESKTOP SCREEN
+========================================================= */
+
+@media (min-width: 992px) and (max-height: 800px) {
+
+    .sis-contact-left-wrapper .sis-section-title {
+        margin-bottom: 15px;
+    }
+
+    .sis-contact-left-wrapper .sisf-m-title {
+        font-size: 27px;
+    }
+
+    .sisf-contact-left-part {
+        height: 390px !important;
+        min-height: 390px !important;
+        flex-basis: 390px !important;
+    }
+
+    .sisf-contact-left-bottom {
+        padding: 19px 22px 17px;
+    }
+
+    .sisf-contact-box {
+        margin-bottom: 9px !important;
+    }
+
+    .sisf-contact-box .sisf-icon {
+        width: 39px;
+        height: 39px;
+        min-width: 39px;
+    }
+
+    .sisf-contact-box .sis-title {
+        font-size: 12px;
+    }
+
+    .sisf-contact-box span.sis-title {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .sis-contact-us-section .col-lg-6 {
+        display: flex;
+    }
+
+    .sis-contact-left-wrapper {
+        height: auto !important;
+    }
+
+    .sis-contact-left-wrapper .sis-section-title {
+        margin-bottom: 20px;
+    }
+
+    .sisf-contact-left-part {
+        width: 100%;
+
+        height: 430px !important;
+        min-height: 430px !important;
+
+        flex: 0 0 430px !important;
+    }
+
+    .sisf-contact-left-image,
+    .sisf-contact-left-image figure {
+        height: 100% !important;
+    }
+
+    .sisf-contact-left-image img {
+        width: 100%;
+        height: 100% !important;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .sis-contact-form-card {
+        width: 100%;
+
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .sis-contact-header {
+        padding: 25px 24px 18px;
+    }
+
+    .sis-form-inner {
+        margin: 0 14px 14px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .sis-contact-us-section .row.g-4 {
+        --bs-gutter-x: 15px;
+        --bs-gutter-y: 20px;
+    }
+
+    .sis-contact-left-wrapper {
+        height: auto !important;
+    }
+
+    .sis-contact-left-wrapper .sisf-m-subtitle {
+        font-size: 10px;
+
+        padding: 8px 13px;
+    }
+
+    .sis-contact-left-wrapper .sisf-m-title {
+        font-size: 27px;
+
+        line-height: 1.2;
+    }
+
+    .sisf-contact-left-part {
+        height: 400px !important;
+        min-height: 400px !important;
+
+        flex: 0 0 400px !important;
+    }
+
+    .sisf-contact-left-bottom {
+        padding: 20px;
+    }
+
+    .sisf-contact-box {
+        gap: 10px !important;
+
+        margin-bottom: 11px !important;
+    }
+
+    .sisf-contact-box .sisf-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .sisf-contact-box .sis-title {
+        font-size: 12px;
+    }
+
+    .sisf-contact-box span.sis-title {
+        font-size: 9px;
+    }
+
+    .sis-contact-header {
+        padding: 24px 18px 17px;
+    }
+
+    .sis-contact-heading-row {
+        display: block;
+    }
+
+    .sis-contact-header h2 {
+        font-size: 25px;
+    }
+
+    .sis-contact-header p {
+        font-size: 10px;
+    }
+
+    .sis-contact-plane {
+        display: none;
+    }
+
+    .sis-form-inner {
+        margin: 0 8px 8px;
+
+        padding: 14px;
+    }
+
+    .sis-form-benefits {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .sis-benefit {
+        justify-content: flex-start;
+
+        padding: 0;
+    }
+
+    .sis-benefit + .sis-benefit {
+        border-left: 0;
+    }
+
+    .sis-form-consent-new label {
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .sis-contact-left-wrapper .sisf-m-title {
+        font-size: 24px;
+    }
+
+    .sisf-contact-left-part {
+        height: 380px !important;
+        min-height: 380px !important;
+
+        flex-basis: 380px !important;
+    }
+
+    .sisf-contact-left-bottom {
+        padding: 17px;
+    }
+
+    .sisf-contact-box {
+        gap: 9px !important;
+
+        margin-bottom: 9px !important;
+    }
+
+    .sisf-contact-box .sisf-icon {
+        width: 39px;
+        height: 39px;
+        min-width: 39px;
+    }
+
+    .sisf-contact-box .sis-title {
+        font-size: 11px;
+    }
+
+    .sisf-contact-box span.sis-title {
+        font-size: 8px;
+    }
+
+    .sis-contact-header {
+        padding: 22px 15px 15px;
+    }
+
+    .sis-contact-header h2 {
+        font-size: 23px;
+    }
+
+    .sis-contact-header p {
+        font-size: 9px;
+    }
+
+    .sis-form-inner {
+        padding: 11px;
+    }
+
+    .sis-input-wrap,
+    .sis-phone-wrap {
+        min-height: 40px;
+        height: 40px;
+    }
+
+    .sis-input-icon,
+    .sis-phone-icon {
+        height: 40px;
+    }
+
+    .sis-input-wrap .form-control,
+    .sis-phone-wrap .form-control {
+        height: 38px;
+
+        font-size: 10px;
+    }
+
+    .sis-country-code {
+        padding-left: 6px;
+        padding-right: 20px;
+    }
+
+    .sis-country-code select {
+        font-size: 8px;
+    }
+
+    .sis-form-benefits {
+        margin-top: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .sisf-contact-left-part {
+        height: 360px !important;
+        min-height: 360px !important;
+
+        flex-basis: 360px !important;
+    }
+
+    .sis-contact-left-wrapper .sisf-m-title {
+        font-size: 22px;
+    }
+
+    .sisf-contact-left-bottom {
+        padding: 14px;
+    }
+
+    .sisf-contact-box .sisf-icon {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+    }
+
+    .sisf-contact-box .sis-title {
+        font-size: 10px;
+    }
+
+    .sis-contact-header h2 {
+        font-size: 21px;
+    }
+
+}
+.fullName i{
+	    color: #77a543;
+    font-size: 20px;
+}
+.emailName i{
+	    color: #8f8e8e;
+    font-size: 20px;
+}
+.studtIn i{
+ 
+    font-size: 20px;
+}
+.sis-textarea-icon i{
+	 font-size: 20px;
+}
+#enquiryForm .col-md-6{
+	margin-top: 4px;
+}
+#sisf-page-header .paddingTop{
+	padding-top: 0px !important;
+}
+
+.sis-university-section{
+	padding-bottom: 0px !important;
+}
+#root .sis-journey-section{
+	padding-bottom: 120px !important;
+}
+.sisf-works-bottom-image{
+	display: none;
+}
+
+/* =========================================================
+   JOURNEY FINAL: SOFT CONTINUOUS BLINK + TRUE SECTION ENTRY
+   Only overrides Journey animation behavior.
+   ========================================================= */
+
+/* The completed icon keeps blinking continuously after the path crosses it.
+   No scale jump and no expanding ripple = no visual jhatka. */
+.sis-step-icon.sis-journey-active {
+  animation: sisJourneySoftCompletedBlink 2.1s ease-in-out infinite !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.sis-step-icon.sis-journey-active::after,
+.sis-step-icon.sis-journey-current::after {
+  display: none !important;
+  animation: none !important;
+  content: none !important;
+}
+
+/* A crossing never gets a separate one-shot animation. */
+.sis-step-icon.sis-journey-current {
+  animation: sisJourneySoftCompletedBlink 2.1s ease-in-out infinite !important;
+  transform: none !important;
+}
+
+@keyframes sisJourneySoftCompletedBlink {
+  0%, 100% {
+    background-color: #E9F6EA;
+    border-color: #78BE80;
+    box-shadow:
+      0 5px 14px rgba(96, 176, 105, .13),
+      0 0 0 5px rgba(122, 194, 130, .08);
+  }
+  50% {
+    background-color: #DDF1DF;
+    border-color: #63B56D;
+    box-shadow:
+      0 5px 14px rgba(96, 176, 105, .13),
+      0 0 0 7px rgba(122, 194, 130, .10);
+  }
+}
+
+/* React owns the path; keep legacy CSS from animating it independently. */
+.sis-journey-wrap[data-g2a-react-journey="1"] #sis-journey-path,
+.sis-journey-wrap[data-g2a-react-journey="1"].in-view #sis-journey-path {
+  transition: none !important;
+  animation: none !important;
 }

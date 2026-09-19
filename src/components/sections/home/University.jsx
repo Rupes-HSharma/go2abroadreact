@@ -11,9 +11,8 @@ export default function University() {
                 TOP UNIVERSITIES
               </span>
               <h2 className="sisf-m-title sis-text-anime-style-3">
-                Study at
-                <span className="sisf-e-colored">
-                  globally recognised
+                Study at   <span className="sisf-e-colored">
+                    globally recognised
                 </span>
                 institutions.
               </h2>

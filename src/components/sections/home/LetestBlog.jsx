@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function LetestBlog() {
   return (
-    <div className="sis-letest-blog-section section pt-0">
+    <div className="sis-letest-blog-section section pt-0 paddingTop">
       <div className="container">
         <div className="row align-items-end">
           <div className="col-lg-6">
@@ -11,8 +11,7 @@ export default function LetestBlog() {
                 LATEST INSIGHTS
               </span>
               <h2 className="sisf-m-title sis-text-anime-style-3">
-                Places that feel like
-                <span className="sisf-e-colored">
+                Places that feel like <span className="sisf-e-colored">
                   Possibility
                 </span>
               </h2>

@@ -114,11 +114,7 @@ export default function ContactUs() {
                     Message
                   </span>
                 </h2>
-                <div className="sisf-m-text">
-                  <p className="mt-3">
-                    Share a few details & get clear, profile-based guidance on your country, course and next steps.
-                  </p>
-                </div>
+               
               </div>
               <div className="form-section">
                 <form id="enquiryForm" className="p-0 m-0" onSubmit={handleSubmit} noValidate>
