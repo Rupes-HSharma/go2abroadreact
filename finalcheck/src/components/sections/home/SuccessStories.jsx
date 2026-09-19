@@ -13,7 +13,7 @@ export default function SuccessStories() {
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
               <h2 className="sisf-m-title sis-text-anime-style-3">
-                People Say The Nicest Things /
+                People Say The Nicest Things
                 <span className="sisf-e-colored">
                   Success Stories..
                 </span>

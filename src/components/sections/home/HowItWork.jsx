@@ -55,8 +55,8 @@ export default function HowItWork() {
               </div>
             </div>
             <div className="col-lg-9">
-              <div className="row">
-                <div className="col-lg-3">
+              <div className="row m-0">
+                <div className="col-lg-4 pl-0">
                   <div className="sisf-blog-item mb-0 bg-white p-3 rounded-3">
                     <div className="sisf-e-inner position-relative">
                       <div className="sisf-e-content p-0">
@@ -89,7 +89,7 @@ export default function HowItWork() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-lg-4">
                   <div className="sisf-blog-item mb-0 bg-white p-3 rounded-3">
                     <div className="sisf-e-inner position-relative">
                       <div className="sisf-e-content p-0">
@@ -109,7 +109,7 @@ export default function HowItWork() {
                             </h2>
                             <p className="sisf-e-excerpt mb-3">
                               Curated shortlists of best-fit universities and programs across the UK, USA, Canada, Australia, Ireland...
-                            </p>
+                            </p><br/>
                           </div>
                           <div className="sisf-m-button">
                             <Link className="sis-btn-default" to="/services#university-shortlisting">
@@ -122,7 +122,7 @@ export default function HowItWork() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-lg-4">
                   <div className="sisf-blog-item mb-0 bg-white p-3 rounded-3">
                     <div className="sisf-e-inner position-relative">
                       <div className="sisf-e-content p-0">
@@ -141,9 +141,7 @@ export default function HowItWork() {
                               </Link>
                             </h2>
                             <p className="sisf-e-excerpt mb-3">
-                              Structured prep support and test strategy to help you hit the score your target university needs
-                              <br />
-                              .
+                              Structured prep support and test strategy to help you hit the score your target university needs.
                             </p>
                           </div>
                           <div className="sisf-m-button">
@@ -157,39 +155,7 @@ export default function HowItWork() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3">
-                  <div className="sisf-blog-item mb-0 bg-white p-3 rounded-3">
-                    <div className="sisf-e-inner position-relative">
-                      <div className="sisf-e-content p-0">
-                        <div className="sisf-e-info mb-2 mt-0 sisf-info--top-holder">
-                          <div className="post-meta-list-after">
-                            <Link className="post-cat fs-1" to="/services#visa-assistance">
-                              ◎
-                            </Link>
-                          </div>
-                        </div>
-                        <div className="sisf-e-content-inner">
-                          <div className="sisf-e-text">
-                            <h2 className="sisf-e-title sis-comman-title mb-2">
-                              <Link className="sisf-e-title-link" to="/services#visa-assistance">
-                                Application & Admission Support
-                              </Link>
-                            </h2>
-                            <p className="sisf-e-excerpt mb-3">
-                              End-to-end handling of SOPs, applications, and documentation, so you get an offer without touching....
-                            </p>
-                          </div>
-                          <div className="sisf-m-button">
-                            <Link className="sis-btn-default" to="/services#visa-assistance">
-                              Read More
-                              <i className="fa-solid fa-arrow-right-long"></i>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               
               </div>
             </div>
           </div>

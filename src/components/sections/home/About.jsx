@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+ import { useEffect, useRef, useState } from "react";
 
 const journeySteps = [
   {
@@ -59,15 +59,18 @@ export default function About() {
     const section = sectionRef.current;
     const wrap = wrapRef.current;
     const path = pathRef.current;
+    const progressPath = wrap.querySelector(".sis-journey-progress-path");
 
-    if (!section || !wrap || !path) return;
+    if (!section || !wrap || !path || !progressPath) return;
 
     const icons = Array.from(
       wrap.querySelectorAll(".sis-step-icon")
     );
 
+    // Trigger Arrival slightly before the line reaches the final frame.
     const thresholds = icons.map((_, index) => {
       if (index === 0) return 0.025;
+      if (index === icons.length - 1) return 0.995;
       return index / (icons.length - 1);
     });
 
@@ -94,9 +97,14 @@ export default function About() {
       const duration = 5600;
       const startTime = performance.now();
 
+      // Keep the original grey line visible and animate a green line over it.
       path.style.strokeDasharray = `${length}`;
-      path.style.strokeDashoffset = `${length}`;
+      path.style.strokeDashoffset = "0px";
       path.style.transition = "none";
+
+      progressPath.style.strokeDasharray = `${length}`;
+      progressPath.style.strokeDashoffset = `${length}`;
+      progressPath.style.transition = "none";
 
       icons.forEach((icon) => {
         icon.classList.remove(
@@ -115,7 +123,11 @@ export default function About() {
             ? 2 * rawProgress * rawProgress
             : 1 - Math.pow(-2 * rawProgress + 2, 2) / 2;
 
-        path.style.setProperty("stroke-dashoffset", `${length * (1 - progress)}px`, "important");
+        progressPath.style.setProperty(
+          "stroke-dashoffset",
+          `${length * (1 - progress)}px`,
+          "important"
+        );
 
         thresholds.forEach((threshold, index) => {
           const icon = icons[index];
@@ -132,7 +144,7 @@ export default function About() {
         if (rawProgress < 1) {
           animationRef.current = requestAnimationFrame(animate);
         } else {
-          path.style.setProperty("stroke-dashoffset", "0px", "important");
+          progressPath.style.setProperty("stroke-dashoffset", "0px", "important");
           animationRef.current = null;
         }
       };
@@ -152,7 +164,7 @@ export default function About() {
         observer.disconnect();
       },
       {
-        threshold: 0,
+        threshold: 0.18,
         rootMargin: "0px 0px 0px 0px",
       }
     );
@@ -172,7 +184,7 @@ export default function About() {
           <div className="col-12">
             <div className="sisf-sis-section-title text-center sis-section-title sis-journey-heading">
               <span className="sisf-m-subtitle sis-text-anime-style-3">
-                WHAT WE OFFER
+                WHAT WE OFFER--
               </span>
 
               <h2 className="sisf-m-title sis-text-anime-style-3">
@@ -214,6 +226,17 @@ export default function About() {
               strokeWidth="2"
               strokeLinecap="round"
               opacity="0.5"
+            />
+
+            <path
+              className="sis-journey-progress-path"
+              d={pathD}
+              fill="none"
+            stroke="#78C98A"
+              strokeWidth="2"
+              strokeLinecap="round"
+              opacity="1"
+              pointerEvents="none"
             />
           </svg>
 

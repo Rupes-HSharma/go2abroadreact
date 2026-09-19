@@ -42,7 +42,7 @@ export default function LetestBlog() {
                     <div className="sisf-e-media-image">
                       <a href="#" className="d-block">
                         <figure>
-                          <img src={img("/images/blog-grid-img4.jpg")} className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
+                          <img src={img("/images/unitedKingdom.jpg")} className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
                         </figure>
                       </a>
                     </div>
@@ -81,7 +81,7 @@ export default function LetestBlog() {
                     <div className="sisf-e-media-image">
                       <a href="#" className="d-block">
                         <figure>
-                          <img src={img("/images/blog-grid-img3.jpg")} className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
+                          <img src={img("/images/sydney-opera-house.jpg")} className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
                         </figure>
                       </a>
                     </div>
@@ -120,7 +120,7 @@ export default function LetestBlog() {
                     <div className="sisf-e-media-image">
                       <a href="#" className="d-block">
                         <figure>
-                          <img src={img("/images/blog-grid-img2.jpg")} className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
+                          <img src={img("/images/canadawaterfall.jpg")} className="w-100" alt="Go2Abroad" style={{height: '283px'}} />
                         </figure>
                       </a>
                     </div>
