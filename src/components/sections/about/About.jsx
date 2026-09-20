@@ -32,16 +32,15 @@ export default function About() {
           </div>
           <div className="col-lg-6 position-relative">
             <div className="sisf-sis-section-title sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle">
                 ABOUT GO2ABROAD
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
-                Connecting Dreams
-                <span className="sisf-e-colored">
+              <h2 className="sisf-m-title">
+                Connecting Dreams  <span className="sisf-e-colored">
                   and Reality
                 </span>
               </h2>
-              <div className="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+              <div className="sisf-m-text" data-aos="fade-up--" data-aos-delay="100">
                 <p>
                   At Go2Abroad, we are not just an education consultancy;
 						we are your partner in turning your study abroad dreams into
@@ -52,7 +51,7 @@ export default function About() {
             </div>
             <div className="row">
               <div className="col-md-8">
-                <div className="sisf-about-content-right" data-aos="fade-up" data-aos-delay="100">
+                <div className="sisf-about-content-right" data-aos="fade-up--" data-aos-delay="100">
                   <div className="sisf-e-inner">
                     <div className="sisf-e-content">
                       <div className="sis-e-text">
@@ -65,14 +64,14 @@ export default function About() {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="sisf-about-right-bottom" data-aos="fade-up" data-aos-delay="300">
+                <div className="sisf-about-right-bottom" data-aos="fade-up--" data-aos-delay="300">
                   <figure className="sis-image-anime">
                     <img src={img("/images/about-image-1.jpg")} className="w-100 sis-radius" alt="Go2Abroad" />
                   </figure>
                 </div>
               </div>
               <div className="col-12">
-                <div className="sisf-m-button pt-4" data-aos="fade-up" data-aos-delay="500">
+                <div className="sisf-m-button pt-4" data-aos="fade-up--" data-aos-delay="500">
                   <Link className="sis-btn-default" to="/about-us">
                     Meet Your Consellor
                     <i className="fa-solid fa-arrow-right-long"></i>

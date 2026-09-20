@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 { font-family:"Poppins",sans-serif !important; font-weight:600
 
 /* Restore natural site-wide motion. Less distance than the original, but visible. */
 [data-aos][data-aos] { transition-duration:.78s !important; }
-[data-aos="fade-up"] { transform:translate3d(0,35px,0) !important; }
+[data-aos="fade-up--"] { transform:translate3d(0,35px,0) !important; }
 [data-aos="fade-down"] { transform:translate3d(0,-35px,0) !important; }
 [data-aos="fade-left"] { transform:translate3d(35px,0,0) !important; }
 [data-aos="fade-right"] { transform:translate3d(-35px,0,0) !important; }

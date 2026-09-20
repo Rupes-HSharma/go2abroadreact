@@ -537,7 +537,7 @@ export default function CountryDetail() {
               </ul>
             </section>
             <div className="sis-cta-wrap py-3">
-              <div className="sis-cta-banner cta-blue" data-aos="fade-up">
+              <div className="sis-cta-banner cta-blue" data-aos="fade-up--">
                 <div className="sis-cta-pattern"></div>
                 <div className="sis-cta-inner">
                   <div className="sis-cta-text">
@@ -778,7 +778,7 @@ export default function CountryDetail() {
               </ol>
             </section>
             <section id="final-cta" className="sis-country-block" style={{borderBottom: 'none'}}>
-              <div className="sis-cta-banner cta-navy" data-aos="fade-up">
+              <div className="sis-cta-banner cta-navy" data-aos="fade-up--">
                 <div className="sis-cta-pattern"></div>
                 <div className="sis-cta-inner">
                   <div className="sis-cta-text">

@@ -12,22 +12,19 @@ export default function OurApproach() {
         <div className="row">
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle">
                 OUR APPROACH
               </span>
-              <h2 className="sisf-m-title text-white sis-text-anime-style-3">
-                Turning Your
-                <span className="sisf-e-colored">
-                  Global Dreams
-                </span>
-                Into Reality
+              <h2 className="sisf-m-title text-white">
+                Turning Your  <span className="sisf-e-colored">
+                  Global Dreams  </span>   Into Reality
               </h2>
-              <div className="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+              <div className="sisf-m-text" data-aos="fade-up--" data-aos-delay="100">
                 <p className="text-white">
                   At Go2Abroad, we do not just get you an admission—we prepare you to learn confidently in a global classroom, adapt to new cultures, and leave a lasting impact in your profession of choice.
                 </p>
               </div>
-              <div className="sisf-m-button pt-4" data-aos="fade-up" data-aos-delay="300">
+              <div className="sisf-m-button pt-4" data-aos="fade-up--" data-aos-delay="300">
                 <Link className="sis-btn-default" to="/service">
                   Start Your Immigration Journey
                   <i className="fa-solid fa-arrow-right-long"></i>
@@ -36,7 +33,7 @@ export default function OurApproach() {
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="sisf-our-approach-content position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div className="sisf-our-approach-content position-relative" data-aos="fade-up--" data-aos-delay="100">
               <div className="sisf-sis-top-right-image">
                 <figure>
                   <img src={img("/images/about-pattern-img.png")} alt="Go2Abroad" />
@@ -64,7 +61,7 @@ export default function OurApproach() {
                 </div>
               </div>
             </div>
-            <div className="sisf-our-approach-content position-relative" data-aos="fade-up" data-aos-delay="300">
+            <div className="sisf-our-approach-content position-relative" data-aos="fade-up--" data-aos-delay="300">
               <div className="sisf-sis-top-right-image">
                 <figure>
                   <img src={img("/images/about-pattern-img.png")} alt="Go2Abroad" />

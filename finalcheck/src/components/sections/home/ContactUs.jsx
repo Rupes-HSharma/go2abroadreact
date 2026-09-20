@@ -37,10 +37,10 @@ export default function ContactUs() {
         <div className="row">
           <div className="col-lg-5">
             <div className="sisf-sis-section-title sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle sis-text-anime-style-3--">
                 INQUIRY / LEAD FORM
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title sis-text-anime-style-3--">
                 Let’s make the next
                 <span className="sisf-e-colored">
                   step clear.
@@ -106,9 +106,9 @@ export default function ContactUs() {
             </div>
           </div>
           <div className="col-lg-7">
-            <div className="sis-contect-right bg-white p-4 sis-radius mt-0" data-aos="fade-up" data-aos-delay="100">
+            <div className="sis-contect-right bg-white p-4 sis-radius mt-0" data-aos="fade-up--" data-aos-delay="100">
               <div className="sisf-sis-section-title sis-section-title">
-                <h2 className="sisf-m-title sis-text-anime-style-3">
+                <h2 className="sisf-m-title sis-text-anime-style-3--">
                   Send a
                   <span className="sisf-e-colored">
                     Message

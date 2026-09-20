@@ -40,7 +40,7 @@ export default function Banner() {
             </span>
           </div>
           <div className="sisf-m-content sisf-content-grid">
-            <h1 className="sisf-m-title text-white sis-text-anime-style-3 entry-title">
+            <h1 className="sisf-m-title text-white sis-text-anime-style-3-- entry-title">
               Arizona State University
             </h1>
           </div>

@@ -12,7 +12,7 @@ export default function SuccessStories() {
         <div className="row align-items-end">
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title sis-text-anime-style-3--">
                 People Say The Nicest Things
                 <span className="sisf-e-colored">
                   Success Stories..
@@ -22,12 +22,12 @@ export default function SuccessStories() {
           </div>
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
-              <div className="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+              <div className="sisf-m-text" data-aos="fade-up--" data-aos-delay="100">
                 <p className="mt-0">
                   Real stories from students whose overseas journeys changed their lives.
                 </p>
               </div>
-              <div className="sisf-m-button pt-4" data-aos="fade-up" data-aos-delay="300">
+              <div className="sisf-m-button pt-4" data-aos="fade-up--" data-aos-delay="300">
                 <Link className="sis-btn-default" to="/success-stories">
                   Explore Success Stories
                   <i className="fa-solid fa-arrow-right-long"></i>
@@ -38,7 +38,7 @@ export default function SuccessStories() {
         </div>
         <div className="row">
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="100">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="100">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-top--content">
                   <div className="sisf-content-inner">
@@ -95,7 +95,7 @@ export default function SuccessStories() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="100">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="100">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-top--content">
                   <div className="sisf-content-inner">
@@ -151,7 +151,7 @@ export default function SuccessStories() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="100">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="100">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-top--content">
                   <div className="sisf-content-inner">
@@ -207,7 +207,7 @@ export default function SuccessStories() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="100">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="100">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-top--content">
                   <div className="sisf-content-inner">

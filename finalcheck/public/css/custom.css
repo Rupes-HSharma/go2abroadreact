@@ -10105,8 +10105,8 @@ html, body, button, input, select, textarea {
 }
 
 /* Hero heading should not be split/animated by the legacy GSAP text effect. */
-.home-page .sis-text-anime-style-3,
-.home-page .sis-text-anime-style-1 {
+.home-page .sis-text-anime-style-3--,
+.home-page .sis-text-anime-style-1-- {
   opacity: 1 !important;
   visibility: visible !important;
   transform: none !important;
@@ -10603,10 +10603,10 @@ body p { font-size:15px !important; }
   animation: g2aHeroImageIn .9s cubic-bezier(.22,.61,.36,1) both;
   animation-delay:.18s;
 }
-@keyframes g2aHeroTextIn {
+/*@keyframes g2aHeroTextIn {
   from { opacity:0; transform:translate3d(0,12px,0); }
   to { opacity:1; transform:translate3d(0,0,0); }
-}
+}*/
 @keyframes g2aHeroBgIn {
   from { opacity:.7; transform:scale(1.015); }
   to { opacity:1; transform:scale(1); }
@@ -10953,7 +10953,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: 600 !important; }
 
 /* Gentle scroll animations — keep motion, reduce travel. */
 [data-aos][data-aos] { transition-duration: .65s !important; }
-[data-aos="fade-up"] { transform: translate3d(0,18px,0) !important; }
+[data-aos="fade-up--"] { transform: translate3d(0,18px,0) !important; }
 [data-aos="fade-down"] { transform: translate3d(0,-18px,0) !important; }
 [data-aos="fade-left"] { transform: translate3d(18px,0,0) !important; }
 [data-aos="fade-right"] { transform: translate3d(-18px,0,0) !important; }
@@ -11173,7 +11173,7 @@ h1,h2,h3,h4,h5,h6 { font-family:"Poppins",sans-serif !important; font-weight:600
 
 /* Restore natural site-wide motion. Less distance than the original, but visible. */
 [data-aos][data-aos] { transition-duration:.78s !important; }
-[data-aos="fade-up"] { transform:translate3d(0,35px,0) !important; }
+[data-aos="fade-up--"] { transform:translate3d(0,35px,0) !important; }
 [data-aos="fade-down"] { transform:translate3d(0,-35px,0) !important; }
 [data-aos="fade-left"] { transform:translate3d(35px,0,0) !important; }
 [data-aos="fade-right"] { transform:translate3d(-35px,0,0) !important; }

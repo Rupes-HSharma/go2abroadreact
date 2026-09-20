@@ -5,7 +5,7 @@ export default function PageCounters() {
         <div className="row">
           <div className="col-md-4">
             <div className="sisf-page-counters">
-              <div className="sis-counter-item" data-aos="fade-up" data-aos-delay="100">
+              <div className="sis-counter-item" data-aos="fade-up--" data-aos-delay="100">
                 <div className="sis-counter-title">
                   <h2 className="d-flex align-items-center">
                     <span className="sis-counter text-white">
@@ -26,7 +26,7 @@ export default function PageCounters() {
           </div>
           <div className="col-md-4">
             <div className="sisf-page-counters">
-              <div className="sis-counter-item" data-aos="fade-up" data-aos-delay="300">
+              <div className="sis-counter-item" data-aos="fade-up--" data-aos-delay="300">
                 <div className="sis-counter-title">
                   <h2 className="d-flex align-items-center">
                     <span className="sis-counter text-white">
@@ -47,7 +47,7 @@ export default function PageCounters() {
           </div>
           <div className="col-md-4">
             <div className="sisf-page-counters">
-              <div className="sis-counter-item" data-aos="fade-up" data-aos-delay="500">
+              <div className="sis-counter-item" data-aos="fade-up--" data-aos-delay="500">
                 <div className="sis-counter-title">
                   <h2 className="d-flex align-items-center">
                     <span className="sis-counter text-white">

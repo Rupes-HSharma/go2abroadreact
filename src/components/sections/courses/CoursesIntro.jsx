@@ -5,10 +5,10 @@ export default function CoursesIntro() {
         <div className="row">
           <div className="col-12">
             <div className="sisf-sis-section-title text-center sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle">
                 FIND THE RIGHT LEVEL
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title">
                 Undergraduate to PhD,
                 <span className="sisf-e-colored">
                   we cover every level.

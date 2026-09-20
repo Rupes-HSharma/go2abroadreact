@@ -172,11 +172,11 @@ export default function About() {
         <div className="row">
           <div className="col-12">
             <div className="sisf-sis-section-title text-center sis-section-title sis-journey-heading">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle sis-text-anime-style-3--">
                 WHAT WE OFFER
               </span>
 
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title sis-text-anime-style-3--">
                 A Six Step Student Journey
                 <br />
                 <span className="sisf-e-colored">

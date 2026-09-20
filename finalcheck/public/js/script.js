@@ -1,4 +1,4 @@
-(function ($) {
+ (function ($) {
    "use strict";
     const $window = $(window);
     const CONFIG = { mobileBreakpoint: 768, formAction: ["form-process.php", "review-form.php"] };
@@ -121,24 +121,6 @@
             tl.from(container, { xPercent: -100, duration: 1, ease: "power2.out" });
             tl.from(image, { xPercent: 100, duration: 1, delay: -1, scale: 1, ease: "power2.out" });
         });
-
-              document.querySelectorAll('.sis-text-anime-style-1').forEach(element => {
-    const split = new SplitText(element, { type: "words" });
-    gsap.from(split.words, {
-        duration: 0.8, delay: 0.3, x: 10,
-        autoAlpha: 0, stagger: 0.04, ease: "sine.out",
-        scrollTrigger: { trigger: element, start: "top 85%" }
-    });
-});
-
-document.querySelectorAll('.sis-text-anime-style-3').forEach(element => {
-    const split = new SplitText(element, { type: "words" });
-    gsap.from(split.words, {
-        duration: 0.7, delay: 0.15, x: 10,
-        autoAlpha: 0, stagger: 0.04, ease: "sine.out",
-        scrollTrigger: { trigger: element, start: "top 85%" }
-    });
-});
     }
 
     // Animation On Scroll Js
@@ -261,28 +243,6 @@ document.querySelectorAll('.sis-text-anime-style-3').forEach(element => {
     });
 
     // Hero Slider Start 
-	function animateActiveSlideText() {
-        gsap.set(".sis-text-anime-style-2", { clearProps: "all" });
-
-        const activeSlide = document.querySelector(".swiper-slide-active");
-        if (!activeSlide) return;
-        const animatedTextElements = activeSlide.querySelectorAll(".sis-text-anime-style-2");
-
-        animatedTextElements.forEach((element) => {
-            const animationSplitText = new SplitText(element, { type: "chars, words" });
-
-            gsap.from(animationSplitText.chars, {
-				opacity: 0,
-                duration: 0.11,         
-				delay: 0.14,
-				x: 250,                 
-				autoAlpha: 0,
-				stagger: 0.09,         
-				ease: "power5.out",
-            });
-        });
-    }
-    
 	const heroHasMultipleSlides = document.querySelectorAll(".hero-slider-layout .swiper .swiper-slide:not(.swiper-slide-duplicate)").length > 1;
 	initSwiper(".hero-slider-layout .swiper", {
         ...swiperOptions,
@@ -665,6 +625,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-
-
-

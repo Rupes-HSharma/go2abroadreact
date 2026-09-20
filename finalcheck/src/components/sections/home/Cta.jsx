@@ -3,7 +3,7 @@ export default function Cta() {
   return (
     <div className="sis-cta-wrap py-5 pt-0">
       <div className="container">
-        <div className="sis-cta-banner cta-blue" data-aos="fade-up">
+        <div className="sis-cta-banner cta-blue" data-aos="fade-up--">
           <div className="sis-cta-pattern"></div>
           <div className="sis-cta-inner">
             <div className="sis-cta-text">

@@ -13,17 +13,15 @@ export default function WhyChooseUs() {
             <div className="col-lg-5"></div>
             <div className="col-lg-7">
               <div className="sisf-sis-section-title mb-4 sis-section-title">
-                <span className="sisf-m-subtitle sis-text-anime-style-3">
+                <span className="sisf-m-subtitle">
                   WHY CHOOSE US
                 </span>
-                <h2 className="sisf-m-title sis-text-anime-style-3">
+                <h2 className="sisf-m-title">
                   Helping You Achieve Your
-                  <span className="sisf-e-colored">
-                    Global Goals
-                  </span>
-                  With Confidence
+                  <span className="sisf-e-colored">  Global Goals
+                  </span>  With Confidence
                 </h2>
-                <div className="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+                <div className="sisf-m-text" data-aos="fade-up--" data-aos-delay="100">
                   <p>
                     Your global ambitions deserve a trusted partner. Our team offers professional advice, strategic planning, and end-to-end assistance to help you confidently navigate immigration requirements and successfully pursue opportunities abroad.
                   </p>
@@ -32,7 +30,7 @@ export default function WhyChooseUs() {
               <div className="sisf-sis-why-choose-us-content sisf-top">
                 <div className="row">
                   <div className="col-md-6">
-                    <div className="sis-why-choose-us-content" data-aos="fade-up" data-aos-delay="300">
+                    <div className="sis-why-choose-us-content" data-aos="fade-up--" data-aos-delay="300">
                       <div className="sis-e-inner">
                         <div className="sisf-m-count">
                           <span>
@@ -55,7 +53,7 @@ export default function WhyChooseUs() {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="sis-why-choose-us-content" data-aos="fade-up" data-aos-delay="500">
+                    <div className="sis-why-choose-us-content" data-aos="fade-up--" data-aos-delay="500">
                       <div className="sis-e-inner">
                         <div className="sisf-m-count">
                           <span>
@@ -82,7 +80,7 @@ export default function WhyChooseUs() {
               <div className="sisf-sis-why-choose-us-content">
                 <div className="row">
                   <div className="col-md-6">
-                    <div className="sis-why-choose-us-content" data-aos="fade-up" data-aos-delay="700">
+                    <div className="sis-why-choose-us-content" data-aos="fade-up--" data-aos-delay="700">
                       <div className="sis-e-inner">
                         <div className="sisf-m-count">
                           <span>
@@ -105,7 +103,7 @@ export default function WhyChooseUs() {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="sis-why-choose-us-content" data-aos="fade-up" data-aos-delay="900">
+                    <div className="sis-why-choose-us-content" data-aos="fade-up--" data-aos-delay="900">
                       <div className="sis-e-inner">
                         <div className="sisf-m-count">
                           <span>

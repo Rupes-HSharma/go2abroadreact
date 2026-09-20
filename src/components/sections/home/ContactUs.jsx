@@ -65,16 +65,15 @@ export default function ContactUs() {
 
               {/* Heading */}
               <div className="sisf-sis-section-title sis-section-title">
-                <span className="sisf-m-subtitle sis-text-anime-style-3">
+                <span className="sisf-m-subtitle">
                   <span className="sis-title-dot"></span>
                   INQUIRY / LEAD FORM
                 </span>
 
-                <h2 className="sisf-m-title sis-text-anime-style-3">
+                <h2 className="sisf-m-title">
                   Let’s make the next{" "}
                   <span className="sisf-e-colored">
-                    step clear.
-                  </span>
+                    step clear.   </span>
                 </h2>
               </div>
 
@@ -188,7 +187,7 @@ export default function ContactUs() {
           <div className="col-lg-6 d-flex">
             <div
               className="sis-contact-form-card w-100 h-100"
-              data-aos="fade-up"
+              data-aos="fade-up--"
               data-aos-delay="100"
             >
 

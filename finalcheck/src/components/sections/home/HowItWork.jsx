@@ -12,10 +12,10 @@ export default function HowItWork() {
         <div className="row align-items-end">
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
-              <span className="sisf-m-subtitle sis-comman-bg sis-text-anime-style-3">
+              <span className="sisf-m-subtitle sis-comman-bg sis-text-anime-style-3--">
                 ABOUT US · WHY CHOOSE GO2ABROAD
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title sis-text-anime-style-3--">
                 Why choose  <span className="sisf-e-colored">
                   Go2Abroad.
                 </span>
@@ -24,12 +24,12 @@ export default function HowItWork() {
           </div>
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
-              <div className="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+              <div className="sisf-m-text" data-aos="fade-up--" data-aos-delay="100">
                 <p className="mt-0">
                   There is a lot to figure out. You do not have to figure it out alone. We bring clarity, care and local know-how to every step.
                 </p>
               </div>
-              <div className="sisf-m-button pt-4" data-aos="fade-up" data-aos-delay="300">
+              <div className="sisf-m-button pt-4" data-aos="fade-up--" data-aos-delay="300">
                 <Link className="sis-btn-default" to="/contact">
                   Meet Your Counsellor
                   <i className="fa-solid fa-arrow-right-long"></i>

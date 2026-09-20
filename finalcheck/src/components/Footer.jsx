@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="container">
             <div className="row">
               <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="footer-links page" data-aos="fade-up" data-aos-delay="300">
+                <div className="footer-links page" data-aos="fade-up--" data-aos-delay="300">
                   <h3>
                     BRAND & IDENTITY
                   </h3>
@@ -58,7 +58,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="col-xl-2 col-lg-6 col-md-6">
-                <div className="footer-links page" data-aos="fade-up" data-aos-delay="100">
+                <div className="footer-links page" data-aos="fade-up--" data-aos-delay="100">
                   <h3>
                     QUICK LINKS
                   </h3>
@@ -107,7 +107,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="footer-links page" data-aos="fade-up" data-aos-delay="300">
+                <div className="footer-links page" data-aos="fade-up--" data-aos-delay="300">
                   <h3>
                     STUDY DESTINATIONS
                   </h3>
@@ -146,7 +146,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="col-xl-4 col-lg-6 col-md-6">
-                <div className="footer-links page" data-aos="fade-up" data-aos-delay="700">
+                <div className="footer-links page" data-aos="fade-up--" data-aos-delay="700">
                   <h3 className="text-uppercase">
                     CONTACT INFORMATION
                   </h3>

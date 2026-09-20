@@ -120,7 +120,7 @@
         tl.from(image, { xPercent: 100, duration: 1, delay: -1, scale: 1, ease: "power2.out" });
       });
 
-      document.querySelectorAll(".sis-text-anime-style-1, .sis-text-anime-style-3").forEach(function (element) {
+      document.querySelectorAll(".sis-text-anime-style-1--, .sis-text-anime-style-3--").forEach(function (element) {
         if (element.closest(".home-page")) {
           // Keep the hero entrance animation on explicitly animated elements.
           if (element.closest(".hero-animate")) return;
@@ -133,8 +133,8 @@
         element.dataset.g2aTextInitialized = "1";
         var split = new window.SplitText(element, { type: "words" });
         window.gsap.from(split.words, {
-          duration: element.classList.contains("sis-text-anime-style-1") ? 0.8 : 0.7,
-          delay: element.classList.contains("sis-text-anime-style-1") ? 0.3 : 0.15,
+          duration: element.classList.contains("sis-text-anime-style-1--") ? 0.8 : 0.7,
+          delay: element.classList.contains("sis-text-anime-style-1--") ? 0.3 : 0.15,
           x: 10,
           autoAlpha: 0,
           stagger: 0.04,

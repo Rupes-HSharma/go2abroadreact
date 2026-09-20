@@ -147,7 +147,7 @@ export default function Footer() {
 
                 <div
                   className="footer-links page"
-                  data-aos="fade-up"
+                  data-aos="fade-up--"
                   data-aos-delay="300"
                 >
 
@@ -202,7 +202,7 @@ export default function Footer() {
 
                 <div
                   className="footer-links page"
-                  data-aos="fade-up"
+                  data-aos="fade-up--"
                   data-aos-delay="100"
                 >
 
@@ -262,7 +262,7 @@ export default function Footer() {
 
                 <div
                   className="footer-links page"
-                  data-aos="fade-up"
+                  data-aos="fade-up--"
                   data-aos-delay="300"
                 >
 
@@ -322,7 +322,7 @@ export default function Footer() {
 
                 <div
                   className="footer-links page"
-                  data-aos="fade-up"
+                  data-aos="fade-up--"
                   data-aos-delay="700"
                 >
 

@@ -4,7 +4,7 @@ export default function CoursesList() {
       <div className="container">
         <div className="row g-4">
           <div className="col-lg-4 col-md-6" id="undergraduate">
-            <div className="sis-course-card" data-aos="fade-up" data-aos-delay="100">
+            <div className="sis-course-card" data-aos="fade-up--" data-aos-delay="100">
               <span className="sis-course-level">
                 Undergraduate
               </span>
@@ -35,7 +35,7 @@ export default function CoursesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="postgraduate">
-            <div className="sis-course-card" data-aos="fade-up" data-aos-delay="200">
+            <div className="sis-course-card" data-aos="fade-up--" data-aos-delay="200">
               <span className="sis-course-level">
                 Postgraduate
               </span>
@@ -66,7 +66,7 @@ export default function CoursesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="mba">
-            <div className="sis-course-card" data-aos="fade-up" data-aos-delay="300">
+            <div className="sis-course-card" data-aos="fade-up--" data-aos-delay="300">
               <span className="sis-course-level">
                 Management
               </span>
@@ -97,7 +97,7 @@ export default function CoursesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="phd">
-            <div className="sis-course-card" data-aos="fade-up" data-aos-delay="100">
+            <div className="sis-course-card" data-aos="fade-up--" data-aos-delay="100">
               <span className="sis-course-level">
                 Doctorate
               </span>
@@ -128,7 +128,7 @@ export default function CoursesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="diploma">
-            <div className="sis-course-card" data-aos="fade-up" data-aos-delay="200">
+            <div className="sis-course-card" data-aos="fade-up--" data-aos-delay="200">
               <span className="sis-course-level">
                 Diploma
               </span>
@@ -159,7 +159,7 @@ export default function CoursesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="language">
-            <div className="sis-course-card" data-aos="fade-up" data-aos-delay="300">
+            <div className="sis-course-card" data-aos="fade-up--" data-aos-delay="300">
               <span className="sis-course-level">
                 Foundation
               </span>

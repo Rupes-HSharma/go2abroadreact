@@ -5,10 +5,10 @@ export default function MoreDestinations() {
         <div className="row">
           <div className="col-12">
             <div className="sisf-sis-section-title sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle">
                 MORE OPTIONS
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title">
                 More Destinations We
                 <span className="sisf-e-colored">
                   Cover
@@ -22,7 +22,7 @@ export default function MoreDestinations() {
             </div>
           </div>
         </div>
-        <div className="sisf-comman-swiper--slider sisf-page-location-list" data-aos="fade-up" data-aos-delay="100">
+        <div className="sisf-comman-swiper--slider sisf-page-location-list" data-aos="fade-up--" data-aos-delay="100">
           <div className="row g-3">
             <div className="col-lg-2 col-md-3 col-6" id="france">
               <div className="sisf-page-location-ist-item mb-0">

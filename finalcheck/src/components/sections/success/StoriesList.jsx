@@ -5,7 +5,7 @@ export default function StoriesList() {
       <div className="container">
         <div className="row g-4">
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="100">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="100">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
@@ -46,7 +46,7 @@ export default function StoriesList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="150">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="150">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
@@ -87,7 +87,7 @@ export default function StoriesList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="200">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="200">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
@@ -128,7 +128,7 @@ export default function StoriesList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="250">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="250">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
@@ -169,7 +169,7 @@ export default function StoriesList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="100">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="100">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
@@ -210,7 +210,7 @@ export default function StoriesList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="150">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="150">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
@@ -251,7 +251,7 @@ export default function StoriesList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="200">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="200">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">
@@ -292,7 +292,7 @@ export default function StoriesList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="testimonial-right page" data-aos="fade-up" data-aos-delay="250">
+            <div className="testimonial-right page" data-aos="fade-up--" data-aos-delay="250">
               <div className="sisf-e-inner bg-white p-4 sis-radius">
                 <div className="sisf-m-inner d-flex align-items-center gap-4">
                   <div className="sisf-e-media-image">

@@ -143,10 +143,10 @@ export default function TeamMember() {
         <div className="row align-items-end">
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle sis-text-anime-style-3--">
                 Meet Team Go2Abroad
               </span>
-              <h2 className="sisf-m-title text-white sis-text-anime-style-3">
+              <h2 className="sisf-m-title text-white sis-text-anime-style-3--">
                 <span className="sisf-e-colored">Meet The Heroes Behind</span>
                 <br />
                 Your Journey

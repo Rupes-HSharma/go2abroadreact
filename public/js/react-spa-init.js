@@ -86,6 +86,21 @@
 
   function initAos() {
     if (!window.AOS) return;
+
+    // Keep AOS for visual/card animations, but never animate text-only elements.
+    document.querySelectorAll("[data-aos]").forEach(function (element) {
+      var hasText = element.textContent && element.textContent.trim().length > 0;
+      var hasVisualChild = element.querySelector("img, svg, video, canvas");
+      if (hasText && !hasVisualChild) {
+        element.removeAttribute("data-aos");
+        element.removeAttribute("data-aos-delay");
+        element.removeAttribute("data-aos-duration");
+        element.removeAttribute("data-aos-easing");
+        element.removeAttribute("data-aos-anchor");
+        element.removeAttribute("data-aos-anchor-placement");
+        element.removeAttribute("data-aos-offset");
+      }
+    });
     try {
       if (!window.AOS.__go2abroadInitialized) {
         window.AOS.init({ once: true, duration: 650, easing: "ease-out-cubic" });
@@ -120,40 +135,25 @@
         tl.from(image, { xPercent: 100, duration: 1, delay: -1, scale: 1, ease: "power2.out" });
       });
 
-      document.querySelectorAll(".sis-text-anime-style-1, .sis-text-anime-style-3").forEach(function (element) {
-        if (element.closest(".home-page")) {
-          // Keep the hero entrance animation on explicitly animated elements.
-          if (element.closest(".hero-animate")) return;
-          element.style.opacity = "1";
-          element.style.visibility = "visible";
-          element.style.transform = "none";
-          return;
-        }
-        if (element.dataset.g2aTextInitialized === "1") return;
-        element.dataset.g2aTextInitialized = "1";
-        var split = new window.SplitText(element, { type: "words" });
-        window.gsap.from(split.words, {
-          duration: element.classList.contains("sis-text-anime-style-1") ? 0.8 : 0.7,
-          delay: element.classList.contains("sis-text-anime-style-1") ? 0.3 : 0.15,
-          x: 10,
-          autoAlpha: 0,
-          stagger: 0.04,
-          ease: "sine.out",
-          scrollTrigger: { trigger: element, start: "top 85%" }
-        });
-      });
-
       if (typeof window.ScrollTrigger.refresh === "function") window.ScrollTrigger.refresh();
     } catch (e) {}
   }
 
   function initCounters() {
-    if (!window.jQuery || !window.jQuery.fn || !window.jQuery.fn.counterUp) return;
+    if (!window.jQuery || !window.jQuery.fn) return;
+
+    // Keep the original CounterUp animation for numbers only.
+    // Do not mark a counter as initialized until CounterUp is actually available.
+    if (!window.jQuery.fn.counterUp) {
+      window.setTimeout(initCounters, 500);
+      return;
+    }
+
     try {
       window.jQuery(".sis-counter").each(function () {
         if (this.dataset.g2aCounterInitialized === "1") return;
-        this.dataset.g2aCounterInitialized = "1";
         window.jQuery(this).counterUp({ delay: 6, time: 3000 });
+        this.dataset.g2aCounterInitialized = "1";
       });
     } catch (e) {}
   }

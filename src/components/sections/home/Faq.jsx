@@ -5,17 +5,17 @@ export default function Faq() {
         <div className="row">
           <div className="col-12">
             <div className="sisf-sis-section-title text-center sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle">
                 FREQUENTLY ASKED QUESTIONS
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title">
                 Find answers to common questions about our
                 <br />
                 <span className="sisf-e-colored">
                   programs and services
                 </span>
               </h2>
-              <div className="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+              <div className="sisf-m-text" data-aos="fade-up--" data-aos-delay="100">
                 <p>
                   Whether you're planning to study, work, invest, or settle abroad,
                   <br />
@@ -29,7 +29,7 @@ every step of your immigration journey.
         <div className="sisf-faqs-content-center bg-white sis-radius">
           <div className="row align-items-center">
             <div className="col-lg-12">
-              <div className="sisf-page-accordian sisf-sis-page-accordian sisf-page-bottom" data-aos="fade-up" data-aos-delay="100">
+              <div className="sisf-page-accordian sisf-sis-page-accordian sisf-page-bottom" data-aos="fade-up--" data-aos-delay="100">
                 <div className="accordion" id="sisf-Accordion">
                   <div className="accordion-item mt-0">
                     <h2 className="accordion-header sis-comman-title">

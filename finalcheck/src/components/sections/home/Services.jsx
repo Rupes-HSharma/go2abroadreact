@@ -17,10 +17,10 @@ export default function Services() {
         <div className="row align-items-end">
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle sis-text-anime-style-3--">
                 OUR SERVICES
               </span>
-              <h2 className="sisf-m-title text-white sis-text-anime-style-3">
+              <h2 className="sisf-m-title text-white sis-text-anime-style-3--">
                 <span className="sisf-e-colored">
                   End-to-End Support  </span>  for Every Step of Your Study Abroad Journey.
               </h2>
@@ -28,12 +28,12 @@ export default function Services() {
           </div>
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
-              <div className="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+              <div className="sisf-m-text" data-aos="fade-up--" data-aos-delay="100">
                 <p className="text-white mt-0">
                   From choosing the right country and course to scholarships, visa filing and your first day on campus — our counsellors guide you through every milestone of the journey, at zero consultation fee.
                 </p>
               </div>
-              <div className="sisf-m-button pt-4" data-aos="fade-up" data-aos-delay="500">
+              <div className="sisf-m-button pt-4" data-aos="fade-up--" data-aos-delay="500">
                 <Link className="sis-btn-default" to="/services">
                   Explore Our Services
                   <i className="fa-solid fa-arrow-right-long"></i>
@@ -44,7 +44,7 @@ export default function Services() {
         </div>
         <div className="row">
           <div className="col-lg-3 col-md-6">
-            <div className="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="100">
+            <div className="sisf-sis-e-service-list" data-aos="fade-up--" data-aos-delay="100">
               <div className="sisf-e-inner bg-white sis-radius position-relative">
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#counselling">
@@ -76,7 +76,7 @@ export default function Services() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="300">
+            <div className="sisf-sis-e-service-list" data-aos="fade-up--" data-aos-delay="300">
               <div className="sisf-e-inner bg-white sis-radius position-relative">
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#test-preparation">
@@ -108,7 +108,7 @@ export default function Services() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="500">
+            <div className="sisf-sis-e-service-list" data-aos="fade-up--" data-aos-delay="500">
               <div className="sisf-e-inner bg-white sis-radius position-relative">
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#university-shortlisting">
@@ -140,7 +140,7 @@ export default function Services() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="700">
+            <div className="sisf-sis-e-service-list" data-aos="fade-up--" data-aos-delay="700">
               <div className="sisf-e-inner bg-white sis-radius position-relative">
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#sop-writing">
@@ -172,7 +172,7 @@ export default function Services() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="100">
+            <div className="sisf-sis-e-service-list" data-aos="fade-up--" data-aos-delay="100">
               <div className="sisf-e-inner bg-white sis-radius position-relative">
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#scholarship-guidance">
@@ -204,7 +204,7 @@ export default function Services() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="300">
+            <div className="sisf-sis-e-service-list" data-aos="fade-up--" data-aos-delay="300">
               <div className="sisf-e-inner bg-white sis-radius position-relative">
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#visa-assistance">
@@ -236,7 +236,7 @@ export default function Services() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="500">
+            <div className="sisf-sis-e-service-list" data-aos="fade-up--" data-aos-delay="500">
               <div className="sisf-e-inner bg-white sis-radius position-relative">
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#loan-assistance">
@@ -268,7 +268,7 @@ export default function Services() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
-            <div className="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="700">
+            <div className="sisf-sis-e-service-list" data-aos="fade-up--" data-aos-delay="700">
               <div className="sisf-e-inner bg-white sis-radius position-relative">
                 <div className="sisf-service-image position-relative">
                   <Link className="sisf-sis-page-link" to="/services#accommodation">

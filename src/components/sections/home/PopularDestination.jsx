@@ -9,7 +9,7 @@ export default function PopularDestination() {
             <div className="sisf-sis-section-title sis-section-title"></div>
             <div className="row">
               <div className="col-md-4">
-                <div className="sis-counter-item" data-aos="fade-up" data-aos-delay="100">
+                <div className="sis-counter-item" data-aos="fade-up--" data-aos-delay="100">
                   <div className="sis-counter-icon">
                     <i className="fa-solid fa-user-graduate"></i>
                   </div>
@@ -31,7 +31,7 @@ export default function PopularDestination() {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="sis-counter-item" data-aos="fade-up" data-aos-delay="300">
+                <div className="sis-counter-item" data-aos="fade-up--" data-aos-delay="300">
                   <div className="sis-counter-icon">
                     <i className="fa-solid fa-chart-line"></i>
                   </div>
@@ -53,7 +53,7 @@ export default function PopularDestination() {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="sis-counter-item" data-aos="fade-up" data-aos-delay="500">
+                <div className="sis-counter-item" data-aos="fade-up--" data-aos-delay="500">
                   <div className="sis-counter-icon">
                     <i className="fa-solid fa-file-circle-check"></i>
                   </div>
@@ -78,25 +78,25 @@ export default function PopularDestination() {
           </div>
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title--">
                 Explore Where
                 <span className="sisf-e-colored">
                   Your Future Can Take You
                 </span>
               </h2>
-              <div className="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+              <div className="sisf-m-text" data-aos="fade-up--" data-aos-delay="100">
                 <p>
                   Each country offers unique pathways and benefits, and our consultants help you identify the option that best matches your goals and qualifications.
                 </p>
               </div>
               <div className="button-group d-flex align-items-center flex-wrap gap-4 pt-4">
-                <div className="sisf-m-button" data-aos="fade-up" data-aos-delay="300">
+                <div className="sisf-m-button" data-aos="fade-up--" data-aos-delay="300">
                   <Link className="sis-btn-default" to="/destinations">
                     Explore Destinations
                     <i className="fa-solid fa-arrow-right-long"></i>
                   </Link>
                 </div>
-                <div className="sisf-m-button d-none" data-aos="fade-up" data-aos-delay="500">
+                <div className="sisf-m-button d-none" data-aos="fade-up--" data-aos-delay="500">
                   <a href="#" className="sis-btn-default btn-light">
                     Free Eligibility Check
                     <i className="fa-solid fa-arrow-right-long"></i>
@@ -108,7 +108,7 @@ export default function PopularDestination() {
         </div>
       </div>
       <div className="container pe-2">
-        <div className="sisf-comman-swiper--slider sisf-page-location-list" data-aos="fade-up" data-aos-delay="700">
+        <div className="sisf-comman-swiper--slider sisf-page-location-list" data-aos="fade-up--" data-aos-delay="700">
           <div className="swiper">
             <div className="swiper-wrapper">
               <div className="swiper-slide">

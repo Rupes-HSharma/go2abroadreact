@@ -6,10 +6,10 @@ export default function ServicesProcess() {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="sisf-sis-section-title sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle">
                 BEFORE YOU APPLY
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title">
                 Every course needs the
                 <span className="sisf-e-colored">
                   right test score.

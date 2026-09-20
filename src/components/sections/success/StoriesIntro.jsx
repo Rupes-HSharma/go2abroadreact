@@ -5,14 +5,12 @@ export default function StoriesIntro() {
         <div className="row">
           <div className="col-12">
             <div className="sisf-sis-section-title text-center sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle">
                 REAL STUDENTS, REAL OUTCOMES
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
-                People say the
-                <span className="sisf-e-colored">
-                  nicest things.
-                </span>
+              <h2 className="sisf-m-title">
+                People say the   <span className="sisf-e-colored">
+                  nicest things.    </span>
               </h2>
               <div className="sisf-m-text">
                 <p>
@@ -22,7 +20,7 @@ export default function StoriesIntro() {
             </div>
           </div>
         </div>
-        <div className="sis-mini-stat-strip mb-5" data-aos="fade-up">
+        <div className="sis-mini-stat-strip mb-5" data-aos="fade-up--">
           <div className="sis-mini-stat">
             <h3>
               2000+

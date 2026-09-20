@@ -4,7 +4,7 @@ export default function ServicesList() {
       <div className="container">
         <div className="row g-4">
           <div className="col-lg-4 col-md-6" id="counselling">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="100">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="100">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-user-graduate"></i>
               </div>
@@ -17,7 +17,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="profile-building">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="150">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="150">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-id-card"></i>
               </div>
@@ -30,7 +30,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="university-shortlisting">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="200">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="200">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-building-columns"></i>
               </div>
@@ -43,7 +43,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="scholarship-guidance">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="250">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="250">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-award"></i>
               </div>
@@ -56,7 +56,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="sop-writing">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="300">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="300">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-pen-nib"></i>
               </div>
@@ -69,7 +69,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="visa-assistance">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="350">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="350">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-stamp"></i>
               </div>
@@ -82,7 +82,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="loan-assistance">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="100">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="100">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-hand-holding-dollar"></i>
               </div>
@@ -95,7 +95,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="test-preparation">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="150">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="150">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-headset"></i>
               </div>
@@ -108,7 +108,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="interview-preparation">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="200">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="200">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-comments"></i>
               </div>
@@ -121,7 +121,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="accommodation">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="250">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="250">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-house-chimney"></i>
               </div>
@@ -134,7 +134,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="forex">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="300">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="300">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-money-bill-transfer"></i>
               </div>
@@ -147,7 +147,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="post-arrival">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="350">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="350">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-plane-arrival"></i>
               </div>
@@ -160,7 +160,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="alumni">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="100">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="100">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-people-group"></i>
               </div>
@@ -173,7 +173,7 @@ export default function ServicesList() {
             </div>
           </div>
           <div className="col-lg-4 col-md-6" id="helpline">
-            <div className="sis-icon-card" data-aos="fade-up" data-aos-delay="150">
+            <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay="150">
               <div className="sis-icon-card-icon">
                 <i className="fa-solid fa-phone-volume"></i>
               </div>

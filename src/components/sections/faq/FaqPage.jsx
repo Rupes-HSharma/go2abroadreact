@@ -6,10 +6,10 @@ export default function FaqPage() {
         <div className="row">
           <div className="col-12">
             <div className="sisf-sis-section-title text-center sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle">
                 GOT QUESTIONS?
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title">
                 Everything you need to
                 <span className="sisf-e-colored">
                   know, in one place.

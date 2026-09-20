@@ -6,10 +6,10 @@ export default function DestinationsList() {
         <div className="row">
           <div className="col-12">
             <div className="sisf-sis-section-title sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle">
                 MOST POPULAR
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
+              <h2 className="sisf-m-title">
                 Top Study Destinations for
                 <span className="sisf-e-colored">
                   Indian Students
@@ -20,7 +20,7 @@ export default function DestinationsList() {
         </div>
         <div className="row g-4">
           <div className="col-lg-3 col-md-6" id="usa">
-            <div className="sis-country-card" data-aos="fade-up" data-aos-delay="100">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="100">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇺🇸
@@ -57,7 +57,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="uk">
-            <div className="sis-country-card" data-aos="fade-up" data-aos-delay="150">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="150">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇬🇧
@@ -94,7 +94,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="canada">
-            <div className="sis-country-card" data-aos="fade-up" data-aos-delay="200">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="200">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇨🇦
@@ -131,7 +131,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="australia">
-            <div className="sis-country-card" data-aos="fade-up" data-aos-delay="250">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="250">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇦🇺
@@ -168,7 +168,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="new-zealand">
-            <div className="sis-country-card" data-aos="fade-up" data-aos-delay="100">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="100">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇳🇿
@@ -205,7 +205,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="germany">
-            <div className="sis-country-card" data-aos="fade-up" data-aos-delay="150">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="150">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇩🇪
@@ -242,7 +242,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="ireland">
-            <div className="sis-country-card" data-aos="fade-up" data-aos-delay="200">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="200">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇮🇪
@@ -279,7 +279,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="singapore">
-            <div className="sis-country-card" data-aos="fade-up" data-aos-delay="250">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="250">
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇸🇬

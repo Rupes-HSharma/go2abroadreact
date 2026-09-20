@@ -5,13 +5,11 @@ export default function ServicesIntro() {
         <div className="row">
           <div className="col-12">
             <div className="sisf-sis-section-title text-center sis-section-title">
-              <span className="sisf-m-subtitle sis-text-anime-style-3">
+              <span className="sisf-m-subtitle">
                 END-TO-END STUDY ABROAD SUPPORT
               </span>
-              <h2 className="sisf-m-title sis-text-anime-style-3">
-                Everything you need,
-                <span className="sisf-e-colored">
-                  under one roof.
+              <h2 className="sisf-m-title">
+                Everything you need,  <span className="sisf-e-colored">   under one roof.
                 </span>
               </h2>
               <div className="sisf-m-text">
@@ -22,7 +20,7 @@ export default function ServicesIntro() {
             </div>
           </div>
         </div>
-        <div className="sis-mini-stat-strip mb-5" data-aos="fade-up">
+        <div className="sis-mini-stat-strip mb-5" data-aos="fade-up--">
           <div className="sis-mini-stat">
             <h3>
               14
