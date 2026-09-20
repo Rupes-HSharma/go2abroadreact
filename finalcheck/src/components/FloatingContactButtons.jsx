@@ -18,7 +18,7 @@ export default function FloatingContactButtons() {
     <div className="sis-floating-contact" aria-label="Quick contact actions">
       <a
         className="sis-floating-contact-btn sis-floating-whatsapp"
-        href="https://wa.me/917068821740"
+        href="https://wa.me/7905377279 "
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with Go2Abroad on WhatsApp"
