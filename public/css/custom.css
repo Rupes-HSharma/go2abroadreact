@@ -14185,7 +14185,7 @@ position: relative;
 /* Office content */
 
 .footer-office-location-content {
-    min-width: 0;
+    max-width: 342px;
     padding-top: 1px;
 }
 

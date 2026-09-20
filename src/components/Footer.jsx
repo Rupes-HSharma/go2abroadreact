@@ -350,20 +350,22 @@ export default function Footer() {
                       </div>
 
 
-                      <div className="sisf-sis-e-content">
+                   <div className="sisf-sis-e-content">
 
-                        <span className="sis-title text-white d-block">
-                          Call / WhatsApp
-                        </span>
+                  <span className="sis-title text-white d-block">
+                    Call / WhatsApp
+                  </span>
 
-                        <a
-                          href="tel:+917068821740"
-                          className="sis-title text-white d-block"
-                        >
-                          +91-7905377279
-                        </a>
+                  <a
+                    href="https://wa.me/917905377279"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="sis-title text-white d-block"
+                  >
+                    +91-7905377279
+                  </a>
 
-                      </div>
+                </div>
 
                     </div>
 
@@ -429,7 +431,7 @@ export default function Footer() {
                           <i className="fa-solid fa-location-dot"></i>
 
                           <span>
-                            Delhi Office
+                            Head Office
                           </span>
 
                         </button>
@@ -475,7 +477,7 @@ export default function Footer() {
 
 
                               <Link to="/contact">
-                                Connaught Place, New Delhi, Delhi, India
+                            B-395, 2nd Floor, Nehru Ground, Neelam Chowk, Faridabad, Haryana - 121001
                               </Link>
 
                             </div>
