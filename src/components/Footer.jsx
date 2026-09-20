@@ -360,9 +360,9 @@ export default function Footer() {
                     href="https://wa.me/917905377279"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="sis-title text-white d-block"
+                    className="sis-title text-white d-block "
                   >
-                    +91-7905377279
+                    +91-7905377279 <i class="fa-solid fa-arrow-right-long"></i>
                   </a>
 
                 </div>
