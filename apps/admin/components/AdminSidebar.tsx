@@ -15,6 +15,7 @@ export function AdminSidebar({ onLogout }: { onLogout: () => void }) {
     ["◎", "Students", "/students"],
     ["◇", "Universities", "/universities"],
     ["▤", "Courses", "/courses"],
+    ["✦", "Services", "/services"],
     ["☆", "Reviews", "/reviews"],
     ["?", "FAQs", "/faqs"],
     ["✎", "Blog", "/blog"],

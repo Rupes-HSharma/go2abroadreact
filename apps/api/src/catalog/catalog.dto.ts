@@ -1,4 +1,5 @@
-import { IsBoolean, IsEmail, IsIn, IsOptional, IsString, IsUrl, MaxLength, MinLength } from "class-validator";
+import { Type } from "class-transformer";
+import { IsBoolean, IsEmail, IsIn, IsInt, IsOptional, IsString, IsUrl, Max, MaxLength, Min, MinLength } from "class-validator";
 
 export class CreateStudentDto {
   @IsEmail() email!: string;
@@ -34,6 +35,9 @@ export class CreateCourseDto {
   @IsOptional() @IsString() @MaxLength(120) field?: string;
   @IsOptional() @IsString() @MaxLength(80) duration?: string;
   @IsOptional() @IsString() @MaxLength(5000) description?: string;
+  @IsOptional() @IsString() @MaxLength(5000) highlights?: string;
+  @IsOptional() @IsString() @MaxLength(500) popularCountries?: string;
+  @IsOptional() @Type(() => Number) @IsInt() @Min(0) sortOrder?: number;
   @IsOptional() @IsBoolean() isPublished?: boolean;
   @IsOptional() @IsString() universityId?: string;
 }
@@ -44,17 +48,29 @@ export class CreateFaqDto {
   @IsString() @MinLength(3) @MaxLength(300) question!: string;
   @IsString() @MinLength(3) @MaxLength(5000) answer!: string;
   @IsOptional() @IsString() @MaxLength(100) category?: string;
-  @IsOptional() sortOrder?: number;
+  @IsOptional() @Type(() => Number) @IsInt() @Min(0) sortOrder?: number;
   @IsOptional() @IsBoolean() isPublished?: boolean;
 }
 
 export class UpdateFaqDto extends CreateFaqDto {}
 
+export class CreateServiceDto {
+  @IsString() @MinLength(2) @MaxLength(180) title!: string;
+  @IsString() @MinLength(2) @MaxLength(180) slug!: string;
+  @IsString() @MaxLength(100) icon!: string;
+  @IsString() @MinLength(5) @MaxLength(5000) description!: string;
+  @IsOptional() @Type(() => Number) @IsInt() @Min(0) sortOrder?: number;
+  @IsOptional() @IsBoolean() isPublished?: boolean;
+}
+
+export class UpdateServiceDto extends CreateServiceDto {}
+
 export class CreateReviewDto {
   @IsString() @MinLength(2) @MaxLength(120) name!: string;
   @IsOptional() @IsString() @MaxLength(120) role?: string;
   @IsString() @MinLength(5) @MaxLength(2000) quote!: string;
-  @IsOptional() rating?: number;
+  @IsOptional() @Type(() => Number) @IsInt() @Min(1) @Max(5) rating?: number;
+  @IsOptional() @IsString() @MaxLength(255) location?: string;
   @IsOptional() @IsString() avatarUrl?: string;
   @IsOptional() @IsBoolean() isPublished?: boolean;
 }

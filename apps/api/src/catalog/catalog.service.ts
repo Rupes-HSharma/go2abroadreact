@@ -1,7 +1,7 @@
 import { ConflictException, Injectable, NotFoundException } from "@nestjs/common";
 import * as bcrypt from "bcrypt";
 import { PrismaService } from "../prisma.service";
-import { CreateCourseDto, CreateFaqDto, CreateReviewDto, CreateStudentDto, CreateUniversityDto, UpdateCourseDto, UpdateFaqDto, UpdateReviewDto, UpdateStudentDto, UpdateUniversityDto } from "./catalog.dto";
+import { CreateCourseDto, CreateFaqDto, CreateReviewDto, CreateServiceDto, CreateStudentDto, CreateUniversityDto, UpdateCourseDto, UpdateFaqDto, UpdateReviewDto, UpdateServiceDto, UpdateStudentDto, UpdateUniversityDto } from "./catalog.dto";
 
 @Injectable()
 export class CatalogService {
@@ -35,14 +35,22 @@ export class CatalogService {
   async deleteUniversity(id: string) { await this.ensureUniversity(id); await this.prisma.university.delete({ where: { id } }); return { deleted: true }; }
 
   listCourses() { return this.prisma.course.findMany({ include: { university: { select: { id: true, name: true } } }, orderBy: { createdAt: "desc" } }); }
+  listPublishedCourses() { return this.prisma.course.findMany({ where: { isPublished: true }, orderBy: [{ sortOrder: "asc" }, { createdAt: "asc" }], select: { id: true, title: true, slug: true, level: true, duration: true, description: true, highlights: true, popularCountries: true, sortOrder: true } }); }
   createCourse(dto: CreateCourseDto) { return this.prisma.course.create({ data: dto }); }
   async updateCourse(id: string, dto: UpdateCourseDto) { await this.ensureCourse(id); return this.prisma.course.update({ where: { id }, data: dto }); }
   async deleteCourse(id: string) { await this.ensureCourse(id); await this.prisma.course.delete({ where: { id } }); return { deleted: true }; }
 
   listFaqs() { return this.prisma.faq.findMany({ orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }] }); }
+  listPublishedFaqs() { return this.prisma.faq.findMany({ where: { isPublished: true }, orderBy: [{ sortOrder: "asc" }, { createdAt: "asc" }], select: { id: true, question: true, answer: true, category: true, sortOrder: true } }); }
   createFaq(dto: CreateFaqDto) { return this.prisma.faq.create({ data: dto }); }
   async updateFaq(id: string, dto: UpdateFaqDto) { await this.ensureFaq(id); return this.prisma.faq.update({ where: { id }, data: dto }); }
   async deleteFaq(id: string) { await this.ensureFaq(id); await this.prisma.faq.delete({ where: { id } }); return { deleted: true }; }
+
+  listServices() { return this.prisma.serviceItem.findMany({ orderBy: [{ sortOrder: "asc" }, { createdAt: "asc" }] }); }
+  listPublishedServices() { return this.prisma.serviceItem.findMany({ where: { isPublished: true }, orderBy: [{ sortOrder: "asc" }, { createdAt: "asc" }], select: { id: true, title: true, slug: true, icon: true, description: true, sortOrder: true } }); }
+  createService(dto: CreateServiceDto) { return this.prisma.serviceItem.create({ data: dto }); }
+  async updateService(id: string, dto: UpdateServiceDto) { await this.ensureService(id); return this.prisma.serviceItem.update({ where: { id }, data: dto }); }
+  async deleteService(id: string) { await this.ensureService(id); await this.prisma.serviceItem.delete({ where: { id } }); return { deleted: true }; }
 
   listReviews() { return this.prisma.review.findMany({ orderBy: { createdAt: "desc" } }); }
   createReview(dto: CreateReviewDto) { return this.prisma.review.create({ data: dto }); }
@@ -52,5 +60,6 @@ export class CatalogService {
   private async ensureUniversity(id: string) { const item = await this.prisma.university.findUnique({ where: { id } }); if (!item) throw new NotFoundException("University not found."); return item; }
   private async ensureCourse(id: string) { const item = await this.prisma.course.findUnique({ where: { id } }); if (!item) throw new NotFoundException("Course not found."); return item; }
   private async ensureFaq(id: string) { const item = await this.prisma.faq.findUnique({ where: { id } }); if (!item) throw new NotFoundException("FAQ not found."); return item; }
+  private async ensureService(id: string) { const item = await this.prisma.serviceItem.findUnique({ where: { id } }); if (!item) throw new NotFoundException("Service not found."); return item; }
   private async ensureReview(id: string) { const item = await this.prisma.review.findUnique({ where: { id } }); if (!item) throw new NotFoundException("Review not found."); return item; }
 }

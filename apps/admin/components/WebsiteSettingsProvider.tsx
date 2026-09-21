@@ -25,16 +25,23 @@ function importedAssetUrl(asset: string | { src: string }) {
   return typeof asset === "string" ? asset : asset.src;
 }
 
+const defaultLogoUrl = importedAssetUrl(defaultLogo);
+const defaultLightLogoUrl = importedAssetUrl(defaultLightLogo);
+
 const defaultSettings: WebsiteSettings = {
   siteName: "Go2Abroad",
-  logoUrl: importedAssetUrl(defaultLogo),
-  logoLightUrl: importedAssetUrl(defaultLightLogo),
+  logoUrl: defaultLogoUrl,
+  logoLightUrl: defaultLightLogoUrl,
 };
 
 function assetUrl(value?: string) {
   if (!value) return "";
   if (/^(https?:|data:|blob:)/i.test(value)) return value;
   if (value.startsWith("/uploads/")) return `${API_BASE}${value}`;
+  if (value === "/images/logo.svg" || value === "/images/logo.png") {
+    return defaultLogoUrl;
+  }
+  if (value === "/images/logo-white.svg") return defaultLightLogoUrl;
   if (value.startsWith("/images/") || value.startsWith("/favicon")) {
     return `${WEBSITE_BASE}${value}`;
   }

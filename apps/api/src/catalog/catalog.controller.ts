@@ -2,7 +2,7 @@ import { Body, Controller, Delete, Get, Param, Patch, Post, UseGuards } from "@n
 import { ApiBearerAuth, ApiTags } from "@nestjs/swagger";
 import { ADMIN_ROLES, CmsGuard, CmsRoles } from "../auth/cms.guard";
 import { CatalogService } from "./catalog.service";
-import { CreateCourseDto, CreateFaqDto, CreateReviewDto, CreateStudentDto, CreateUniversityDto, UpdateCourseDto, UpdateFaqDto, UpdateReviewDto, UpdateStudentDto, UpdateUniversityDto } from "./catalog.dto";
+import { CreateCourseDto, CreateFaqDto, CreateReviewDto, CreateServiceDto, CreateStudentDto, CreateUniversityDto, UpdateCourseDto, UpdateFaqDto, UpdateReviewDto, UpdateServiceDto, UpdateStudentDto, UpdateUniversityDto } from "./catalog.dto";
 
 @ApiTags("Catalog and Students")
 @ApiBearerAuth()
@@ -26,8 +26,33 @@ export class CatalogController {
   @Post("faqs") @CmsRoles(...ADMIN_ROLES) createFaq(@Body() dto: CreateFaqDto) { return this.service.createFaq(dto); }
   @Patch("faqs/:id") @CmsRoles(...ADMIN_ROLES) updateFaq(@Param("id") id: string, @Body() dto: UpdateFaqDto) { return this.service.updateFaq(id, dto); }
   @Delete("faqs/:id") @CmsRoles(...ADMIN_ROLES) deleteFaq(@Param("id") id: string) { return this.service.deleteFaq(id); }
+  @Get("services") @CmsRoles(...ADMIN_ROLES) services() { return this.service.listServices(); }
+  @Post("services") @CmsRoles(...ADMIN_ROLES) createService(@Body() dto: CreateServiceDto) { return this.service.createService(dto); }
+  @Patch("services/:id") @CmsRoles(...ADMIN_ROLES) updateService(@Param("id") id: string, @Body() dto: UpdateServiceDto) { return this.service.updateService(id, dto); }
+  @Delete("services/:id") @CmsRoles(...ADMIN_ROLES) deleteService(@Param("id") id: string) { return this.service.deleteService(id); }
   @Get("reviews") @CmsRoles(...ADMIN_ROLES) reviews() { return this.service.listReviews(); }
   @Post("reviews") @CmsRoles(...ADMIN_ROLES) createReview(@Body() dto: CreateReviewDto) { return this.service.createReview(dto); }
   @Patch("reviews/:id") @CmsRoles(...ADMIN_ROLES) updateReview(@Param("id") id: string, @Body() dto: UpdateReviewDto) { return this.service.updateReview(id, dto); }
   @Delete("reviews/:id") @CmsRoles(...ADMIN_ROLES) deleteReview(@Param("id") id: string) { return this.service.deleteReview(id); }
+}
+
+@ApiTags("Public Catalog")
+@Controller("public")
+export class PublicCatalogController {
+  constructor(private readonly service: CatalogService) {}
+
+  @Get("courses")
+  courses() {
+    return this.service.listPublishedCourses();
+  }
+
+  @Get("faqs")
+  faqs() {
+    return this.service.listPublishedFaqs();
+  }
+
+  @Get("services")
+  services() {
+    return this.service.listPublishedServices();
+  }
 }
