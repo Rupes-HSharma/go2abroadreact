@@ -1,4 +1,4 @@
-import { useState } from "react";
+ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const img = (path) =>
@@ -57,69 +57,200 @@ export default function Footer() {
               <div className="g2-footer-partners-track">
 
                 {[
-                  ["Credila", "credila.com", "CR"],
-                  ["Avanse", "avanse.com", "A"],
-                  ["Poonawalla Fincorp", "poonawallafincorp.com", "PF"],
-                  ["Yes Bank", "yesbank.in", "YES"],
-                  ["Axis Bank", "axisbank.com", "AXIS"],
-                  ["ICICI Bank", "icicibank.com", "ICICI"],
-                  ["IDFC First", "idfcfirstbank.com", "IDFC"],
-                  ["Auxilo", "auxilo.com", "AUX"],
-                  ["InCred", "incred.com", "IN"],
-                  ["EdGro", "edgro.in", "EG"],
-                  ["Tata Capital", "tatacapital.com", "TATA"],
-                  ["MPower (Int. Lender)", "mpowerfinancing.com", "MPOWER"],
-                  ["Prodigy (Int. Lender)", "prodigyfinance.com", "P"],
-                  ["US Cosigner (Int. Lender)", "uscosigner.com", "USC"],
-                  ["Saraswat Bank", "saraswatbank.com", "SB"]
-                ].concat([
-                  ["Credila", "credila.com", "CR"],
-                  ["Avanse", "avanse.com", "A"],
-                  ["Poonawalla Fincorp", "poonawallafincorp.com", "PF"],
-                  ["Yes Bank", "yesbank.in", "YES"],
-                  ["Axis Bank", "axisbank.com", "AXIS"],
-                  ["ICICI Bank", "icicibank.com", "ICICI"],
-                  ["IDFC First", "idfcfirstbank.com", "IDFC"],
-                  ["Auxilo", "auxilo.com", "AUX"],
-                  ["InCred", "incred.com", "IN"],
-                  ["EdGro", "edgro.in", "EG"],
-                  ["Tata Capital", "tatacapital.com", "TATA"],
-                  ["MPower (Int. Lender)", "mpowerfinancing.com", "MPOWER"],
-                  ["Prodigy (Int. Lender)", "prodigyfinance.com", "P"],
-                  ["US Cosigner (Int. Lender)", "uscosigner.com", "USC"],
-                  ["Saraswat Bank", "saraswatbank.com", "SB"]
-                ]).map(([name, domain, fallback], index) => (
+                  {
+                    name: "Credila",
+                    logo: "/images/partners/credila.png",
+                    fallback: "CR"
+                  },
+                  {
+                    name: "Avanse",
+                    logo: "/images/partners/avanse.png",
+                    fallback: "A"
+                  },
+                  {
+                    name: "Poonawalla Fincorp",
+                    logo: "/images/partners/poonawalla-fincorp.png",
+                    fallback: "PF"
+                  },
+                  {
+                    name: "Yes Bank",
+                    logo: "/images/partners/yes-bank.png",
+                    fallback: "YES"
+                  },
+                  {
+                    name: "Axis Bank",
+                    logo: "/images/partners/axis-bank.png",
+                    fallback: "AXIS"
+                  },
+                  {
+                    name: "ICICI Bank",
+                    logo: "/images/partners/icici-bank.png",
+                    fallback: "ICICI"
+                  },
+                  {
+                    name: "IDFC First",
+                    logo: "/images/partners/idfc-first.png",
+                    fallback: "IDFC"
+                  },
+                  {
+                    name: "Auxilo",
+                    logo: "/images/partners/auxilo.png",
+                    fallback: "AUX"
+                  },
+                  {
+                    name: "InCred",
+                    logo: "/images/partners/incred.png",
+                    fallback: "IN"
+                  },
+                  {
+                    name: "EdGro",
+                    logo: "/images/partners/edgro.png",
+                    fallback: "EG"
+                  },
+                  {
+                    name: "Tata Capital",
+                    logo: "/images/partners/tata-capital.png",
+                    fallback: "TATA"
+                  },
+                  {
+                    name: "MPower (Int. Lender)",
+                    logo: "/images/partners/mpower.png",
+                    fallback: "MPOWER"
+                  },
+                  {
+                    name: "Prodigy (Int. Lender)",
+                    logo: "/images/partners/prodigy.png",
+                    fallback: "P"
+                  },
+                  {
+                    name: "US Cosigner (Int. Lender)",
+                    logo: "/images/partners/us-cosigner.png",
+                    fallback: "USC"
+                  },
+                  {
+                    name: "Saraswat Bank",
+                    logo: "/images/partners/saraswat-bank.png",
+                    fallback: "SB"
+                  }
+                ]
+                  .concat([
+                    {
+                      name: "Credila",
+                      logo: "/images/partners/credila.png",
+                      fallback: "CR"
+                    },
+                    {
+                      name: "Avanse",
+                      logo: "/images/partners/avanse.png",
+                      fallback: "A"
+                    },
+                    {
+                      name: "Poonawalla Fincorp",
+                      logo: "/images/partners/poonawalla-fincorp.png",
+                      fallback: "PF"
+                    },
+                    {
+                      name: "Yes Bank",
+                      logo: "/images/partners/yes-bank.png",
+                      fallback: "YES"
+                    },
+                    {
+                      name: "Axis Bank",
+                      logo: "/images/partners/axis-bank.png",
+                      fallback: "AXIS"
+                    },
+                    {
+                      name: "ICICI Bank",
+                      logo: "/images/partners/icici-bank.png",
+                      fallback: "ICICI"
+                    },
+                    {
+                      name: "IDFC First",
+                      logo: "/images/partners/idfc-first.png",
+                      fallback: "IDFC"
+                    },
+                    {
+                      name: "Auxilo",
+                      logo: "/images/partners/auxilo.png",
+                      fallback: "AUX"
+                    },
+                    {
+                      name: "InCred",
+                      logo: "/images/partners/incred.png",
+                      fallback: "IN"
+                    },
+                    {
+                      name: "EdGro",
+                      logo: "/images/partners/edgro.png",
+                      fallback: "EG"
+                    },
+                    {
+                      name: "Tata Capital",
+                      logo: "/images/partners/tata-capital.png",
+                      fallback: "TATA"
+                    },
+                    {
+                      name: "MPower (Int. Lender)",
+                      logo: "/images/partners/mpower.png",
+                      fallback: "MPOWER"
+                    },
+                    {
+                      name: "Prodigy (Int. Lender)",
+                      logo: "/images/partners/prodigy.png",
+                      fallback: "P"
+                    },
+                    {
+                      name: "US Cosigner (Int. Lender)",
+                      logo: "/images/partners/us-cosigner.png",
+                      fallback: "USC"
+                    },
+                    {
+                      name: "Saraswat Bank",
+                      logo: "/images/partners/saraswat-bank.png",
+                      fallback: "SB"
+                    }
+                  ])
+                  .map(({ name, logo, fallback }, index) => (
 
-                  <div
-                    className="g2-partner-card"
-                    key={`${name}-${index}`}
-                  >
+                    <div
+                      className="g2-partner-card"
+                      key={`${name}-${index}`}
+                    >
 
-                    <span className="g2-partner-mark">
+                      <span className="g2-partner-mark">
 
-                      <img
-                        src={`https://www.google.com/s2/favicons?domain=${domain}&sz=64`}
-                        alt=""
-                        loading="lazy"
-                        onError={(e) => {
-                          e.currentTarget.style.display = "none";
-                          e.currentTarget.nextElementSibling.style.display = "inline";
-                        }}
-                      />
+                        <img
+                          src={img(logo)}
+                          alt={`${name} logo`}
+                          loading="lazy"
+                          onError={(e) => {
+                            e.currentTarget.style.display = "none";
 
-                      <span className="g2-partner-fallback">
-                        {fallback}
+                            if (
+                              e.currentTarget.nextElementSibling
+                            ) {
+                              e.currentTarget.nextElementSibling.style.display =
+                                "inline-flex";
+                            }
+                          }}
+                        />
+
+                        <span
+                          className="g2-partner-fallback"
+                          style={{ display: "none" }}
+                        >
+                          {fallback}
+                        </span>
+
                       </span>
 
-                    </span>
+                      <strong>
+                        {name}
+                      </strong>
 
-                    <strong>
-                      {name}
-                    </strong>
+                    </div>
 
-                  </div>
-
-                ))}
+                  ))}
 
               </div>
 
@@ -185,8 +316,6 @@ export default function Footer() {
                       the career that follows — at zero consultation cost.
 
                     </li>
-
- 
 
                   </ul>
 
@@ -350,22 +479,23 @@ export default function Footer() {
                       </div>
 
 
-                   <div className="sisf-sis-e-content">
+                      <div className="sisf-sis-e-content">
 
-                  <span className="sis-title text-white d-block">
-                    Call / WhatsApp
-                  </span>
+                        <span className="sis-title text-white d-block">
+                          Call / WhatsApp
+                        </span>
 
-                  <a
-                    href="https://wa.me/917905377279"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="sis-title text-white d-block "
-                  >
-                    +91-7905377279 <i class="fa-solid fa-arrow-right-long"></i>
-                  </a>
+                        <a
+                          href="https://wa.me/917905377279"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="sis-title text-white d-block"
+                        >
+                          +91-7905377279{" "}
+                          <i className="fa-solid fa-arrow-right-long"></i>
+                        </a>
 
-                </div>
+                      </div>
 
                     </div>
 
@@ -470,14 +600,11 @@ export default function Footer() {
 
                           <div className="footer-office-location">
 
-                         
-
-
                             <div className="footer-office-location-content">
 
-
                               <Link to="/contact">
-                            B-395, 2nd Floor, Nehru Ground, Neelam Chowk, Faridabad, Haryana - 121001
+                                B-395, 2nd Floor, Nehru Ground, Neelam Chowk,
+                                Faridabad, Haryana - 121001
                               </Link>
 
                             </div>
@@ -498,11 +625,7 @@ export default function Footer() {
 
                           <div className="footer-office-location">
 
-                          
-
                             <div className="footer-office-location-content">
-
-                          
 
                               <Link to="/contact">
                                 SCO 223, Sector 13-17 Main Rd, HUDA,
@@ -558,74 +681,75 @@ export default function Footer() {
                 </div>
 
 
-                {/* Empty Space */}
+                {/* Social Icons */}
                 <div className="col-xl-2 col-lg-2 col-md-3">
-  <div className="footer-links page">
 
-                        <div className="footer-social-icons-link page">
+                  <div className="footer-links page">
 
-                          <ul className="list-unstyled d-flex align-items-left justify-content-left gap-3 p-0 m-0">
+                    <div className="footer-social-icons-link page">
 
-                            {/* Facebook */}
-                            <li className="mb-0 p-0">
+                      <ul className="list-unstyled d-flex align-items-left justify-content-left gap-3 p-0 m-0">
 
-                              <a
-                                href="https://www.facebook.com/p/Go2Abroad-Overseas-Consultancy-61587411091019/"
-                                target="_blank"
-                                rel="noopener"
-                              >
-                                <i className="fa-brands fa-facebook"></i>
-                              </a>
+                        {/* Facebook */}
+                        <li className="mb-0 p-0">
 
-                            </li>
+                          <a
+                            href="https://www.facebook.com/p/Go2Abroad-Overseas-Consultancy-61587411091019/"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <i className="fa-brands fa-facebook"></i>
+                          </a>
 
-
-                            {/* Instagram */}
-                            <li className="mb-0 p-0">
-
-                              <a
-                                href="https://www.instagram.com/go2abroad_?igsh=cG10ODg4bDY4ejh1&utm_source=qr"
-                                target="_blank"
-                                rel="noopener"
-                              >
-                                <i className="fa-brands fa-instagram"></i>
-                              </a>
-
-                            </li>
+                        </li>
 
 
-                            {/* X */}
-                            <li className="mb-0 p-0">
+                        {/* Instagram */}
+                        <li className="mb-0 p-0">
 
-                              <a
-                                href="https://x.com/G2Abroad_25?t=-zpbUEvZoTwsGH3QNKZSfA&s=09"
-                                target="_blank"
-                                rel="noopener"
-                              >
-                                <i className="fa-brands fa-x-twitter"></i>
-                              </a>
+                          <a
+                            href="https://www.instagram.com/go2abroad_?igsh=cG10ODg4bDY4ejh1&utm_source=qr"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <i className="fa-brands fa-instagram"></i>
+                          </a>
 
-                            </li>
+                        </li>
 
 
-                            {/* YouTube */}
-                            <li className="mb-0 p-0">
+                        {/* X */}
+                        <li className="mb-0 p-0">
 
-                              <a
-                                href="https://www.youtube.com/@go2abroad"
-                                target="_blank"
-                                rel="noopener"
-                              >
-                                <i className="fa-brands fa-youtube"></i>
-                              </a>
+                          <a
+                            href="https://x.com/G2Abroad_25?t=-zpbUEvZoTwsGH3QNKZSfA&s=09"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <i className="fa-brands fa-x-twitter"></i>
+                          </a>
 
-                            </li>
+                        </li>
 
-                          </ul>
 
-                        </div>
+                        {/* YouTube */}
+                        <li className="mb-0 p-0">
 
-                      </div>
+                          <a
+                            href="https://www.youtube.com/@go2abroad"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <i className="fa-brands fa-youtube"></i>
+                          </a>
+
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+                  </div>
 
                 </div>
 
