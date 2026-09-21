@@ -1,0 +1,8 @@
+{
+  "name": "go2abroad-student",
+  "private": true,
+  "overrides": { "next": { "postcss": "^8.5.28", "sharp": "^0.35.4" } },
+  "scripts": { "dev": "next dev -p 3002", "build": "next build", "start": "next start -p 3002" },
+  "dependencies": { "next": "^15.0.0", "react": "^19.0.0", "react-dom": "^19.0.0" },
+  "devDependencies": { "@types/node": "^22.0.0", "@types/react": "^19.0.0", "@types/react-dom": "^19.0.0", "typescript": "^5.0.0" }
+}

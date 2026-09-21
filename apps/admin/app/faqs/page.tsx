@@ -1,0 +1,3 @@
+"use client";
+import { CrudResource } from "../../components/CrudResource";
+export default function FaqsPage() { return <CrudResource title="FAQs" description="Manage frequently asked questions shown across the website." endpoint="/faqs" fields={[{ name: "question", label: "Question", required: true }, { name: "answer", label: "Answer", type: "textarea", required: true }, { name: "category", label: "Category" }, { name: "sortOrder", label: "Sort order", type: "text" }, { name: "isPublished", label: "Published", type: "checkbox" }]} columns={[{ key: "question", label: "Question" }, { key: "category", label: "Category" }, { key: "sortOrder", label: "Order" }, { key: "isPublished", label: "Published" }]} />; }

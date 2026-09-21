@@ -1,0 +1,3 @@
+"use client";
+import { CrudResource } from "../../components/CrudResource";
+export default function ReviewsPage() { return <CrudResource title="Reviews" description="Manage testimonials and student reviews shown on the website." endpoint="/reviews" fields={[{ name: "name", label: "Name", required: true }, { name: "role", label: "Role or course" }, { name: "quote", label: "Review", type: "textarea", required: true }, { name: "rating", label: "Rating (1–5)", type: "text" }, { name: "avatarUrl", label: "Avatar URL" }, { name: "isPublished", label: "Published", type: "checkbox" }]} columns={[{ key: "name", label: "Name" }, { key: "role", label: "Role" }, { key: "rating", label: "Rating" }, { key: "isPublished", label: "Published" }]} />; }

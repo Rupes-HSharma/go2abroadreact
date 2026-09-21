@@ -1,0 +1,35 @@
+{
+  "name": "go2abroad-admin",
+  "private": true,
+  "overrides": { "next": { "postcss": "^8.5.28", "sharp": "^0.35.4" } },
+  "scripts": {
+    "predev": "npm --prefix ../../packages/page-builder run build",
+    "prebuild": "npm --prefix ../../packages/page-builder run build",
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@go2abroad/page-builder": "file:../../packages/page-builder",
+    "@radix-ui/react-slot": "^1.3.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.45.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.5.6",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.0.0"
+  }
+}

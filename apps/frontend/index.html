@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+    <!-- Bootstrap Css Link -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="/css/mousecursor.css" />
+    <!-- Magnific Popup Css File -->
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+    <!-- Font Awesome Icon Css-->
+    <link href="./css/all.min.css" rel="stylesheet" media="screen" />
+    <!-- SlickNav Css -->
+    <link href="./css/slicknav.min.css" rel="stylesheet" />
+    <!-- Animation On Scroll Css File -->
+    <link href="./css/aos.css" rel="stylesheet" />
+    <!-- Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Plus Jakarta Sans Fonts Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+    <!-- Main Custom Css -->
+    <link href="./css/custom.css" rel="stylesheet" media="screen" />
+
+    <title>GO2ABROAD</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- React App (mounts first, then legacy plugin scripts run against the rendered DOM) -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Legacy template scripts, kept in original order, deferred so they run after React mounts -->
+    <script src="./js/jquery-3.7.1.min.js" defer></script>
+    <script src="./js/bootstrap.min.js" defer></script>
+    <script src="./js/validator.min.js" defer></script>
+    <script src="./js/jquery.slicknav.js" defer></script>
+    <script src="/js/swiper-bundle.min.js" defer></script>
+    <script src="/js/aos.js" defer></script>
+    <script src="/js/jquery.waypoints.min.js" defer></script>
+    <script src="/js/jquery.counterup.min.js" defer></script>
+    <script src="/js/jquery.magnific-popup.min.js" defer></script>
+    <script src="/js/gsap.min.js" defer></script>
+    <script src="/js/magiccursor.js" defer></script>
+    <script src="/js/cursor/cursor.js" defer></script>
+    <script src="/js/ScrollTrigger.min.js" defer></script>
+    <script src="/js/SplitText.js" defer></script>
+    <script src="/js/script.js" defer></script>
+    <script src="/js/country-tools.js" defer></script>
+    <!-- React SPA re-initializer: re-runs page plugins after client-side route changes -->
+    <script src="/js/react-spa-init.js" defer></script>
+    <script defer>
+      window.addEventListener("load", function () {
+        if (window.AOS) AOS.refresh();
+      });
+    </script>
+  </body>
+</html>
