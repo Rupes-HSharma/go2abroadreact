@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:4000").replace(/\/$/, "");
 const categories = [
@@ -57,6 +58,7 @@ function FaqGroup({ category, entries }) {
 export default function FaqPage() {
   const [faqs, setFaqs] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -69,7 +71,10 @@ export default function FaqPage() {
         if (!cancelled) setFaqs(Array.isArray(data) ? data : []);
       })
       .catch(() => {
-        if (!cancelled) setFaqs([]);
+        if (!cancelled) {
+          setFaqs([]);
+          setError(true);
+        }
       })
       .finally(() => {
         if (!cancelled) setLoading(false);
@@ -82,6 +87,9 @@ export default function FaqPage() {
 
   if (loading) {
     return <div className="sis-faq-page-section section"><div className="container"><p>Loading FAQs…</p></div></div>;
+  }
+  if (error) {
+    return <div className="sis-faq-page-section section"><div className="container"><p>FAQs are temporarily unavailable. <Link to="/contact">Contact us</Link> and our team will help answer your questions.</p></div></div>;
   }
 
   return (

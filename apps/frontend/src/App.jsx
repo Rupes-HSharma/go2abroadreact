@@ -10,6 +10,8 @@ import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
 import Usa from "./pages/Usa";
 import ArizonaStateUniversity from "./pages/ArizonaStateUniversity";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 export default function App() {
   return (
@@ -30,6 +32,8 @@ export default function App() {
       path="/arizona-state-university"
       element={<ArizonaStateUniversity />}
     />
+    <Route path="/blog" element={<Blog />} />
+    <Route path="/blog/:slug" element={<BlogPost />} />
   </Route>
 
 </Routes>

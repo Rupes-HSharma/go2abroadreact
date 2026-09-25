@@ -46,6 +46,11 @@ export class PublicCatalogController {
     return this.service.listPublishedCourses();
   }
 
+  @Get("universities")
+  universities() {
+    return this.service.listPublishedUniversities();
+  }
+
   @Get("faqs")
   faqs() {
     return this.service.listPublishedFaqs();
@@ -54,5 +59,10 @@ export class PublicCatalogController {
   @Get("services")
   services() {
     return this.service.listPublishedServices();
+  }
+
+  @Get("reviews")
+  reviews() {
+    return this.service.listPublishedReviews();
   }
 }

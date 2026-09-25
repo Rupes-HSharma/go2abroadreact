@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:4000").replace(/\/$/, "");
 
@@ -33,6 +34,7 @@ function CourseCard({ course, delay }) {
 export default function CoursesList() {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -45,7 +47,10 @@ export default function CoursesList() {
         if (!cancelled) setCourses(Array.isArray(data) ? data : []);
       })
       .catch(() => {
-        if (!cancelled) setCourses([]);
+        if (!cancelled) {
+          setCourses([]);
+          setError(true);
+        }
       })
       .finally(() => {
         if (!cancelled) setLoading(false);
@@ -57,6 +62,7 @@ export default function CoursesList() {
   }, []);
 
   if (loading) return <div className="sis-courses-list-section section pt-0"><div className="container"><p>Loading courses…</p></div></div>;
+  if (error) return <div className="sis-courses-list-section section pt-0"><div className="container"><p>Courses are temporarily unavailable. <Link to="/contact">Contact us</Link> for help choosing a program.</p></div></div>;
 
   return (
     <div className="sis-courses-list-section section pt-0">

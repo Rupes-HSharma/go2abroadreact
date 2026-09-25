@@ -30,6 +30,7 @@ export class CatalogService {
   }
 
   listUniversities() { return this.prisma.university.findMany({ include: { _count: { select: { courses: true } } }, orderBy: { createdAt: "desc" } }); }
+  listPublishedUniversities() { return this.prisma.university.findMany({ where: { isPublished: true }, orderBy: { createdAt: "asc" }, select: { id: true, name: true, slug: true, country: true, city: true, website: true, description: true, logoUrl: true } }); }
   createUniversity(dto: CreateUniversityDto) { return this.prisma.university.create({ data: dto }); }
   async updateUniversity(id: string, dto: UpdateUniversityDto) { await this.ensureUniversity(id); return this.prisma.university.update({ where: { id }, data: dto }); }
   async deleteUniversity(id: string) { await this.ensureUniversity(id); await this.prisma.university.delete({ where: { id } }); return { deleted: true }; }
@@ -53,6 +54,7 @@ export class CatalogService {
   async deleteService(id: string) { await this.ensureService(id); await this.prisma.serviceItem.delete({ where: { id } }); return { deleted: true }; }
 
   listReviews() { return this.prisma.review.findMany({ orderBy: { createdAt: "desc" } }); }
+  listPublishedReviews() { return this.prisma.review.findMany({ where: { isPublished: true }, orderBy: { createdAt: "asc" }, select: { id: true, name: true, role: true, quote: true, location: true, rating: true, avatarUrl: true } }); }
   createReview(dto: CreateReviewDto) { return this.prisma.review.create({ data: dto }); }
   async updateReview(id: string, dto: UpdateReviewDto) { await this.ensureReview(id); return this.prisma.review.update({ where: { id }, data: dto }); }
   async deleteReview(id: string) { await this.ensureReview(id); await this.prisma.review.delete({ where: { id } }); return { deleted: true }; }

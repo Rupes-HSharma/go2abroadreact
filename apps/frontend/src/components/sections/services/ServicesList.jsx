@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:4000").replace(/\/$/, "");
 
 export default function ServicesList() {
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -17,7 +19,10 @@ export default function ServicesList() {
         if (!cancelled) setServices(Array.isArray(data) ? data : []);
       })
       .catch(() => {
-        if (!cancelled) setServices([]);
+        if (!cancelled) {
+          setServices([]);
+          setError(true);
+        }
       })
       .finally(() => {
         if (!cancelled) setLoading(false);
@@ -29,6 +34,7 @@ export default function ServicesList() {
   }, []);
 
   if (loading) return <div className="sis-services-list-section section pt-0"><div className="container"><p>Loading services…</p></div></div>;
+  if (error) return <div className="sis-services-list-section section pt-0"><div className="container"><p>Services are temporarily unavailable. <Link to="/contact">Contact us</Link> and we’ll help plan your journey.</p></div></div>;
 
   return (
     <div className="sis-services-list-section section pt-0">
