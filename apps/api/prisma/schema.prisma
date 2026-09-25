@@ -1,0 +1,393 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String       @id @default(uuid())
+  email             String       @unique
+  passwordHash      String?
+  name              String?
+  firstName         String?
+  lastName          String?
+  phone             String?
+  avatarUrl         String?
+  role              UserRole     @default(STUDENT)
+  status            UserStatus   @default(ACTIVE)
+  emailVerifiedAt   DateTime?
+  lastLoginAt       DateTime?
+  timezone          String?      @default("UTC")
+  locale            String?      @default("en")
+  createdAt         DateTime     @default(now())
+  updatedAt         DateTime     @updatedAt
+  deletedAt         DateTime?
+  resetTokenHash     String?
+  resetTokenExpiresAt DateTime?
+  sessions           AuthSession[]
+  studentProfile    StudentProfile?
+  blogPosts         BlogPost[]
+
+  @@index([role])
+  @@index([status])
+  @@index([createdAt])
+  @@map("User")
+}
+
+model AuthSession {
+  id        String   @id @default(uuid())
+  userId    String
+  tokenHash String   @unique
+  expiresAt DateTime
+  revokedAt DateTime?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+  @@map("auth_sessions")
+}
+
+model StudentProfile {
+  id                 String    @id @default(uuid())
+  userId             String    @unique
+  dateOfBirth        DateTime?
+  gender             String?
+  nationality        String?
+  passportNumber     String?
+  addressLine1       String?
+  addressLine2       String?
+  city               String?
+  state              String?
+  postalCode         String?
+  country            String?
+  highestEducation   String?
+  graduationYear     Int?
+  englishTest        String?
+  englishTestScore   String?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+  user               User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([country])
+  @@map("student_profiles")
+}
+
+model WebsiteSetting {
+  id                  String   @id @default(uuid())
+  key                 String   @unique @default("default")
+  siteName            String
+  slogan              String?
+  logoUrl             String?
+  logoLightUrl        String?
+  faviconUrl          String?
+  primaryColor        String?
+  secondaryColor      String?
+  footerTitle         String?
+  footerDescription   String?
+  copyrightText       String?
+  seoTitle            String?
+  seoDescription      String?
+  seoKeywords         String?
+  ogImageUrl          String?
+  contactEmail        String?
+  contactPhone        String?
+  whatsappNumber      String?
+  address             String?
+  officeHours         String?
+  socialLinks         Json?
+  googleMapsUrl       String?
+  privacyPolicyUrl    String?
+  termsUrl            String?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  @@map("website_settings")
+}
+
+model Lead {
+  id           String     @id @default(uuid())
+  firstName    String
+  email        String
+  phone        String
+  destination  String?
+  interest     String?
+  message      String       @db.Text
+  source       String     @default("website-contact")
+  status       LeadStatus @default(NEW)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@index([status])
+  @@index([createdAt])
+  @@index([email])
+  @@map("leads")
+}
+
+model University {
+  id          String   @id @default(uuid())
+  name        String
+  slug        String   @unique
+  country     String
+  city        String?
+  website     String?
+  description String?  @db.Text
+  logoUrl     String?
+  isPublished Boolean  @default(false)
+  courses     Course[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([country])
+  @@index([isPublished])
+  @@map("universities")
+}
+
+model Course {
+  id           String     @id @default(uuid())
+  title        String
+  slug         String     @unique
+  level        String
+  field        String?
+  duration     String?
+  description  String?  @db.Text
+  highlights   String?  @db.Text
+  popularCountries String?
+  sortOrder    Int      @default(0)
+  isPublished  Boolean    @default(false)
+  universityId String?
+  university   University? @relation(fields: [universityId], references: [id], onDelete: SetNull)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@index([level])
+  @@index([universityId])
+  @@index([isPublished])
+  @@map("courses")
+}
+
+model Faq {
+  id          String   @id @default(uuid())
+  question    String
+  answer      String   @db.Text
+  category    String?
+  sortOrder   Int      @default(0)
+  isPublished Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([isPublished, sortOrder])
+  @@map("faqs")
+}
+
+model ServiceItem {
+  id          String   @id @default(uuid())
+  title       String
+  slug        String   @unique
+  icon        String
+  description String   @db.Text
+  sortOrder   Int      @default(0)
+  isPublished Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([isPublished, sortOrder])
+  @@map("services")
+}
+
+model Review {
+  id          String   @id @default(uuid())
+  name        String
+  role        String?
+  quote       String   @db.Text
+  location    String?
+  rating      Int      @default(5)
+  avatarUrl   String?
+  isPublished Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([isPublished])
+  @@map("reviews")
+}
+
+model BlogPost {
+  id            String         @id @default(uuid())
+  title         String
+  slug          String         @unique
+  excerpt       String?        @db.Text
+  content       String         @db.Text
+  coverImageUrl String?
+  status        BlogPostStatus @default(DRAFT)
+  publishedAt   DateTime?
+  authorId      String?
+  author        User?          @relation(fields: [authorId], references: [id], onDelete: SetNull)
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  @@index([status, publishedAt])
+  @@index([authorId])
+  @@map("blog_posts")
+}
+
+model Page {
+  id              String        @id @default(uuid())
+  title           String
+  slug            String        @unique
+  status          PageStatus    @default(DRAFT)
+  metaTitle       String?
+  metaDescription String?
+  canonicalUrl    String?
+  ogTitle         String?
+  ogDescription   String?
+  ogImage         String?
+  robots          String?       @default("index,follow")
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  sections        PageSection[]
+  versions        PageVersion[]
+  revision        Int           @default(0)
+  publishedSlug   String?       @unique
+  publishedConfiguration Json?
+  draftTheme      Json?
+  draftNavigation Json?
+  previews        PagePreview[]
+
+  @@index([status])
+  @@map("pages")
+}
+
+model PageSection {
+  id         String   @id @default(uuid())
+  pageId     String
+  type       String
+  order      Int
+  data       Json
+  settings   Json?
+  isVisible  Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  page       Page     @relation(fields: [pageId], references: [id], onDelete: Cascade)
+
+  @@index([pageId, order])
+  @@index([type])
+  @@map("page_sections")
+}
+
+model PageVersion {
+  id          String   @id @default(uuid())
+  pageId      String
+  version     Int
+  configuration Json
+  createdBy   String?
+  createdAt   DateTime @default(now())
+  publishedAt DateTime?
+  page        Page     @relation(fields: [pageId], references: [id], onDelete: Cascade)
+
+  @@unique([pageId, version])
+  @@index([pageId])
+  @@map("page_versions")
+}
+
+enum UserRole {
+  SUPER_ADMIN
+  ADMIN
+  CONTENT_MANAGER
+  SEO_MANAGER
+  COUNSELLOR
+  EDITOR
+  STUDENT
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUALIFIED
+  CONVERTED
+  LOST
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+}
+
+enum PageStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+enum BlogPostStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+model PagePreview {
+  id            String   @id @default(uuid())
+  pageId        String
+  sessionId     String
+  configuration Json
+  expiresAt     DateTime
+  page          Page     @relation(fields: [pageId], references: [id], onDelete: Cascade)
+
+  @@index([expiresAt])
+  @@map("page_previews")
+}
+
+model Media {
+  id           String   @id @default(uuid())
+  storageKey   String   @unique
+  name         String
+  mimeType     String
+  size         Int
+  createdBy    String
+  createdAt    DateTime @default(now())
+
+  @@index([createdAt])
+  @@map("media")
+}
+
+model Theme {
+  id            String @id @default("default")
+  configuration Json
+  updatedAt     DateTime @updatedAt
+  @@map("themes")
+}
+
+model Navigation {
+  id        String @id @default("default")
+  items     NavigationItem[]
+  updatedAt DateTime @updatedAt
+  @@map("navigation")
+}
+
+model NavigationItem {
+  id           String @id
+  navigationId String
+  parentId     String?
+  label        String
+  url          String
+  order        Int
+  isVisible    Boolean @default(true)
+  navigation   Navigation @relation(fields: [navigationId], references: [id], onDelete: Cascade)
+  parent       NavigationItem? @relation("NavigationTree", fields: [parentId], references: [id], onDelete: Cascade)
+  children     NavigationItem[] @relation("NavigationTree")
+  @@index([navigationId, parentId, order])
+  @@map("navigation_items")
+}
+
+model AuditLog {
+  id        String @id @default(uuid())
+  actorId   String
+  action    String
+  pageId    String?
+  createdAt DateTime @default(now())
+  @@index([pageId, createdAt])
+  @@map("audit_logs")
+}

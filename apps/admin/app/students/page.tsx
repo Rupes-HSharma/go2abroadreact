@@ -1,0 +1,3 @@
+"use client";
+import { CrudResource } from "../../components/CrudResource";
+export default function StudentsPage() { return <CrudResource title="Students" description="Create and manage student portal accounts." endpoint="/students" fields={[{ name: "name", label: "Full name", required: true }, { name: "email", label: "Email", type: "email", required: true }, { name: "phone", label: "Phone" }, { name: "password", label: "Password", type: "password", required: true }]} columns={[{ key: "name", label: "Name" }, { key: "email", label: "Email" }, { key: "phone", label: "Phone" }, { key: "status", label: "Status" }]} />; }

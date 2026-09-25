@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base { body { @apply bg-slate-50 text-slate-900 antialiased; } }
+@layer components {
+  .auth-shell { @apply flex min-h-screen items-center justify-center bg-slate-100 p-6; }
+  .auth-card { @apply w-full max-w-md rounded-2xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/60; }
+  .brand-mark { @apply mb-7 text-2xl font-black tracking-tight text-indigo-600; } .auth-logo { @apply mb-7 block max-h-16 max-w-[220px] object-contain; } .admin-logo-image { @apply block max-h-12 max-w-[190px] object-contain object-left; }
+  .brand-mark span, .logo span { @apply text-orange-600; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.18em] text-indigo-600; }
+  .muted { @apply text-sm leading-6 text-slate-500; }
+  form { @apply mt-7; } label { @apply mb-4 block text-sm font-semibold text-slate-700; }
+  input, textarea, select { @apply mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100; }
+  button { @apply rounded-lg bg-indigo-600 px-4 py-2.5 font-semibold text-white shadow-sm transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60; }
+  .text-button { @apply mt-4 bg-transparent p-0 text-sm text-indigo-600 shadow-none hover:bg-transparent hover:text-indigo-800 hover:underline; }
+  .dashboard { @apply flex min-h-screen; } .sidebar { @apply flex w-64 shrink-0 flex-col bg-slate-950 px-4 py-6 text-white; }
+  .logo { @apply mb-10 px-3 text-2xl font-black tracking-tight text-white; } .sidebar small { @apply mb-3 px-3 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500; }
+  .sidebar nav { @apply grid gap-1; } .sidebar nav a { @apply flex items-center justify-start gap-3 rounded-lg px-3 py-2.5 text-sm text-slate-400 transition hover:bg-white/10 hover:text-white; } .sidebar-nav-icon { @apply inline-flex w-5 shrink-0 items-center justify-center text-center; }
+  .sidebar nav a.active { @apply bg-indigo-600 text-white shadow-lg shadow-indigo-950/40; } .sidebar > button { @apply mt-auto bg-white/10 text-slate-300 hover:bg-red-500/20 hover:text-white; }
+  .content { @apply min-w-0 flex-1; } .content > header { @apply flex items-center justify-between border-b border-slate-200 bg-white px-8 py-6; }
+  .content > header h1 { @apply mt-1 text-2xl font-bold tracking-tight text-slate-900; } .avatar { @apply grid h-10 w-10 place-items-center rounded-full bg-orange-100 text-sm font-bold text-orange-700; }
+  .body { @apply p-8; } .body > h2 { @apply text-2xl font-bold; } .stats { @apply my-7 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4; }
+  .stat, .panel { @apply rounded-xl border border-slate-200 bg-white p-6 shadow-sm; } .stat strong { @apply my-2 block text-3xl font-bold; }
+  .stat small, .success { @apply text-sm text-emerald-600; } .panels { @apply mb-5 grid gap-5 lg:grid-cols-2; } .panel h3, .panel h2 { @apply font-bold text-slate-900; }
+  .chart { @apply mt-6 h-36 rounded-lg bg-gradient-to-br from-indigo-50 via-white to-orange-50; } .source, .activity { @apply flex justify-between border-b border-slate-100 py-3 text-sm; }
+  .settings-section { @apply mb-5; } .form-grid, .settings-grid { @apply grid gap-x-5 gap-y-2 md:grid-cols-2; } .delete-button { @apply ml-3 bg-red-600 hover:bg-red-700; } .error { @apply text-sm text-red-600; }
+}
+@media (max-width: 700px) { .dashboard { @apply block; } .sidebar { @apply w-full p-3; } .sidebar small, .sidebar .logo { @apply hidden; } .sidebar nav { @apply flex overflow-x-auto; } .sidebar nav a { @apply whitespace-nowrap text-xs; } .sidebar > button { @apply mt-3 self-start text-xs; } .body { @apply p-4; } .content > header { @apply px-4; } }

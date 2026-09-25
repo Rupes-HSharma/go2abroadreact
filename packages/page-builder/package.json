@@ -1,0 +1,11 @@
+{
+  "name": "@go2abroad/page-builder",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": { "build": "tsc -p tsconfig.json" },
+  "peerDependencies": { "react": "^19.0.0" },
+  "dependencies": { "zod": "^3.25.76" },
+  "devDependencies": { "typescript": "^5.7.0", "@types/react": "^19.0.0" }
+}
