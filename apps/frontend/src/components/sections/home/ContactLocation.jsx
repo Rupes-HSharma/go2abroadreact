@@ -1,4 +1,7 @@
+import { useContactDetails } from "../../../context/WebsiteSettingsContext";
+
 export default function ContactLocation() {
+  const { phone, email } = useContactDetails();
   return (
     <section className="sis-contact-location section pt-0">
       <div className="container">
@@ -56,7 +59,7 @@ export default function ContactLocation() {
                   Call Us
                 </span>
                 <p id="officePhone">
-                  +91-7068821740
+                  {phone}
                 </p>
               </div>
             </div>
@@ -69,7 +72,7 @@ export default function ContactLocation() {
                   Email
                 </span>
                 <p id="officeEmail">
-                  info@go2abroad.co
+                  {email}
                 </p>
               </div>
             </div>

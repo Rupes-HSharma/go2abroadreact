@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+import { useContactDetails } from "../../../context/WebsiteSettingsContext";
+
 export default function Cta2() {
+  const { phone, phoneHref } = useContactDetails();
   return (
     <div className="sis-cta-wrap py-5">
       <div className="container">
@@ -29,8 +32,8 @@ export default function Cta2() {
                   <span>
                     Call our visa desk
                   </span>
-                  <a href="tel:+917068821740">
-                    +91-70688 21740
+                  <a href={phoneHref}>
+                    {phone}
                   </a>
                 </div>
               </div>

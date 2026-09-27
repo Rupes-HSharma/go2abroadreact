@@ -13,7 +13,8 @@ const defaults = {
     "As a leading study abroad consultant, we help Indian students connect with trusted institutions across the globe and plan the career that follows — at zero consultation cost.",
   copyrightText: "© Copyright 2026 Go2Abroad. All Rights Reserved.",
   contactEmail: "info@go2abroad.co",
-  contactPhone: "+91-7068821760",
+  contactPhone: "+91-7068821740",
+  whatsappNumber: "917068821740",
   address: "B-395, 2nd Floor, Nehru Ground, Neelam Chowk, Faridabad, Haryana - 121001",
   officeHours: "Mon - Sat: 11:00 AM - 07:00 PM",
   socialLinks: {},
@@ -99,4 +100,18 @@ export function WebsiteSettingsProvider({ children }) {
 
 export function useWebsiteSettings() {
   return useContext(WebsiteSettingsContext);
+}
+
+export function useContactDetails() {
+  const { settings } = useWebsiteSettings();
+  const phone = settings.contactPhone || defaults.contactPhone;
+  const digits = phone.replace(/\D/g, "");
+  const whatsappDigits = (settings.whatsappNumber || digits).replace(/\D/g, "");
+
+  return useMemo(() => ({
+    email: settings.contactEmail || defaults.contactEmail,
+    phone,
+    phoneHref: `tel:+${digits}`,
+    whatsappHref: `https://wa.me/${whatsappDigits}`,
+  }), [digits, phone, settings.contactEmail, whatsappDigits]);
 }

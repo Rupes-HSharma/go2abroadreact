@@ -1,10 +1,12 @@
  import { useState } from "react";
 import { submitContactForm } from "../../../utils/submitContactForm";
+import { useContactDetails } from "../../../context/WebsiteSettingsContext";
 
 const img = (path) =>
   `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
 export default function ContactUs() {
+  const { email, phone, phoneHref, whatsappHref } = useContactDetails();
   const [submitting, setSubmitting] = useState(false);
   const [formStatus, setFormStatus] = useState("");
 
@@ -45,7 +47,7 @@ export default function ContactUs() {
       );
     } catch (error) {
       setFormStatus(
-        "We could not send your enquiry. Please try again or email info@go2abroad.co."
+        `We could not send your enquiry. Please try again or email ${email}.`
       );
     } finally {
       setSubmitting(false);
@@ -100,17 +102,17 @@ export default function ContactUs() {
                     {/* Phone */}
                     <div className="sisf-contact-box mb-3 d-flex align-items-center gap-3">
                       <div className="sisf-icon">
-                        <a href="tel:+917068821740">
+                        <a href={phoneHref}>
                           <i className="fa-solid fa-phone-volume"></i>
                         </a>
                       </div>
 
                       <div className="sisf-sis-e-content">
                         <a
-                          href="tel:+917068821740"
+                          href={phoneHref}
                           className="sis-title text-white d-block"
                         >
-                          +91-70688 21740, +91-79053 77279
+                          {phone}
                         </a>
 
                         <span className="sis-title text-white d-block">
@@ -122,17 +124,17 @@ export default function ContactUs() {
                     {/* Email */}
                     <div className="sisf-contact-box mb-3 d-flex align-items-center gap-3">
                       <div className="sisf-icon">
-                        <a href="mailto:info@go2abroad.co">
+                        <a href={`mailto:${email}`}>
                           <i className="fa-regular fa-envelope"></i>
                         </a>
                       </div>
 
                       <div className="sisf-sis-e-content">
                         <a
-                          href="mailto:info@go2abroad.co"
+                          href={`mailto:${email}`}
                           className="sis-title text-white d-block"
                         >
-                          info@go2abroad.co
+                          {email}
                         </a>
 
                         <span className="sis-title text-white d-block">
@@ -145,7 +147,7 @@ export default function ContactUs() {
                     <div className="sisf-contact-box mb-0 d-flex align-items-center gap-3">
                       <div className="sisf-icon">
                         <a
-                          href="https://wa.me/917068821740"
+                          href={whatsappHref}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -155,7 +157,7 @@ export default function ContactUs() {
 
                       <div className="sisf-sis-e-content">
                         <a
-                          href="https://wa.me/917068821740"
+                          href={whatsappHref}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="sis-title text-white d-block"

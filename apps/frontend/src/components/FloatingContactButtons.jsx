@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useContactDetails } from "../context/WebsiteSettingsContext";
 
 export default function FloatingContactButtons() {
   const [showTop, setShowTop] = useState(false);
+  const { phoneHref, whatsappHref } = useContactDetails();
 
   useEffect(() => {
     const onScroll = () => setShowTop(window.scrollY > 240);
@@ -18,7 +20,7 @@ export default function FloatingContactButtons() {
     <div className="sis-floating-contact" aria-label="Quick contact actions">
       <a
         className="sis-floating-contact-btn sis-floating-whatsapp"
-        href="https://wa.me/917905377279"
+        href={whatsappHref}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with Go2Abroad on WhatsApp"
@@ -29,7 +31,7 @@ export default function FloatingContactButtons() {
 
       <a
         className="sis-floating-contact-btn sis-floating-call"
-        href="tel:+917068821740"
+        href={phoneHref}
         aria-label="Call Go2Abroad"
         title="Call us"
       >

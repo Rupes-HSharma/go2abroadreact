@@ -1,4 +1,7 @@
+import { useContactDetails } from "../../../context/WebsiteSettingsContext";
+
 export default function Cta() {
+  const { phoneHref, whatsappHref, phone } = useContactDetails();
   return (
     <div className="sis-cta-wrap py-5">
       <div className="container">
@@ -18,12 +21,12 @@ export default function Cta() {
               </p>
             </div>
             <div className="sis-cta-actions">
-              <a href="https://wa.me/917068821740" target="_blank" rel="noopener" className="sis-btn-default btn-light">
+              <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="sis-btn-default btn-light">
                 Chat on WhatsApp
                 <i className="fa-brands fa-whatsapp"></i>
               </a>
-              <a href="tel:+917068821740" className="sis-btn-default">
-                Call +91-70688 21740
+              <a href={phoneHref} className="sis-btn-default">
+                Call {phone}
                 <i className="fa-solid fa-phone"></i>
               </a>
             </div>

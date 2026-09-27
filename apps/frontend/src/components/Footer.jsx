@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useContactDetails } from "../context/WebsiteSettingsContext";
 
 const img = (path) =>
   `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
@@ -8,6 +9,7 @@ export default function Footer() {
 
   // Office tab state
   const [activeOffice, setActiveOffice] = useState("delhi");
+  const { email, phone, phoneHref, whatsappHref } = useContactDetails();
 
   return (
     <footer className="main-footer">
@@ -341,7 +343,7 @@ export default function Footer() {
 
                       <div className="sisf-icon">
 
-                        <a href="tel:+917068821740">
+                        <a href={phoneHref}>
 
                           <i className="fa-solid fa-phone-volume"></i>
 
@@ -357,12 +359,12 @@ export default function Footer() {
                   </span>
 
                   <a
-                    href="https://wa.me/917905377279"
+                    href={whatsappHref}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="sis-title text-white d-block "
                   >
-                    +91-7905377279 <i class="fa-solid fa-arrow-right-long"></i>
+                    {phone} <i className="fa-solid fa-arrow-right-long"></i>
                   </a>
 
                 </div>
@@ -377,7 +379,7 @@ export default function Footer() {
 
                       <div className="sisf-icon">
 
-                        <a href="mailto:info@go2abroad.co">
+                        <a href={`mailto:${email}`}>
 
                           <i className="fa-regular fa-envelope"></i>
 
@@ -393,10 +395,10 @@ export default function Footer() {
                         </span>
 
                         <a
-                          href="mailto:info@go2abroad.co"
+                          href={`mailto:${email}`}
                           className="sis-title text-white d-block"
                         >
-                          info@go2abroad.co
+                          {email}
                         </a>
 
                       </div>
