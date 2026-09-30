@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import CursorFx from "./CursorFx";
 import RouteEffects from "./RouteEffects";
 import FloatingContactButtons from "./FloatingContactButtons";
+import SiteEnhancements from "./pending/SiteEnhancements";
 
 export default function Layout() {
   return (
@@ -14,6 +15,7 @@ export default function Layout() {
       <Footer />
       <CursorFx />
       <FloatingContactButtons />
+      <SiteEnhancements />
     </>
   );
 }

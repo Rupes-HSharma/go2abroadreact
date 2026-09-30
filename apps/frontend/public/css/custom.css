@@ -14323,3 +14323,12 @@ position: relative;
   transition: none !important;
 }
 .sisf-about-top-image{display:none;}
+
+.g2-team-grid .col-sm-12:last-child img{
+	padding-top: 20px;
+}
+
+/* Go2Abroad pending-task enhancements - isolated additions */
+.go2abroad-version{font-size:11px;color:#858b94;text-align:center;padding:8px 15px;border-top:1px solid rgba(0,0,0,.06);background:#fff}.go2abroad-notice{position:fixed;right:24px;bottom:24px;z-index:9998;background:#192233;color:#fff;padding:13px 16px 13px 18px;border-radius:10px;box-shadow:0 10px 35px rgba(0,0,0,.2);display:flex;gap:20px;align-items:center;font-size:14px}.go2abroad-notice button{border:0;background:transparent;color:#fff;font-size:20px;line-height:1;cursor:pointer}.go2abroad-modal-backdrop{position:fixed;inset:0;background:rgba(12,18,28,.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px}.go2abroad-lead-modal{position:relative;width:min(520px,100%);background:#fff;border-radius:20px;padding:42px;box-shadow:0 25px 80px rgba(0,0,0,.25)}.go2abroad-modal-close{position:absolute;right:15px;top:12px;width:36px;height:36px;border:0;background:#f3f4f6;border-radius:50%;font-size:24px;cursor:pointer}.go2abroad-popup-label{font-size:11px;letter-spacing:2px;font-weight:700;color:#f47b38}.go2abroad-lead-modal h2{font-size:34px;line-height:1.15;margin:10px 0}.go2abroad-lead-modal p{color:#6a7280;line-height:1.7}.go2abroad-popup-btn{background:#f47b38;color:#fff;border-radius:8px;padding:12px 22px;font-weight:700}.go2abroad-popup-btn:hover{background:#df692c;color:#fff}@media(max-width:575px){.go2abroad-lead-modal{padding:35px 25px}.go2abroad-lead-modal h2{font-size:28px}.go2abroad-notice{left:15px;right:15px;bottom:15px}}
+
+.pending-form-error{grid-column:1/-1;padding:12px 14px;border-radius:8px;background:#fff0f0;color:#b42318;font-size:13px}.pending-form button:disabled{opacity:.65;cursor:not-allowed}

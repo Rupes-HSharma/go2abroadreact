@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const img = (path) =>
@@ -16,6 +16,16 @@ const TEAM_PROFILES = {
     phone: "+91 79053 77279",
     description: "Founder & CEO of Go2Abroad, focused on building a transparent, student-first study abroad journey from counselling to arrival.",
   },
+   "Sandhya Kathuria": {
+    role: "Cheif Business Officer",
+    image: img("/images/sandhya.png"),
+    linkedin: "https://in.linkedin.com/in/sandhya-jhamtani-912ba587",
+    short:
+      "Bringing deep international education experience and student-focused guidance to every journey.",
+    email: "sandhya.k@go2abroad.co",
+    phone: "+91 99581 55484",
+    description: "Cheif Business Officer bringing international education experience and student-focused guidance to every journey.",
+  },
   "Amrit Seth": {
     role: "Operational & Digital Support",
     image: img("/images/amritSeth.png"),
@@ -26,16 +36,7 @@ const TEAM_PROFILES = {
     phone: "+91 7518437330",
     description: "Operational & Digital Support professional helping Go2Abroad with digital systems, operations and day-to-day execution.",
   },
-  "Sandhya Kathuria": {
-    role: "Cheif Business Officer",
-    image: img("/images/sandhya.png"),
-    linkedin: "https://in.linkedin.com/in/sandhya-jhamtani-912ba587",
-    short:
-      "Bringing deep international education experience and student-focused guidance to every journey.",
-    email: "sandhya.k@go2abroad.co",
-    phone: "+91 99581 55484",
-    description: "Cheif Business Officer bringing international education experience and student-focused guidance to every journey.",
-  },
+ 
 };
 
 function TeamCard({ member, onHover }) {
@@ -174,8 +175,9 @@ export default function TeamMember() {
 
         <div className="row g2-team-grid">
           <TeamCard member="Chakrapalit Narayan" onHover={setSelectedMember} />
+           <TeamCard member="Sandhya Kathuria" onHover={setSelectedMember} />
           <TeamCard member="Amrit Seth" onHover={setSelectedMember} />
-          <TeamCard member="Sandhya Kathuria" onHover={setSelectedMember} />
+         
         </div>
         <TeamProfileModal member={selectedMember} onClose={() => setSelectedMember(null)} />
       </div>

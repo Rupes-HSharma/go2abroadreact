@@ -1,4 +1,4 @@
- import { useState } from "react";
+  import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const img = (path) =>
@@ -283,7 +283,7 @@ export default function Footer() {
                 >
 
                   <h3>
-                    BRAND &amp; IDENTITY
+                   ABOUT GO2ABROAD
                   </h3>
 
                   <ul>
@@ -298,11 +298,16 @@ export default function Footer() {
                         to="/"
                       >
 
-                        <img
-                          src={img("/images/footerLight.png")}
-                          alt="Go2Abroad Logo"
-                          style={{ width: "190px" }}
-                        />
+                     <img
+  src={img("/images/logo.png")}
+  alt="Go2Abroad Logo"
+  style={{
+    width: "190px",
+    padding: "7px",
+    background: "#fff",
+    borderRadius: "4px",
+  }}
+/>
 
                       </Link>
 
@@ -722,11 +727,11 @@ export default function Footer() {
                         <li className="mb-0 p-0">
 
                           <a
-                            href="https://x.com/G2Abroad_25?t=-zpbUEvZoTwsGH3QNKZSfA&s=09"
+                            href="https://www.linkedin.com/company/go2abroad/"
                             target="_blank"
                             rel="noopener"
                           >
-                            <i className="fa-brands fa-x-twitter"></i>
+                          <i className="fa-brands fa-linkedin"></i>
                           </a>
 
                         </li>

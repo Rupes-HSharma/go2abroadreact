@@ -10,6 +10,7 @@ import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
 import Usa from "./pages/Usa";
 import ArizonaStateUniversity from "./pages/ArizonaStateUniversity";
+import { ServiceDetails, CountryDetails, UniversityDetails, SuccessDetails, BlogDetails, CourseDetails, PartnerDetails, LeadGeneration, InquiryForm, ThankYou } from "./pages/pending/PendingPages";
 
 export default function App() {
   return (
@@ -30,6 +31,16 @@ export default function App() {
       path="/arizona-state-university"
       element={<ArizonaStateUniversity />}
     />
+    <Route path="/service-details" element={<ServiceDetails />} />
+    <Route path="/country-details" element={<CountryDetails />} />
+    <Route path="/university-details" element={<UniversityDetails />} />
+    <Route path="/success-story-details" element={<SuccessDetails />} />
+    <Route path="/blog-details" element={<BlogDetails />} />
+    <Route path="/course-details" element={<CourseDetails />} />
+    <Route path="/partner-details" element={<PartnerDetails />} />
+    <Route path="/lead-generation" element={<LeadGeneration />} />
+    <Route path="/inquiry-form" element={<InquiryForm />} />
+    <Route path="/thank-you" element={<ThankYou />} />
   </Route>
 
 </Routes>
