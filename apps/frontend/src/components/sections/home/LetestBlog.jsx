@@ -52,7 +52,7 @@ export default function LetestBlog() {
                   <div className="sisf-e-text">
                     <div className="sisf-e-title-wraper mb-2">
                       <h2 className="sisf-e-title sis-comman-title entry-title">
-                        <Link className="sisf-e-title-link blog-title-link" to="/destinations#uk">
+                        <Link className="sisf-e-title-link blog-title-link" to="/uk">
                           United Kingdom
                         </Link>
                       </h2>
@@ -63,7 +63,7 @@ export default function LetestBlog() {
                       </p>
                     </div>
                     <div className="sisf-m-btn">
-                      <Link className="sis-btn-outlined sisf-e-colored" to="/destinations#uk">
+                      <Link className="sis-btn-outlined sisf-e-colored" to="/uk">
                         Explore destination
                         <i className="fa-solid fa-arrow-right-long"></i>
                       </Link>
@@ -91,7 +91,7 @@ export default function LetestBlog() {
                   <div className="sisf-e-text">
                     <div className="sisf-e-title-wraper mb-2">
                       <h2 className="sisf-e-title sis-comman-title entry-title">
-                        <Link className="sisf-e-title-link blog-title-link" to="/destinations#australia">
+                        <Link className="sisf-e-title-link blog-title-link" to="/australia">
                           Australia
                         </Link>
                       </h2>
@@ -102,7 +102,7 @@ export default function LetestBlog() {
                       </p>
                     </div>
                     <div className="sisf-m-btn">
-                      <Link className="sis-btn-outlined sisf-e-colored" to="/destinations#australia">
+                      <Link className="sis-btn-outlined sisf-e-colored" to="/australia">
                         Explore destination
                         <i className="fa-solid fa-arrow-right-long"></i>
                       </Link>
@@ -130,7 +130,7 @@ export default function LetestBlog() {
                   <div className="sisf-e-text">
                     <div className="sisf-e-title-wraper mb-2">
                       <h2 className="sisf-e-title sis-comman-title entry-title">
-                        <Link className="sisf-e-title-link blog-title-link" to="/destinations#canada">
+                        <Link className="sisf-e-title-link blog-title-link" to="/canada">
                           Canada
                         </Link>
                       </h2>
@@ -141,7 +141,7 @@ export default function LetestBlog() {
                       </p>
                     </div>
                     <div className="sisf-m-btn">
-                      <Link className="sis-btn-outlined sisf-e-colored" to="/destinations#canada">
+                      <Link className="sis-btn-outlined sisf-e-colored" to="/canada">
                         Explore destination
                         <i className="fa-solid fa-arrow-right-long"></i>
                       </Link>

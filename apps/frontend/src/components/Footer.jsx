@@ -124,7 +124,7 @@ export default function Footer() {
                   },
                   {
                     name: "US Cosigner (Int. Lender)",
-                    logo: "/images/partners/us-cosigner.png",
+                    logo: "/images/partners/us-cosigner.jpg",
                     fallback: "USC"
                   },
                   {
@@ -201,7 +201,7 @@ export default function Footer() {
                     },
                     {
                       name: "US Cosigner (Int. Lender)",
-                      logo: "/images/partners/us-cosigner.png",
+                      logo: "/images/partners/us-cosigner.jpg",
                       fallback: "USC"
                     },
                     {
@@ -268,7 +268,7 @@ export default function Footer() {
 
           <div className="container">
 
-            <div className="row">
+            <div className="row g2-footer-main-grid">
 
 
               {/* =================================================
@@ -345,43 +345,12 @@ export default function Footer() {
                   </h3>
 
                   <ul>
-
-                    <li>
-                      <Link to="/">
-                        Home
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link to="/services">
-                        Services
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link to="/destinations">
-                        Study Destinations
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link to="/courses">
-                        Courses
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link to="/success-stories">
-                        Success Stories
-                      </Link>
-                    </li>
-
-                    <li className="mb-0">
-                      <Link to="/contact">
-                        Contact Us
-                      </Link>
-                    </li>
-
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/services">Services</Link></li>
+                    <li><Link to="/destinations">Study Destinations</Link></li>
+                    <li><Link to="/courses">Courses</Link></li>
+                    <li><Link to="/success-stories">Success Stories</Link></li>
+                    <li><Link to="/blog">Blog</Link></li>
                   </ul>
 
                 </div>
@@ -390,9 +359,24 @@ export default function Footer() {
 
 
               {/* =================================================
-                  STUDY DESTINATIONS
+                  MORE LINKS
               ================================================== */}
               <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="footer-links page g2-footer-more-links" data-aos="fade-up--" data-aos-delay="200">
+                  <h3>MORE LINKS</h3>
+                  <ul className="g2-footer-link-grid">
+                    <li><Link to="/partner-details">Our Partners</Link></li>
+                    <li><Link to="/lead-generation">Lead Generation Form</Link></li>
+                    <li><Link to="/inquiry-form">Inquiry Form</Link></li>
+                  </ul>
+                </div>
+              </div>
+
+
+              {/* =================================================
+                  STUDY DESTINATIONS
+              ================================================== */}
+              <div className="col-xl-2 col-lg-6 col-md-6">
 
                 <div
                   className="footer-links page"
@@ -413,31 +397,31 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <Link to="/destinations#uk">
+                      <Link to="/uk">
                         Study In UK
                       </Link>
                     </li>
 
                     <li>
-                      <Link to="/destinations#canada">
+                      <Link to="/canada">
                         Study In Canada
                       </Link>
                     </li>
 
                     <li>
-                      <Link to="/destinations#australia">
+                      <Link to="/australia">
                         Study In Australia
                       </Link>
                     </li>
 
                     <li>
-                      <Link to="/destinations#new-zealand">
+                      <Link to="/new-zealand">
                         Study In New Zealand
                       </Link>
                     </li>
 
                     <li className="mb-0">
-                      <Link to="/destinations#germany">
+                      <Link to="/germany">
                         Study In Germany
                       </Link>
                     </li>
@@ -452,7 +436,7 @@ export default function Footer() {
               {/* =================================================
                   CONTACT INFORMATION
               ================================================== */}
-              <div className="col-xl-4 col-lg-6 col-md-6">
+              <div className="col-xl-3 col-lg-6 col-md-6">
 
                 <div
                   className="footer-links page"
@@ -792,24 +776,24 @@ export default function Footer() {
 
                       <li>
 
-                        <a
-                          href="#"
+                        <Link
+                          to="/terms-and-conditions"
                           className="text-white"
                         >
                           Terms &amp; Conditions
-                        </a>
+                        </Link>
 
                       </li>
 
 
                       <li>
 
-                        <a
-                          href="#"
+                        <Link
+                          to="/privacy-policy"
                           className="text-white"
                         >
                           Privacy Policy
-                        </a>
+                        </Link>
 
                       </li>
 

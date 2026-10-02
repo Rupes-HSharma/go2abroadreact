@@ -1,20 +1,29 @@
 import {useLocation, Link} from "react-router-dom";
-import { useEffect } from "react";
+import { SERVICE_CATALOG } from "../data/serviceCatalog";
 const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
 export default function Header() {
   const location = useLocation();
 
-  useEffect(() => {
-    // Legacy script.js adds .active once on initial load. React Router
-    // owns the active state, so remove the stale legacy class on every route change.
-    document
-      .querySelectorAll("#sisf-page-header .nav-link.active")
-      .forEach((link) => link.classList.remove("active"));
-  }, [location.pathname]);
+  const navCls = (base, path) => {
+    const pathname = location.pathname;
+    let active = pathname === path;
 
-  const navCls = (base, path) =>
-    location.pathname === path ? `${base} sis-nav-active` : base;
+    // Keep the parent menu highlighted while visiting any of its detail pages.
+    if (path === "/destinations") {
+      active = active || pathname.startsWith("/destination/") || [
+        "/usa", "/uk", "/canada", "/australia", "/new-zealand",
+        "/germany", "/ireland", "/singapore", "/france", "/italy", "/europe"
+      ].includes(pathname);
+    }
+    if (path === "/courses") {
+      active = active || pathname.startsWith("/course/") || [
+        "/undergraduate", "/postgraduate", "/mba", "/phd", "/diploma", "/language"
+      ].includes(pathname);
+    }
+    if (path === "/services") active = active || pathname.startsWith("/services/") || pathname === "/service" || pathname.startsWith("/service/");
+    return active ? `${base} sis-nav-active` : base;
+  };
 
   return (
     <header id="sisf-page-header" className="sisf-main-header sisf-standerd-header">
@@ -47,76 +56,13 @@ export default function Header() {
                         <i className="fas fa-chevron-down custom-toggle-icon ps-2"></i>
                       </Link>
                       <ul className="sub-menu sis-menu-columns-2">
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#counselling">
-                            Profile & Career Counselling
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#profile-building">
-                            Portfolio & Profile Building
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#university-shortlisting">
-                            University Shortlisting
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#scholarship-guidance">
-                            Scholarship Guidance
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#sop-writing">
-                            SOP & LOR Writing
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#visa-assistance">
-                            Visa Assistance
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#loan-assistance">
-                            Education Loan Assistance
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#test-preparation">
-                            English Proficiency Test Prep
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#interview-preparation">
-                            Interview Preparation
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#accommodation">
-                            Accommodation Assistance
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#forex">
-                            Forex Services
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#post-arrival">
-                            Post-Arrival Support
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#alumni">
-                            Alumni Meets & Mentorship
-                          </Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link className="nav-link" to="/services#helpline">
-                            24×7 Helpline Support
-                          </Link>
-                        </li>
+                        {SERVICE_CATALOG.map((service) => (
+                          <li className="nav-item" key={service.slug}>
+                            <Link className="nav-link" to={`/service/${service.slug}`}>
+                              {service.title}
+                            </Link>
+                          </li>
+                        ))}
                         <li className="nav-item sis-submenu-view-all">
                           <Link className="nav-link" to="/services">
                             View All Services
@@ -137,52 +83,52 @@ export default function Header() {
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/destinations#uk">
+                          <Link className="nav-link" to="/uk">
                             United Kingdom (UK)
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/destinations#canada">
+                          <Link className="nav-link" to="/canada">
                             Canada
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/destinations#australia">
+                          <Link className="nav-link" to="/australia">
                             Australia
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/destinations#new-zealand">
+                          <Link className="nav-link" to="/new-zealand">
                             New Zealand
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/destinations#germany">
+                          <Link className="nav-link" to="/germany">
                             Germany
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/destinations#ireland">
+                          <Link className="nav-link" to="/ireland">
                             Ireland
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/destinations#singapore">
+                          <Link className="nav-link" to="/singapore">
                             Singapore
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/destinations#france">
+                          <Link className="nav-link" to="/france">
                             France
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/destinations#italy">
+                          <Link className="nav-link" to="/italy">
                             Italy
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/destinations#europe">
+                          <Link className="nav-link" to="/europe">
                             Europe (More Countries)
                           </Link>
                         </li>
@@ -201,32 +147,32 @@ export default function Header() {
                       </Link>
                       <ul className="sub-menu">
                         <li className="nav-item">
-                          <Link className="nav-link" to="/courses#undergraduate">
+                          <Link className="nav-link" to="/undergraduate">
                             Undergraduate (Bachelor's)
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/courses#postgraduate">
+                          <Link className="nav-link" to="/postgraduate">
                             Postgraduate (Master's)
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/courses#mba">
+                          <Link className="nav-link" to="/mba">
                             MBA & Management
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/courses#phd">
+                          <Link className="nav-link" to="/phd">
                             PhD & Doctorate
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/courses#diploma">
+                          <Link className="nav-link" to="/diploma">
                             Diploma & Certificate
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="/courses#language">
+                          <Link className="nav-link" to="/language">
                             English Language Programs
                           </Link>
                         </li>
@@ -238,6 +184,12 @@ export default function Header() {
                         </li>
                       </ul>
                     </li>
+                    <li className={navCls("nav-item submenu", "/blog")}>
+                      <Link className="nav-link" to="/blog">
+                        Blog
+                      </Link>
+                    </li>
+
                     <li className={navCls("nav-item submenu", "/success-stories")}>
                       <Link className="nav-link" to="/success-stories">
                         Success Stories

@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:4000").replace(/\/$/, "");
 
 function CourseCard({ course, delay }) {
+  const navigate = useNavigate();
   const highlights = (course.highlights || "")
     .split("\n")
     .map((highlight) => highlight.trim())
@@ -10,7 +12,7 @@ function CourseCard({ course, delay }) {
 
   return (
     <div className="col-lg-4 col-md-6" id={course.slug}>
-      <div className="sis-course-card" data-aos="fade-up--" data-aos-delay={delay}>
+      <div className="sis-course-card" data-aos="fade-up--" data-aos-delay={delay} onClick={() => navigate(`/course/${course.slug}`)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); navigate(`/course/${course.slug}`); } }} role="link" tabIndex={0}>
         <span className="sis-course-level">{course.level}</span>
         <h3>{course.title}</h3>
         {course.duration && <p className="mb-2"><strong>{course.duration}</strong></p>}

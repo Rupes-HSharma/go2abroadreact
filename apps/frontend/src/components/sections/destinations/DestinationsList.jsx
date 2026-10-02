@@ -1,5 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export default function DestinationsList() {
+  const navigate = useNavigate();
+
+  const openDestination = (path) => navigate(path);
+
+  const handleCardKeyDown = (event, path) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      navigate(path);
+    }
+  };
+
   return (
     <div className="sis-destinations-list-section section pt-0">
       <div className="container">
@@ -20,7 +31,7 @@ export default function DestinationsList() {
         </div>
         <div className="row g-4">
           <div className="col-lg-3 col-md-6" id="usa">
-            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="100">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="100" onClick={() => openDestination("/usa")} onKeyDown={(event) => handleCardKeyDown(event, "/usa")} role="link" tabIndex={0}>
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇺🇸
@@ -57,7 +68,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="uk">
-            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="150">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="150" onClick={() => openDestination("/uk")} onKeyDown={(event) => handleCardKeyDown(event, "/uk")} role="link" tabIndex={0}>
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇬🇧
@@ -86,7 +97,7 @@ export default function DestinationsList() {
                     World-ranked universities & rich culture
                   </li>
                 </ul>
-                <Link className="sis-country-card-link" to="/contact">
+                <Link className="sis-country-card-link" to="/uk">
                   Explore UK
                   <i className="fa-solid fa-arrow-right-long"></i>
                 </Link>
@@ -94,7 +105,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="canada">
-            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="200">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="200" onClick={() => openDestination("/canada")} onKeyDown={(event) => handleCardKeyDown(event, "/canada")} role="link" tabIndex={0}>
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇨🇦
@@ -123,7 +134,7 @@ export default function DestinationsList() {
                     Affordable tuition vs. USA/UK
                   </li>
                 </ul>
-                <Link className="sis-country-card-link" to="/contact">
+                <Link className="sis-country-card-link" to="/canada">
                   Explore Canada
                   <i className="fa-solid fa-arrow-right-long"></i>
                 </Link>
@@ -131,7 +142,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="australia">
-            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="250">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="250" onClick={() => openDestination("/australia")} onKeyDown={(event) => handleCardKeyDown(event, "/australia")} role="link" tabIndex={0}>
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇦🇺
@@ -160,7 +171,7 @@ export default function DestinationsList() {
                     Strong skilled-migration pathway
                   </li>
                 </ul>
-                <Link className="sis-country-card-link" to="/contact">
+                <Link className="sis-country-card-link" to="/australia">
                   Explore Australia
                   <i className="fa-solid fa-arrow-right-long"></i>
                 </Link>
@@ -168,7 +179,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="new-zealand">
-            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="100">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="100" onClick={() => openDestination("/new-zealand")} onKeyDown={(event) => handleCardKeyDown(event, "/new-zealand")} role="link" tabIndex={0}>
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇳🇿
@@ -197,7 +208,7 @@ export default function DestinationsList() {
                     Smaller class sizes, strong student support
                   </li>
                 </ul>
-                <Link className="sis-country-card-link" to="/contact">
+                <Link className="sis-country-card-link" to="/new-zealand">
                   Explore New Zealand
                   <i className="fa-solid fa-arrow-right-long"></i>
                 </Link>
@@ -205,7 +216,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="germany">
-            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="150">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="150" onClick={() => openDestination("/germany")} onKeyDown={(event) => handleCardKeyDown(event, "/germany")} role="link" tabIndex={0}>
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇩🇪
@@ -234,7 +245,7 @@ export default function DestinationsList() {
                     Engineering & research powerhouse
                   </li>
                 </ul>
-                <Link className="sis-country-card-link" to="/contact">
+                <Link className="sis-country-card-link" to="/germany">
                   Explore Germany
                   <i className="fa-solid fa-arrow-right-long"></i>
                 </Link>
@@ -242,7 +253,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="ireland">
-            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="200">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="200" onClick={() => openDestination("/ireland")} onKeyDown={(event) => handleCardKeyDown(event, "/ireland")} role="link" tabIndex={0}>
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇮🇪
@@ -271,7 +282,7 @@ export default function DestinationsList() {
                     English-speaking gateway to the EU
                   </li>
                 </ul>
-                <Link className="sis-country-card-link" to="/contact">
+                <Link className="sis-country-card-link" to="/ireland">
                   Explore Ireland
                   <i className="fa-solid fa-arrow-right-long"></i>
                 </Link>
@@ -279,7 +290,7 @@ export default function DestinationsList() {
             </div>
           </div>
           <div className="col-lg-3 col-md-6" id="singapore">
-            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="250">
+            <div className="sis-country-card" data-aos="fade-up--" data-aos-delay="250" onClick={() => openDestination("/singapore")} onKeyDown={(event) => handleCardKeyDown(event, "/singapore")} role="link" tabIndex={0}>
               <div className="sis-country-card-top">
                 <div className="sis-country-flag" style={{fontSize: '24px'}}>
                   🇸🇬
@@ -308,7 +319,7 @@ export default function DestinationsList() {
                     Gateway to Southeast Asian job markets
                   </li>
                 </ul>
-                <Link className="sis-country-card-link" to="/contact">
+                <Link className="sis-country-card-link" to="/singapore">
                   Explore Singapore
                   <i className="fa-solid fa-arrow-right-long"></i>
                 </Link>

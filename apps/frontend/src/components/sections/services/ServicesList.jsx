@@ -1,48 +1,25 @@
-import { useEffect, useState } from "react";
 
-const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:4000").replace(/\/$/, "");
+import { Link } from "react-router-dom";
+import { SERVICE_CATALOG } from "../../../data/serviceCatalog";
 
 export default function ServicesList() {
-  const [services, setServices] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    let cancelled = false;
-    fetch(`${API_URL}/public/services`)
-      .then((response) => {
-        if (!response.ok) throw new Error("Unable to load services");
-        return response.json();
-      })
-      .then((data) => {
-        if (!cancelled) setServices(Array.isArray(data) ? data : []);
-      })
-      .catch(() => {
-        if (!cancelled) setServices([]);
-      })
-      .finally(() => {
-        if (!cancelled) setLoading(false);
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  if (loading) return <div className="sis-services-list-section section pt-0"><div className="container"><p>Loading services…</p></div></div>;
-
   return (
-    <div className="sis-services-list-section section pt-0">
+    <div className="sis-services-list-section section pt-0 g2-services-directory">
       <div className="container">
         <div className="row g-4">
-          {services.map((service, index) => (
-            <div className="col-lg-4 col-md-6" id={service.slug} key={service.id}>
-              <div className="sis-icon-card" data-aos="fade-up--" data-aos-delay={100 + (index % 6) * 50}>
-                <div className="sis-icon-card-icon">
-                  <i className={`fa-solid ${service.icon}`} />
+          {SERVICE_CATALOG.map((service, index) => (
+            <div className="col-lg-4 col-md-6" id={service.slug} key={service.slug}>
+              <Link to={`/service/${service.slug}`} className="g2-service-card-link">
+                <div className="sis-icon-card g2-service-card" data-aos="fade-up--" data-aos-delay={100 + (index % 6) * 50}>
+                  <div className="sis-icon-card-icon">
+                    <i className={`fa-solid ${service.icon}`} />
+                  </div>
+                  <span className="g2-service-card-number">{String(index + 1).padStart(2, "0")}</span>
+                  <h3>{service.title}</h3>
+                  <p>{service.text}</p>
+                  <span className="g2-service-card-action">Explore Service <i className="fa-solid fa-arrow-right-long" /></span>
                 </div>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-              </div>
+              </Link>
             </div>
           ))}
         </div>

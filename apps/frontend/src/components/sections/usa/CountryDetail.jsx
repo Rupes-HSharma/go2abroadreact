@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function CountryDetail() {
   return (
-    <div className="sis-country-detail-section section" data-country-page="usa">
+    <div id="usa-details" className="sis-country-detail-section section" data-country-page="usa">
       <div className="container">
         <div className="row">
           <div className="col-lg-3 sis-country-toc-col">

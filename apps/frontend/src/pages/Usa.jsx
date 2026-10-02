@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Banner from "../components/sections/usa/Banner";
+import ModernInnerHero from "../components/ModernInnerHero";
 import CountryDetail from "../components/sections/usa/CountryDetail";
 
 export default function Usa() {
@@ -17,7 +17,19 @@ export default function Usa() {
 
   return (
     <>
-      <Banner />
+      <ModernInnerHero
+        eyebrow="🇺🇸 STUDY IN THE USA"
+        title="Build your next chapter in the United States."
+        intro="Explore universities, flexible degree structures, campus life and career-focused programs with guidance from shortlist to application."
+        image="/images/service-image-4.png"
+        imageAlt="International student planning study in the USA"
+        badge="Study in the USA"
+        primaryLabel="Talk to a USA counsellor"
+        secondaryLabel="Explore destinations"
+        secondaryTo="/destinations"
+        meta={["Free counselling", "University matching", "Visa guidance"]}
+        themeKey="usa"
+      />
       <CountryDetail />
     </>
   );

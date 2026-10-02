@@ -26,5 +26,19 @@ export async function submitContactForm(form) {
     throw new Error(data.message || "Unable to submit the enquiry right now. If this is the first submission, the FormSubmit email must be activated once.");
   }
 
+  // Notify the global UI so every enquiry form in the application can
+  // show the same success/thank-you modal after a successful submission.
+  try {
+    window.dispatchEvent(new CustomEvent("go2abroad:form-success", {
+      detail: {
+        name: payload.name || "",
+        email: payload.email || "",
+      },
+    }));
+  } catch {
+    // Keep form submission successful even if the browser does not support
+    // CustomEvent in an unusual environment.
+  }
+
   return data;
 }

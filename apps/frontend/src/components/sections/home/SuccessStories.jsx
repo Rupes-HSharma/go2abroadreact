@@ -1,6 +1,34 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 const img = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 export default function SuccessStories() {
+  useEffect(() => {
+    let slider;
+    const timer = window.setTimeout(() => {
+      if (!window.Swiper) return;
+      slider = new window.Swiper(".go2-home-success-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 18,
+        loop: true,
+        speed: 650,
+        autoplay: { delay: 3800, disableOnInteraction: false },
+        navigation: {
+          nextEl: ".go2-success-next",
+          prevEl: ".go2-success-prev"
+        },
+        breakpoints: {
+          576: { slidesPerView: 2 },
+          992: { slidesPerView: 3 },
+          1200: { slidesPerView: 4 }
+        }
+      });
+    }, 500);
+    return () => {
+      window.clearTimeout(timer);
+      if (slider) slider.destroy(true, true);
+    };
+  }, []);
+
   return (
     <div className="sis-success-stories-section position-relative pb-0 section sis-brand-gradient-deep">
       <div className="sisf-sis-bottom-left-image" style={{top: '0px'}}>
@@ -35,9 +63,10 @@ export default function SuccessStories() {
             </div>
           </div>
         </div>
-       <div className="row">
+       <div className="swiper go2-home-success-swiper">
+         <div className="swiper-wrapper">
   {/* ==================== JAGPREET SINGH ==================== */}
-  <div className="col-lg-3 col-md-6">
+  <div className="swiper-slide">
     <div
       className="testimonial-right page"
       data-aos="fade-up--"
@@ -113,9 +142,7 @@ export default function SuccessStories() {
 
               <div className="sis-m-overview-inner align-items-center flex-wrap gap-2">
                 <div className="sis-m-overview-item text-center">
-                  <Link to="/success-stories">
-                    <span>READ FULL STORY</span>
-                  </Link>
+                  <Link to="/success-story/jagpreet-singh"><span>READ FULL STORY</span></Link>
                 </div>
               </div>
 
@@ -129,7 +156,7 @@ export default function SuccessStories() {
 
 
   {/* ==================== ABDULLAH YUNUS ==================== */}
-  <div className="col-lg-3 col-md-6">
+  <div className="swiper-slide">
     <div
       className="testimonial-right page"
       data-aos="fade-up--"
@@ -194,9 +221,7 @@ export default function SuccessStories() {
 
               <div className="sis-m-overview-inner align-items-center flex-wrap gap-2">
                 <div className="sis-m-overview-item text-center">
-                  <Link to="/success-stories">
-                    <span>READ FULL STORY</span>
-                  </Link>
+                  <Link to="/success-story/abdullah-yunus"><span>READ FULL STORY</span></Link>
                 </div>
               </div>
 
@@ -210,7 +235,7 @@ export default function SuccessStories() {
 
 
   {/* ==================== MOHAMMAD HAMZA KHAN ==================== */}
-  <div className="col-lg-3 col-md-6">
+  <div className="swiper-slide">
     <div
       className="testimonial-right page"
       data-aos="fade-up--"
@@ -278,9 +303,7 @@ export default function SuccessStories() {
 
               <div className="sis-m-overview-inner align-items-center flex-wrap gap-2">
                 <div className="sis-m-overview-item text-center">
-                  <Link to="/success-stories">
-                    <span>READ FULL STORY</span>
-                  </Link>
+                  <Link to="/success-story/mohammad-hamza-khan"><span>READ FULL STORY</span></Link>
                 </div>
               </div>
 
@@ -294,7 +317,7 @@ export default function SuccessStories() {
 
 
   {/* ==================== MOHAMMAD SUHAIB KHAN ==================== */}
-  <div className="col-lg-3 col-md-6">
+  <div className="swiper-slide">
     <div
       className="testimonial-right page"
       data-aos="fade-up--"
@@ -359,9 +382,7 @@ export default function SuccessStories() {
 
               <div className="sis-m-overview-inner align-items-center flex-wrap gap-2">
                 <div className="sis-m-overview-item text-center">
-                  <Link to="/success-stories">
-                    <span>READ FULL STORY</span>
-                  </Link>
+                  <Link to="/success-story/mohammad-suhaib-khan"><span>READ FULL STORY</span></Link>
                 </div>
               </div>
 
@@ -372,7 +393,83 @@ export default function SuccessStories() {
       </div>
     </div>
   </div>
-</div>
+
+
+  {/* ==================== ATIF SAIFI ==================== */}
+  <div className="swiper-slide">
+    <div className="testimonial-right page">
+      <div className="sisf-e-inner bg-white p-4 sis-radius">
+        <div className="sisf-top--content">
+          <div className="sisf-content-inner">
+            <div className="sisf-m-inner d-flex align-items-center gap-4">
+              <div className="sisf-e-media-image">
+                <img
+                  src={img("/images/AtifSaifi.jpg")}
+                  className="w-100"
+                  alt="Atif Saifi"
+                />
+              </div>
+              <div className="sisf-e-author">
+                <span className="sisf-e-author-name sis-comman-title d-block">ATIF SAIFI</span>
+                <span className="sisf-e-author-role"><i>Cyber Security Student</i></span>
+              </div>
+            </div>
+            <div className="sisf-e-content-center">
+              <div className="sisf-e-discription mt-4">
+                <p>“A heartfelt thank you to Go2Abroad for making my UK study journey smooth, stress-free, and successful with their constant guidance and support.”</p>
+                <p style={{ color: "#64748B" }}><i className="fa-solid fa-location-dot"></i> University of Surrey, Guildford, England</p>
+              </div>
+            </div>
+            <div className="sisf-case-overview pt-3 text-center">
+              <div className="mb-2"><span className="g2a-rating-star">★</span><span className="g2a-rating-star">★</span><span className="g2a-rating-star">★</span><span className="g2a-rating-star">★</span><span className="g2a-rating-star">★</span></div>
+              <div className="sis-m-overview-inner align-items-center flex-wrap gap-2"><div className="sis-m-overview-item text-center"><Link to="/success-story/atif-saifi"><span>READ FULL STORY</span></Link></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* ==================== NAZMUL HUDA ==================== */}
+  <div className="swiper-slide">
+    <div className="testimonial-right page">
+      <div className="sisf-e-inner bg-white p-4 sis-radius">
+        <div className="sisf-top--content">
+          <div className="sisf-content-inner">
+            <div className="sisf-m-inner d-flex align-items-center gap-4">
+              <div className="sisf-e-media-image">
+                <img
+                  src={img("/images/NazmulHuda.jpg")}
+                  className="w-100"
+                  alt="Nazmul Huda"
+                />
+              </div>
+              <div className="sisf-e-author">
+                <span className="sisf-e-author-name sis-comman-title d-block">NAZMUL HUDA</span>
+                <span className="sisf-e-author-role"><i>Artificial Intelligence Student</i></span>
+              </div>
+            </div>
+            <div className="sisf-e-content-center">
+              <div className="sisf-e-discription mt-4">
+                <p>“Grateful for Go2Abroad’s honest, dedicated, and stress-free support throughout my UK study and visa journey.”</p>
+                <p style={{ color: "#64748B" }}><i className="fa-solid fa-location-dot"></i> University of East London, London, England</p>
+              </div>
+            </div>
+            <div className="sisf-case-overview pt-3 text-center">
+              <div className="mb-2"><span className="g2a-rating-star">★</span><span className="g2a-rating-star">★</span><span className="g2a-rating-star">★</span><span className="g2a-rating-star">★</span><span className="g2a-rating-star">★</span></div>
+              <div className="sis-m-overview-inner align-items-center flex-wrap gap-2"><div className="sis-m-overview-item text-center"><Link to="/success-story/nazmul-huda"><span>READ FULL STORY</span></Link></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+         </div>
+         <div className="go2-success-nav">
+           <button className="go2-success-prev" type="button" aria-label="Previous success story"><i className="fa-solid fa-arrow-left"></i></button>
+           <button className="go2-success-next" type="button" aria-label="Next success story"><i className="fa-solid fa-arrow-right"></i></button>
+         </div>
+       </div>
       </div>
     </div>
   );
